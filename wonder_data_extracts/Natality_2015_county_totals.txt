@@ -1,0 +1,1962 @@
+"Notes"	"County"	"County Code"	"Delivery Method"	"Delivery Method Code"	Births
+	"Baldwin County, AL"	"01003"	"Vaginal"	"1"	1273
+	"Baldwin County, AL"	"01003"	"Cesarean"	"2"	565
+	"Baldwin County, AL"	"01003"	"Not Stated"	"9"	Suppressed
+	"Calhoun County, AL"	"01015"	"Vaginal"	"1"	759
+	"Calhoun County, AL"	"01015"	"Cesarean"	"2"	347
+	"Calhoun County, AL"	"01015"	"Not Stated"	"9"	Suppressed
+	"Etowah County, AL"	"01055"	"Vaginal"	"1"	658
+	"Etowah County, AL"	"01055"	"Cesarean"	"2"	260
+	"Etowah County, AL"	"01055"	"Not Stated"	"9"	Suppressed
+	"Houston County, AL"	"01069"	"Vaginal"	"1"	607
+	"Houston County, AL"	"01069"	"Cesarean"	"2"	392
+	"Houston County, AL"	"01069"	"Not Stated"	"9"	Suppressed
+	"Jefferson County, AL"	"01073"	"Vaginal"	"1"	4695
+	"Jefferson County, AL"	"01073"	"Cesarean"	"2"	2048
+	"Jefferson County, AL"	"01073"	"Not Stated"	"9"	Suppressed
+	"Lee County, AL"	"01081"	"Vaginal"	"1"	1098
+	"Lee County, AL"	"01081"	"Cesarean"	"2"	460
+	"Lee County, AL"	"01081"	"Not Stated"	"9"	Suppressed
+	"Madison County, AL"	"01089"	"Vaginal"	"1"	2061
+	"Madison County, AL"	"01089"	"Cesarean"	"2"	955
+	"Madison County, AL"	"01089"	"Not Stated"	"9"	Suppressed
+	"Mobile County, AL"	"01097"	"Vaginal"	"1"	2623
+	"Mobile County, AL"	"01097"	"Cesarean"	"2"	1522
+	"Mobile County, AL"	"01097"	"Not Stated"	"9"	Suppressed
+	"Montgomery County, AL"	"01101"	"Vaginal"	"1"	1548
+	"Montgomery County, AL"	"01101"	"Cesarean"	"2"	757
+	"Montgomery County, AL"	"01101"	"Not Stated"	"9"	Suppressed
+	"Morgan County, AL"	"01103"	"Vaginal"	"1"	784
+	"Morgan County, AL"	"01103"	"Cesarean"	"2"	342
+	"Morgan County, AL"	"01103"	"Not Stated"	"9"	Suppressed
+	"Shelby County, AL"	"01117"	"Vaginal"	"1"	1316
+	"Shelby County, AL"	"01117"	"Cesarean"	"2"	631
+	"Shelby County, AL"	"01117"	"Not Stated"	"9"	Suppressed
+	"Tuscaloosa County, AL"	"01125"	"Vaginal"	"1"	1279
+	"Tuscaloosa County, AL"	"01125"	"Cesarean"	"2"	633
+	"Tuscaloosa County, AL"	"01125"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, AL"	"01999"	"Vaginal"	"1"	11809
+	"Unidentified Counties, AL"	"01999"	"Cesarean"	"2"	5933
+	"Unidentified Counties, AL"	"01999"	"Not Stated"	"9"	Suppressed
+	"Anchorage Borough, AK"	"02020"	"Vaginal"	"1"	2544
+	"Anchorage Borough, AK"	"02020"	"Cesarean"	"2"	848
+	"Anchorage Borough, AK"	"02020"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, AK"	"02999"	"Vaginal"	"1"	3860
+	"Unidentified Counties, AK"	"02999"	"Cesarean"	"2"	1009
+	"Unidentified Counties, AK"	"02999"	"Not Stated"	"9"	Suppressed
+	"Cochise County, AZ"	"04003"	"Vaginal"	"1"	948
+	"Cochise County, AZ"	"04003"	"Cesarean"	"2"	313
+	"Cochise County, AZ"	"04003"	"Not Stated"	"9"	Suppressed
+	"Coconino County, AZ"	"04005"	"Vaginal"	"1"	965
+	"Coconino County, AZ"	"04005"	"Cesarean"	"2"	214
+	"Coconino County, AZ"	"04005"	"Not Stated"	"9"	Suppressed
+	"Maricopa County, AZ"	"04013"	"Vaginal"	"1"	32061
+	"Maricopa County, AZ"	"04013"	"Cesarean"	"2"	11457
+	"Maricopa County, AZ"	"04013"	"Not Stated"	"9"	Suppressed
+	"Mohave County, AZ"	"04015"	"Vaginal"	"1"	1028
+	"Mohave County, AZ"	"04015"	"Cesarean"	"2"	397
+	"Mohave County, AZ"	"04015"	"Not Stated"	"9"	Suppressed
+	"Navajo County, AZ"	"04017"	"Vaginal"	"1"	947
+	"Navajo County, AZ"	"04017"	"Cesarean"	"2"	245
+	"Navajo County, AZ"	"04017"	"Not Stated"	"9"	Suppressed
+	"Pima County, AZ"	"04019"	"Vaginal"	"1"	7122
+	"Pima County, AZ"	"04019"	"Cesarean"	"2"	2144
+	"Pima County, AZ"	"04019"	"Not Stated"	"9"	Suppressed
+	"Pinal County, AZ"	"04021"	"Vaginal"	"1"	2559
+	"Pinal County, AZ"	"04021"	"Cesarean"	"2"	1029
+	"Pinal County, AZ"	"04021"	"Not Stated"	"9"	Suppressed
+	"Yavapai County, AZ"	"04025"	"Vaginal"	"1"	1019
+	"Yavapai County, AZ"	"04025"	"Cesarean"	"2"	385
+	"Yavapai County, AZ"	"04025"	"Not Stated"	"9"	Suppressed
+	"Yuma County, AZ"	"04027"	"Vaginal"	"1"	1720
+	"Yuma County, AZ"	"04027"	"Cesarean"	"2"	680
+	"Yuma County, AZ"	"04027"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, AZ"	"04999"	"Vaginal"	"1"	2027
+	"Unidentified Counties, AZ"	"04999"	"Cesarean"	"2"	538
+	"Unidentified Counties, AZ"	"04999"	"Not Stated"	"9"	Suppressed
+	"Benton County, AR"	"05007"	"Vaginal"	"1"	1914
+	"Benton County, AR"	"05007"	"Cesarean"	"2"	865
+	"Benton County, AR"	"05007"	"Not Stated"	"9"	Suppressed
+	"Faulkner County, AR"	"05045"	"Vaginal"	"1"	756
+	"Faulkner County, AR"	"05045"	"Cesarean"	"2"	411
+	"Faulkner County, AR"	"05045"	"Not Stated"	"9"	Suppressed
+	"Pulaski County, AR"	"05119"	"Vaginal"	"1"	3196
+	"Pulaski County, AR"	"05119"	"Cesarean"	"2"	881
+	"Pulaski County, AR"	"05119"	"Not Stated"	"9"	Suppressed
+	"Saline County, AR"	"05125"	"Vaginal"	"1"	745
+	"Saline County, AR"	"05125"	"Cesarean"	"2"	199
+	"Saline County, AR"	"05125"	"Not Stated"	"9"	Suppressed
+	"Sebastian County, AR"	"05131"	"Vaginal"	"1"	856
+	"Sebastian County, AR"	"05131"	"Cesarean"	"2"	523
+	"Sebastian County, AR"	"05131"	"Not Stated"	"9"	Suppressed
+	"Washington County, AR"	"05143"	"Vaginal"	"1"	1663
+	"Washington County, AR"	"05143"	"Cesarean"	"2"	709
+	"Washington County, AR"	"05143"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, AR"	"05999"	"Vaginal"	"1"	11035
+	"Unidentified Counties, AR"	"05999"	"Cesarean"	"2"	5573
+	"Unidentified Counties, AR"	"05999"	"Not Stated"	"9"	Suppressed
+	"Alameda County, CA"	"06001"	"Vaginal"	"1"	12260
+	"Alameda County, CA"	"06001"	"Cesarean"	"2"	4340
+	"Alameda County, CA"	"06001"	"Not Stated"	"9"	Suppressed
+	"Butte County, CA"	"06007"	"Vaginal"	"1"	1445
+	"Butte County, CA"	"06007"	"Cesarean"	"2"	611
+	"Butte County, CA"	"06007"	"Not Stated"	"9"	Suppressed
+	"Contra Costa County, CA"	"06013"	"Vaginal"	"1"	7884
+	"Contra Costa County, CA"	"06013"	"Cesarean"	"2"	2810
+	"Contra Costa County, CA"	"06013"	"Not Stated"	"9"	Suppressed
+	"El Dorado County, CA"	"06017"	"Vaginal"	"1"	993
+	"El Dorado County, CA"	"06017"	"Cesarean"	"2"	325
+	"El Dorado County, CA"	"06017"	"Not Stated"	"9"	Suppressed
+	"Fresno County, CA"	"06019"	"Vaginal"	"1"	8993
+	"Fresno County, CA"	"06019"	"Cesarean"	"2"	4184
+	"Fresno County, CA"	"06019"	"Not Stated"	"9"	Suppressed
+	"Humboldt County, CA"	"06023"	"Vaginal"	"1"	861
+	"Humboldt County, CA"	"06023"	"Cesarean"	"2"	308
+	"Humboldt County, CA"	"06023"	"Not Stated"	"9"	Suppressed
+	"Imperial County, CA"	"06025"	"Vaginal"	"1"	1675
+	"Imperial County, CA"	"06025"	"Cesarean"	"2"	984
+	"Imperial County, CA"	"06025"	"Not Stated"	"9"	Suppressed
+	"Kern County, CA"	"06029"	"Vaginal"	"1"	8463
+	"Kern County, CA"	"06029"	"Cesarean"	"2"	2984
+	"Kern County, CA"	"06029"	"Not Stated"	"9"	Suppressed
+	"Kings County, CA"	"06031"	"Vaginal"	"1"	1254
+	"Kings County, CA"	"06031"	"Cesarean"	"2"	699
+	"Kings County, CA"	"06031"	"Not Stated"	"9"	Suppressed
+	"Los Angeles County, CA"	"06037"	"Vaginal"	"1"	71028
+	"Los Angeles County, CA"	"06037"	"Cesarean"	"2"	35253
+	"Los Angeles County, CA"	"06037"	"Not Stated"	"9"	Suppressed
+	"Madera County, CA"	"06039"	"Vaginal"	"1"	1335
+	"Madera County, CA"	"06039"	"Cesarean"	"2"	630
+	"Madera County, CA"	"06039"	"Not Stated"	"9"	Suppressed
+	"Marin County, CA"	"06041"	"Vaginal"	"1"	1542
+	"Marin County, CA"	"06041"	"Cesarean"	"2"	443
+	"Marin County, CA"	"06041"	"Not Stated"	"9"	Suppressed
+	"Merced County, CA"	"06047"	"Vaginal"	"1"	2420
+	"Merced County, CA"	"06047"	"Cesarean"	"2"	1186
+	"Merced County, CA"	"06047"	"Not Stated"	"9"	Suppressed
+	"Monterey County, CA"	"06053"	"Vaginal"	"1"	4074
+	"Monterey County, CA"	"06053"	"Cesarean"	"2"	1457
+	"Monterey County, CA"	"06053"	"Not Stated"	"9"	Suppressed
+	"Napa County, CA"	"06055"	"Vaginal"	"1"	882
+	"Napa County, CA"	"06055"	"Cesarean"	"2"	338
+	"Napa County, CA"	"06055"	"Not Stated"	"9"	Suppressed
+	"Orange County, CA"	"06059"	"Vaginal"	"1"	22234
+	"Orange County, CA"	"06059"	"Cesarean"	"2"	10558
+	"Orange County, CA"	"06059"	"Not Stated"	"9"	Suppressed
+	"Placer County, CA"	"06061"	"Vaginal"	"1"	2445
+	"Placer County, CA"	"06061"	"Cesarean"	"2"	750
+	"Placer County, CA"	"06061"	"Not Stated"	"9"	Suppressed
+	"Riverside County, CA"	"06065"	"Vaginal"	"1"	18230
+	"Riverside County, CA"	"06065"	"Cesarean"	"2"	8134
+	"Riverside County, CA"	"06065"	"Not Stated"	"9"	Suppressed
+	"Sacramento County, CA"	"06067"	"Vaginal"	"1"	12389
+	"Sacramento County, CA"	"06067"	"Cesarean"	"2"	4308
+	"Sacramento County, CA"	"06067"	"Not Stated"	"9"	Suppressed
+	"San Bernardino County, CA"	"06071"	"Vaginal"	"1"	18210
+	"San Bernardino County, CA"	"06071"	"Cesarean"	"2"	8079
+	"San Bernardino County, CA"	"06071"	"Not Stated"	"9"	Suppressed
+	"San Diego County, CA"	"06073"	"Vaginal"	"1"	26331
+	"San Diego County, CA"	"06073"	"Cesarean"	"2"	11555
+	"San Diego County, CA"	"06073"	"Not Stated"	"9"	Suppressed
+	"San Francisco County, CA"	"06075"	"Vaginal"	"1"	5923
+	"San Francisco County, CA"	"06075"	"Cesarean"	"2"	1811
+	"San Francisco County, CA"	"06075"	"Not Stated"	"9"	Suppressed
+	"San Joaquin County, CA"	"06077"	"Vaginal"	"1"	5970
+	"San Joaquin County, CA"	"06077"	"Cesarean"	"2"	2480
+	"San Joaquin County, CA"	"06077"	"Not Stated"	"9"	Suppressed
+	"San Luis Obispo County, CA"	"06079"	"Vaginal"	"1"	1558
+	"San Luis Obispo County, CA"	"06079"	"Cesarean"	"2"	641
+	"San Luis Obispo County, CA"	"06079"	"Not Stated"	"9"	Suppressed
+	"San Mateo County, CA"	"06081"	"Vaginal"	"1"	5756
+	"San Mateo County, CA"	"06081"	"Cesarean"	"2"	2048
+	"San Mateo County, CA"	"06081"	"Not Stated"	"9"	Suppressed
+	"Santa Barbara County, CA"	"06083"	"Vaginal"	"1"	3320
+	"Santa Barbara County, CA"	"06083"	"Cesarean"	"2"	1533
+	"Santa Barbara County, CA"	"06083"	"Not Stated"	"9"	Suppressed
+	"Santa Clara County, CA"	"06085"	"Vaginal"	"1"	14949
+	"Santa Clara County, CA"	"06085"	"Cesarean"	"2"	5726
+	"Santa Clara County, CA"	"06085"	"Not Stated"	"9"	Suppressed
+	"Santa Cruz County, CA"	"06087"	"Vaginal"	"1"	1666
+	"Santa Cruz County, CA"	"06087"	"Cesarean"	"2"	656
+	"Santa Cruz County, CA"	"06087"	"Not Stated"	"9"	Suppressed
+	"Shasta County, CA"	"06089"	"Vaginal"	"1"	1192
+	"Shasta County, CA"	"06089"	"Cesarean"	"2"	496
+	"Shasta County, CA"	"06089"	"Not Stated"	"9"	Suppressed
+	"Solano County, CA"	"06095"	"Vaginal"	"1"	3245
+	"Solano County, CA"	"06095"	"Cesarean"	"2"	1046
+	"Solano County, CA"	"06095"	"Not Stated"	"9"	Suppressed
+	"Sonoma County, CA"	"06097"	"Vaginal"	"1"	3230
+	"Sonoma County, CA"	"06097"	"Cesarean"	"2"	1046
+	"Sonoma County, CA"	"06097"	"Not Stated"	"9"	Suppressed
+	"Stanislaus County, CA"	"06099"	"Vaginal"	"1"	4425
+	"Stanislaus County, CA"	"06099"	"Cesarean"	"2"	1933
+	"Stanislaus County, CA"	"06099"	"Not Stated"	"9"	Suppressed
+	"Tulare County, CA"	"06107"	"Vaginal"	"1"	4212
+	"Tulare County, CA"	"06107"	"Cesarean"	"2"	1948
+	"Tulare County, CA"	"06107"	"Not Stated"	"9"	Suppressed
+	"Ventura County, CA"	"06111"	"Vaginal"	"1"	6026
+	"Ventura County, CA"	"06111"	"Cesarean"	"2"	2661
+	"Ventura County, CA"	"06111"	"Not Stated"	"9"	Suppressed
+	"Yolo County, CA"	"06113"	"Vaginal"	"1"	1571
+	"Yolo County, CA"	"06113"	"Cesarean"	"2"	470
+	"Yolo County, CA"	"06113"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, CA"	"06999"	"Vaginal"	"1"	5883
+	"Unidentified Counties, CA"	"06999"	"Cesarean"	"2"	2447
+	"Unidentified Counties, CA"	"06999"	"Not Stated"	"9"	Suppressed
+	"Adams County, CO"	"08001"	"Vaginal"	"1"	4251
+	"Adams County, CO"	"08001"	"Cesarean"	"2"	1148
+	"Adams County, CO"	"08001"	"Not Stated"	"9"	Suppressed
+	"Arapahoe County, CO"	"08005"	"Vaginal"	"1"	4713
+	"Arapahoe County, CO"	"08005"	"Cesarean"	"2"	1647
+	"Arapahoe County, CO"	"08005"	"Not Stated"	"9"	Suppressed
+	"Boulder County, CO"	"08013"	"Vaginal"	"1"	1736
+	"Boulder County, CO"	"08013"	"Cesarean"	"2"	562
+	"Boulder County, CO"	"08013"	"Not Stated"	"9"	Suppressed
+	"Denver County, CO"	"08031"	"Vaginal"	"1"	6041
+	"Denver County, CO"	"08031"	"Cesarean"	"2"	1969
+	"Denver County, CO"	"08031"	"Not Stated"	"9"	Suppressed
+	"Douglas County, CO"	"08035"	"Vaginal"	"1"	2019
+	"Douglas County, CO"	"08035"	"Cesarean"	"2"	775
+	"Douglas County, CO"	"08035"	"Not Stated"	"9"	Suppressed
+	"El Paso County, CO"	"08041"	"Vaginal"	"1"	5896
+	"El Paso County, CO"	"08041"	"Cesarean"	"2"	1480
+	"El Paso County, CO"	"08041"	"Not Stated"	"9"	Suppressed
+	"Jefferson County, CO"	"08059"	"Vaginal"	"1"	3736
+	"Jefferson County, CO"	"08059"	"Cesarean"	"2"	1183
+	"Jefferson County, CO"	"08059"	"Not Stated"	"9"	Suppressed
+	"Larimer County, CO"	"08069"	"Vaginal"	"1"	2068
+	"Larimer County, CO"	"08069"	"Cesarean"	"2"	851
+	"Larimer County, CO"	"08069"	"Not Stated"	"9"	Suppressed
+	"Mesa County, CO"	"08077"	"Vaginal"	"1"	1108
+	"Mesa County, CO"	"08077"	"Cesarean"	"2"	262
+	"Mesa County, CO"	"08077"	"Not Stated"	"9"	Suppressed
+	"Pueblo County, CO"	"08101"	"Vaginal"	"1"	1183
+	"Pueblo County, CO"	"08101"	"Cesarean"	"2"	280
+	"Pueblo County, CO"	"08101"	"Not Stated"	"9"	Suppressed
+	"Weld County, CO"	"08123"	"Vaginal"	"1"	2577
+	"Weld County, CO"	"08123"	"Cesarean"	"2"	927
+	"Weld County, CO"	"08123"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, CO"	"08999"	"Vaginal"	"1"	5130
+	"Unidentified Counties, CO"	"08999"	"Cesarean"	"2"	1864
+	"Unidentified Counties, CO"	"08999"	"Not Stated"	"9"	Suppressed
+	"Fairfield County, CT"	"09001"	"Vaginal"	"1"	5355
+	"Fairfield County, CT"	"09001"	"Cesarean"	"2"	2790
+	"Fairfield County, CT"	"09001"	"Not Stated"	"9"	41
+	"Hartford County, CT"	"09003"	"Vaginal"	"1"	5252
+	"Hartford County, CT"	"09003"	"Cesarean"	"2"	2306
+	"Hartford County, CT"	"09003"	"Not Stated"	"9"	34
+	"Litchfield County, CT"	"09005"	"Vaginal"	"1"	773
+	"Litchfield County, CT"	"09005"	"Cesarean"	"2"	383
+	"Litchfield County, CT"	"09005"	"Not Stated"	"9"	Suppressed
+	"Middlesex County, CT"	"09007"	"Vaginal"	"1"	736
+	"Middlesex County, CT"	"09007"	"Cesarean"	"2"	343
+	"Middlesex County, CT"	"09007"	"Not Stated"	"9"	Suppressed
+	"New Haven County, CT"	"09009"	"Vaginal"	"1"	4933
+	"New Haven County, CT"	"09009"	"Cesarean"	"2"	2086
+	"New Haven County, CT"	"09009"	"Not Stated"	"9"	17
+	"New London County, CT"	"09011"	"Vaginal"	"1"	1473
+	"New London County, CT"	"09011"	"Cesarean"	"2"	672
+	"New London County, CT"	"09011"	"Not Stated"	"9"	35
+	"Tolland County, CT"	"09013"	"Vaginal"	"1"	646
+	"Tolland County, CT"	"09013"	"Cesarean"	"2"	259
+	"Tolland County, CT"	"09013"	"Not Stated"	"9"	Suppressed
+	"Windham County, CT"	"09015"	"Vaginal"	"1"	592
+	"Windham County, CT"	"09015"	"Cesarean"	"2"	256
+	"Windham County, CT"	"09015"	"Not Stated"	"9"	Suppressed
+	"Kent County, DE"	"10001"	"Vaginal"	"1"	1179
+	"Kent County, DE"	"10001"	"Cesarean"	"2"	469
+	"Kent County, DE"	"10001"	"Not Stated"	"9"	Suppressed
+	"New Castle County, DE"	"10003"	"Vaginal"	"1"	3531
+	"New Castle County, DE"	"10003"	"Cesarean"	"2"	1500
+	"New Castle County, DE"	"10003"	"Not Stated"	"9"	Suppressed
+	"Sussex County, DE"	"10005"	"Vaginal"	"1"	1240
+	"Sussex County, DE"	"10005"	"Cesarean"	"2"	638
+	"Sussex County, DE"	"10005"	"Not Stated"	"9"	Suppressed
+	"District of Columbia, DC"	"11001"	"Vaginal"	"1"	5236
+	"District of Columbia, DC"	"11001"	"Cesarean"	"2"	2145
+	"District of Columbia, DC"	"11001"	"Not Stated"	"9"	Suppressed
+	"Alachua County, FL"	"12001"	"Vaginal"	"1"	1595
+	"Alachua County, FL"	"12001"	"Cesarean"	"2"	638
+	"Alachua County, FL"	"12001"	"Not Stated"	"9"	Suppressed
+	"Bay County, FL"	"12005"	"Vaginal"	"1"	1370
+	"Bay County, FL"	"12005"	"Cesarean"	"2"	515
+	"Bay County, FL"	"12005"	"Not Stated"	"9"	Suppressed
+	"Brevard County, FL"	"12009"	"Vaginal"	"1"	2734
+	"Brevard County, FL"	"12009"	"Cesarean"	"2"	1217
+	"Brevard County, FL"	"12009"	"Not Stated"	"9"	Suppressed
+	"Broward County, FL"	"12011"	"Vaginal"	"1"	10336
+	"Broward County, FL"	"12011"	"Cesarean"	"2"	7130
+	"Broward County, FL"	"12011"	"Not Stated"	"9"	Suppressed
+	"Charlotte County, FL"	"12015"	"Vaginal"	"1"	529
+	"Charlotte County, FL"	"12015"	"Cesarean"	"2"	279
+	"Charlotte County, FL"	"12015"	"Not Stated"	"9"	Suppressed
+	"Citrus County, FL"	"12017"	"Vaginal"	"1"	550
+	"Citrus County, FL"	"12017"	"Cesarean"	"2"	206
+	"Citrus County, FL"	"12017"	"Not Stated"	"9"	Suppressed
+	"Clay County, FL"	"12019"	"Vaginal"	"1"	1193
+	"Clay County, FL"	"12019"	"Cesarean"	"2"	489
+	"Clay County, FL"	"12019"	"Not Stated"	"9"	Suppressed
+	"Collier County, FL"	"12021"	"Vaginal"	"1"	1606
+	"Collier County, FL"	"12021"	"Cesarean"	"2"	999
+	"Collier County, FL"	"12021"	"Not Stated"	"9"	Suppressed
+	"Duval County, FL"	"12031"	"Vaginal"	"1"	6770
+	"Duval County, FL"	"12031"	"Cesarean"	"2"	3046
+	"Duval County, FL"	"12031"	"Not Stated"	"9"	14
+	"Escambia County, FL"	"12033"	"Vaginal"	"1"	2169
+	"Escambia County, FL"	"12033"	"Cesarean"	"2"	797
+	"Escambia County, FL"	"12033"	"Not Stated"	"9"	Suppressed
+	"Hernando County, FL"	"12053"	"Vaginal"	"1"	762
+	"Hernando County, FL"	"12053"	"Cesarean"	"2"	451
+	"Hernando County, FL"	"12053"	"Not Stated"	"9"	Suppressed
+	"Hillsborough County, FL"	"12057"	"Vaginal"	"1"	8930
+	"Hillsborough County, FL"	"12057"	"Cesarean"	"2"	4280
+	"Hillsborough County, FL"	"12057"	"Not Stated"	"9"	Suppressed
+	"Indian River County, FL"	"12061"	"Vaginal"	"1"	683
+	"Indian River County, FL"	"12061"	"Cesarean"	"2"	300
+	"Indian River County, FL"	"12061"	"Not Stated"	"9"	Suppressed
+	"Lake County, FL"	"12069"	"Vaginal"	"1"	1521
+	"Lake County, FL"	"12069"	"Cesarean"	"2"	870
+	"Lake County, FL"	"12069"	"Not Stated"	"9"	Suppressed
+	"Lee County, FL"	"12071"	"Vaginal"	"1"	3405
+	"Lee County, FL"	"12071"	"Cesarean"	"2"	1871
+	"Lee County, FL"	"12071"	"Not Stated"	"9"	Suppressed
+	"Leon County, FL"	"12073"	"Vaginal"	"1"	1639
+	"Leon County, FL"	"12073"	"Cesarean"	"2"	723
+	"Leon County, FL"	"12073"	"Not Stated"	"9"	Suppressed
+	"Manatee County, FL"	"12081"	"Vaginal"	"1"	1815
+	"Manatee County, FL"	"12081"	"Cesarean"	"2"	795
+	"Manatee County, FL"	"12081"	"Not Stated"	"9"	Suppressed
+	"Marion County, FL"	"12083"	"Vaginal"	"1"	1882
+	"Marion County, FL"	"12083"	"Cesarean"	"2"	835
+	"Marion County, FL"	"12083"	"Not Stated"	"9"	Suppressed
+	"Martin County, FL"	"12085"	"Vaginal"	"1"	655
+	"Martin County, FL"	"12085"	"Cesarean"	"2"	340
+	"Martin County, FL"	"12085"	"Not Stated"	"9"	Suppressed
+	"Miami-Dade County, FL"	"12086"	"Vaginal"	"1"	12894
+	"Miami-Dade County, FL"	"12086"	"Cesarean"	"2"	11160
+	"Miami-Dade County, FL"	"12086"	"Not Stated"	"9"	Suppressed
+	"Okaloosa County, FL"	"12091"	"Vaginal"	"1"	1536
+	"Okaloosa County, FL"	"12091"	"Cesarean"	"2"	686
+	"Okaloosa County, FL"	"12091"	"Not Stated"	"9"	Suppressed
+	"Orange County, FL"	"12095"	"Vaginal"	"1"	8278
+	"Orange County, FL"	"12095"	"Cesarean"	"2"	4411
+	"Orange County, FL"	"12095"	"Not Stated"	"9"	11
+	"Osceola County, FL"	"12097"	"Vaginal"	"1"	2092
+	"Osceola County, FL"	"12097"	"Cesarean"	"2"	1142
+	"Osceola County, FL"	"12097"	"Not Stated"	"9"	Suppressed
+	"Palm Beach County, FL"	"12099"	"Vaginal"	"1"	7391
+	"Palm Beach County, FL"	"12099"	"Cesarean"	"2"	4083
+	"Palm Beach County, FL"	"12099"	"Not Stated"	"9"	Suppressed
+	"Pasco County, FL"	"12101"	"Vaginal"	"1"	2559
+	"Pasco County, FL"	"12101"	"Cesarean"	"2"	1299
+	"Pasco County, FL"	"12101"	"Not Stated"	"9"	Suppressed
+	"Pinellas County, FL"	"12103"	"Vaginal"	"1"	4723
+	"Pinellas County, FL"	"12103"	"Cesarean"	"2"	2045
+	"Pinellas County, FL"	"12103"	"Not Stated"	"9"	Suppressed
+	"Polk County, FL"	"12105"	"Vaginal"	"1"	4031
+	"Polk County, FL"	"12105"	"Cesarean"	"2"	1732
+	"Polk County, FL"	"12105"	"Not Stated"	"9"	Suppressed
+	"St. Johns County, FL"	"12109"	"Vaginal"	"1"	1088
+	"St. Johns County, FL"	"12109"	"Cesarean"	"2"	577
+	"St. Johns County, FL"	"12109"	"Not Stated"	"9"	Suppressed
+	"St. Lucie County, FL"	"12111"	"Vaginal"	"1"	1511
+	"St. Lucie County, FL"	"12111"	"Cesarean"	"2"	915
+	"St. Lucie County, FL"	"12111"	"Not Stated"	"9"	Suppressed
+	"Santa Rosa County, FL"	"12113"	"Vaginal"	"1"	1077
+	"Santa Rosa County, FL"	"12113"	"Cesarean"	"2"	444
+	"Santa Rosa County, FL"	"12113"	"Not Stated"	"9"	Suppressed
+	"Sarasota County, FL"	"12115"	"Vaginal"	"1"	1470
+	"Sarasota County, FL"	"12115"	"Cesarean"	"2"	732
+	"Sarasota County, FL"	"12115"	"Not Stated"	"9"	Suppressed
+	"Seminole County, FL"	"12117"	"Vaginal"	"1"	2253
+	"Seminole County, FL"	"12117"	"Cesarean"	"2"	1157
+	"Seminole County, FL"	"12117"	"Not Stated"	"9"	Suppressed
+	"Volusia County, FL"	"12127"	"Vaginal"	"1"	2405
+	"Volusia County, FL"	"12127"	"Cesarean"	"2"	1272
+	"Volusia County, FL"	"12127"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, FL"	"12999"	"Vaginal"	"1"	6776
+	"Unidentified Counties, FL"	"12999"	"Cesarean"	"2"	3299
+	"Unidentified Counties, FL"	"12999"	"Not Stated"	"9"	Suppressed
+	"Bartow County, GA"	"13015"	"Vaginal"	"1"	638
+	"Bartow County, GA"	"13015"	"Cesarean"	"2"	309
+	"Bartow County, GA"	"13015"	"Not Stated"	"9"	Suppressed
+	"Bibb County, GA"	"13021"	"Vaginal"	"1"	1149
+	"Bibb County, GA"	"13021"	"Cesarean"	"2"	573
+	"Bibb County, GA"	"13021"	"Not Stated"	"9"	Suppressed
+	"Carroll County, GA"	"13045"	"Vaginal"	"1"	875
+	"Carroll County, GA"	"13045"	"Cesarean"	"2"	310
+	"Carroll County, GA"	"13045"	"Not Stated"	"9"	Suppressed
+	"Chatham County, GA"	"13051"	"Vaginal"	"1"	1994
+	"Chatham County, GA"	"13051"	"Cesarean"	"2"	1118
+	"Chatham County, GA"	"13051"	"Not Stated"	"9"	Suppressed
+	"Cherokee County, GA"	"13057"	"Vaginal"	"1"	1446
+	"Cherokee County, GA"	"13057"	"Cesarean"	"2"	643
+	"Cherokee County, GA"	"13057"	"Not Stated"	"9"	Suppressed
+	"Clarke County, GA"	"13059"	"Vaginal"	"1"	801
+	"Clarke County, GA"	"13059"	"Cesarean"	"2"	284
+	"Clarke County, GA"	"13059"	"Not Stated"	"9"	Suppressed
+	"Clayton County, GA"	"13063"	"Vaginal"	"1"	2023
+	"Clayton County, GA"	"13063"	"Cesarean"	"2"	821
+	"Clayton County, GA"	"13063"	"Not Stated"	"9"	Suppressed
+	"Cobb County, GA"	"13067"	"Vaginal"	"1"	5078
+	"Cobb County, GA"	"13067"	"Cesarean"	"2"	2444
+	"Cobb County, GA"	"13067"	"Not Stated"	"9"	Suppressed
+	"Columbia County, GA"	"13073"	"Vaginal"	"1"	885
+	"Columbia County, GA"	"13073"	"Cesarean"	"2"	413
+	"Columbia County, GA"	"13073"	"Not Stated"	"9"	Suppressed
+	"Coweta County, GA"	"13077"	"Vaginal"	"1"	838
+	"Coweta County, GA"	"13077"	"Cesarean"	"2"	339
+	"Coweta County, GA"	"13077"	"Not Stated"	"9"	Suppressed
+	"DeKalb County, GA"	"13089"	"Vaginal"	"1"	5724
+	"DeKalb County, GA"	"13089"	"Cesarean"	"2"	2525
+	"DeKalb County, GA"	"13089"	"Not Stated"	"9"	11
+	"Douglas County, GA"	"13097"	"Vaginal"	"1"	1020
+	"Douglas County, GA"	"13097"	"Cesarean"	"2"	450
+	"Douglas County, GA"	"13097"	"Not Stated"	"9"	Suppressed
+	"Fayette County, GA"	"13113"	"Vaginal"	"1"	469
+	"Fayette County, GA"	"13113"	"Cesarean"	"2"	170
+	"Fayette County, GA"	"13113"	"Not Stated"	"9"	Suppressed
+	"Forsyth County, GA"	"13117"	"Vaginal"	"1"	1145
+	"Forsyth County, GA"	"13117"	"Cesarean"	"2"	604
+	"Forsyth County, GA"	"13117"	"Not Stated"	"9"	Suppressed
+	"Fulton County, GA"	"13121"	"Vaginal"	"1"	7101
+	"Fulton County, GA"	"13121"	"Cesarean"	"2"	3081
+	"Fulton County, GA"	"13121"	"Not Stated"	"9"	25
+	"Gwinnett County, GA"	"13135"	"Vaginal"	"1"	6424
+	"Gwinnett County, GA"	"13135"	"Cesarean"	"2"	2723
+	"Gwinnett County, GA"	"13135"	"Not Stated"	"9"	16
+	"Hall County, GA"	"13139"	"Vaginal"	"1"	1653
+	"Hall County, GA"	"13139"	"Cesarean"	"2"	619
+	"Hall County, GA"	"13139"	"Not Stated"	"9"	Suppressed
+	"Henry County, GA"	"13151"	"Vaginal"	"1"	1425
+	"Henry County, GA"	"13151"	"Cesarean"	"2"	506
+	"Henry County, GA"	"13151"	"Not Stated"	"9"	Suppressed
+	"Houston County, GA"	"13153"	"Vaginal"	"1"	1078
+	"Houston County, GA"	"13153"	"Cesarean"	"2"	486
+	"Houston County, GA"	"13153"	"Not Stated"	"9"	Suppressed
+	"Lowndes County, GA"	"13185"	"Vaginal"	"1"	888
+	"Lowndes County, GA"	"13185"	"Cesarean"	"2"	428
+	"Lowndes County, GA"	"13185"	"Not Stated"	"9"	Suppressed
+	"Muscogee County, GA"	"13215"	"Vaginal"	"1"	1506
+	"Muscogee County, GA"	"13215"	"Cesarean"	"2"	688
+	"Muscogee County, GA"	"13215"	"Not Stated"	"9"	Suppressed
+	"Paulding County, GA"	"13223"	"Vaginal"	"1"	910
+	"Paulding County, GA"	"13223"	"Cesarean"	"2"	373
+	"Paulding County, GA"	"13223"	"Not Stated"	"9"	Suppressed
+	"Richmond County, GA"	"13245"	"Vaginal"	"1"	1591
+	"Richmond County, GA"	"13245"	"Cesarean"	"2"	707
+	"Richmond County, GA"	"13245"	"Not Stated"	"9"	Suppressed
+	"Whitfield County, GA"	"13313"	"Vaginal"	"1"	767
+	"Whitfield County, GA"	"13313"	"Cesarean"	"2"	351
+	"Whitfield County, GA"	"13313"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, GA"	"13999"	"Vaginal"	"1"	21901
+	"Unidentified Counties, GA"	"13999"	"Cesarean"	"2"	10705
+	"Unidentified Counties, GA"	"13999"	"Not Stated"	"9"	28
+	"Hawaii County, HI"	"15001"	"Vaginal"	"1"	1152
+	"Hawaii County, HI"	"15001"	"Cesarean"	"2"	505
+	"Hawaii County, HI"	"15001"	"Not Stated"	"9"	Suppressed
+	"Honolulu County, HI"	"15003"	"Vaginal"	"1"	7806
+	"Honolulu County, HI"	"15003"	"Cesarean"	"2"	2230
+	"Honolulu County, HI"	"15003"	"Not Stated"	"9"	Suppressed
+	"Maui County, HI"	"15009"	"Vaginal"	"1"	1045
+	"Maui County, HI"	"15009"	"Cesarean"	"2"	326
+	"Maui County, HI"	"15009"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, HI"	"15999"	"Vaginal"	"1"	487
+	"Unidentified Counties, HI"	"15999"	"Cesarean"	"2"	154
+	"Unidentified Counties, HI"	"15999"	"Not Stated"	"9"	Suppressed
+	"Ada County, ID"	"16001"	"Vaginal"	"1"	3265
+	"Ada County, ID"	"16001"	"Cesarean"	"2"	847
+	"Ada County, ID"	"16001"	"Not Stated"	"9"	Suppressed
+	"Bonneville County, ID"	"16019"	"Vaginal"	"1"	1192
+	"Bonneville County, ID"	"16019"	"Cesarean"	"2"	327
+	"Bonneville County, ID"	"16019"	"Not Stated"	"9"	Suppressed
+	"Canyon County, ID"	"16027"	"Vaginal"	"1"	1870
+	"Canyon County, ID"	"16027"	"Cesarean"	"2"	575
+	"Canyon County, ID"	"16027"	"Not Stated"	"9"	Suppressed
+	"Kootenai County, ID"	"16055"	"Vaginal"	"1"	1038
+	"Kootenai County, ID"	"16055"	"Cesarean"	"2"	371
+	"Kootenai County, ID"	"16055"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, ID"	"16999"	"Vaginal"	"1"	6595
+	"Unidentified Counties, ID"	"16999"	"Cesarean"	"2"	1909
+	"Unidentified Counties, ID"	"16999"	"Not Stated"	"9"	Suppressed
+	"Champaign County, IL"	"17019"	"Vaginal"	"1"	1360
+	"Champaign County, IL"	"17019"	"Cesarean"	"2"	585
+	"Champaign County, IL"	"17019"	"Not Stated"	"9"	Suppressed
+	"Cook County, IL"	"17031"	"Vaginal"	"1"	39241
+	"Cook County, IL"	"17031"	"Cesarean"	"2"	14873
+	"Cook County, IL"	"17031"	"Not Stated"	"9"	61
+	"DeKalb County, IL"	"17037"	"Vaginal"	"1"	691
+	"DeKalb County, IL"	"17037"	"Cesarean"	"2"	291
+	"DeKalb County, IL"	"17037"	"Not Stated"	"9"	Suppressed
+	"DuPage County, IL"	"17043"	"Vaginal"	"1"	6361
+	"DuPage County, IL"	"17043"	"Cesarean"	"2"	2543
+	"DuPage County, IL"	"17043"	"Not Stated"	"9"	Suppressed
+	"Kane County, IL"	"17089"	"Vaginal"	"1"	3832
+	"Kane County, IL"	"17089"	"Cesarean"	"2"	1552
+	"Kane County, IL"	"17089"	"Not Stated"	"9"	Suppressed
+	"Kankakee County, IL"	"17091"	"Vaginal"	"1"	789
+	"Kankakee County, IL"	"17091"	"Cesarean"	"2"	261
+	"Kankakee County, IL"	"17091"	"Not Stated"	"9"	Suppressed
+	"Kendall County, IL"	"17093"	"Vaginal"	"1"	871
+	"Kendall County, IL"	"17093"	"Cesarean"	"2"	410
+	"Kendall County, IL"	"17093"	"Not Stated"	"9"	Suppressed
+	"Lake County, IL"	"17097"	"Vaginal"	"1"	4342
+	"Lake County, IL"	"17097"	"Cesarean"	"2"	1856
+	"Lake County, IL"	"17097"	"Not Stated"	"9"	Suppressed
+	"LaSalle County, IL"	"17099"	"Vaginal"	"1"	730
+	"LaSalle County, IL"	"17099"	"Cesarean"	"2"	273
+	"LaSalle County, IL"	"17099"	"Not Stated"	"9"	Suppressed
+	"McHenry County, IL"	"17111"	"Vaginal"	"1"	1961
+	"McHenry County, IL"	"17111"	"Cesarean"	"2"	742
+	"McHenry County, IL"	"17111"	"Not Stated"	"9"	Suppressed
+	"McLean County, IL"	"17113"	"Vaginal"	"1"	1117
+	"McLean County, IL"	"17113"	"Cesarean"	"2"	600
+	"McLean County, IL"	"17113"	"Not Stated"	"9"	Suppressed
+	"Macon County, IL"	"17115"	"Vaginal"	"1"	720
+	"Macon County, IL"	"17115"	"Cesarean"	"2"	362
+	"Macon County, IL"	"17115"	"Not Stated"	"9"	Suppressed
+	"Madison County, IL"	"17119"	"Vaginal"	"1"	1824
+	"Madison County, IL"	"17119"	"Cesarean"	"2"	668
+	"Madison County, IL"	"17119"	"Not Stated"	"9"	Suppressed
+	"Peoria County, IL"	"17143"	"Vaginal"	"1"	1489
+	"Peoria County, IL"	"17143"	"Cesarean"	"2"	614
+	"Peoria County, IL"	"17143"	"Not Stated"	"9"	Suppressed
+	"Rock Island County, IL"	"17161"	"Vaginal"	"1"	1081
+	"Rock Island County, IL"	"17161"	"Cesarean"	"2"	441
+	"Rock Island County, IL"	"17161"	"Not Stated"	"9"	Suppressed
+	"St. Clair County, IL"	"17163"	"Vaginal"	"1"	1918
+	"St. Clair County, IL"	"17163"	"Cesarean"	"2"	737
+	"St. Clair County, IL"	"17163"	"Not Stated"	"9"	Suppressed
+	"Sangamon County, IL"	"17167"	"Vaginal"	"1"	1338
+	"Sangamon County, IL"	"17167"	"Cesarean"	"2"	450
+	"Sangamon County, IL"	"17167"	"Not Stated"	"9"	Suppressed
+	"Tazewell County, IL"	"17179"	"Vaginal"	"1"	925
+	"Tazewell County, IL"	"17179"	"Cesarean"	"2"	324
+	"Tazewell County, IL"	"17179"	"Not Stated"	"9"	Suppressed
+	"Will County, IL"	"17197"	"Vaginal"	"1"	4289
+	"Will County, IL"	"17197"	"Cesarean"	"2"	1983
+	"Will County, IL"	"17197"	"Not Stated"	"9"	Suppressed
+	"Winnebago County, IL"	"17201"	"Vaginal"	"1"	1871
+	"Winnebago County, IL"	"17201"	"Cesarean"	"2"	912
+	"Winnebago County, IL"	"17201"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, IL"	"17999"	"Vaginal"	"1"	12913
+	"Unidentified Counties, IL"	"17999"	"Cesarean"	"2"	5114
+	"Unidentified Counties, IL"	"17999"	"Not Stated"	"9"	Suppressed
+	"Allen County, IN"	"18003"	"Vaginal"	"1"	3265
+	"Allen County, IN"	"18003"	"Cesarean"	"2"	1030
+	"Allen County, IN"	"18003"	"Not Stated"	"9"	Suppressed
+	"Clark County, IN"	"18019"	"Vaginal"	"1"	887
+	"Clark County, IN"	"18019"	"Cesarean"	"2"	335
+	"Clark County, IN"	"18019"	"Not Stated"	"9"	Suppressed
+	"Delaware County, IN"	"18035"	"Vaginal"	"1"	820
+	"Delaware County, IN"	"18035"	"Cesarean"	"2"	170
+	"Delaware County, IN"	"18035"	"Not Stated"	"9"	Suppressed
+	"Elkhart County, IN"	"18039"	"Vaginal"	"1"	1763
+	"Elkhart County, IN"	"18039"	"Cesarean"	"2"	659
+	"Elkhart County, IN"	"18039"	"Not Stated"	"9"	Suppressed
+	"Hamilton County, IN"	"18057"	"Vaginal"	"1"	2281
+	"Hamilton County, IN"	"18057"	"Cesarean"	"2"	953
+	"Hamilton County, IN"	"18057"	"Not Stated"	"9"	Suppressed
+	"Hendricks County, IN"	"18063"	"Vaginal"	"1"	1037
+	"Hendricks County, IN"	"18063"	"Cesarean"	"2"	426
+	"Hendricks County, IN"	"18063"	"Not Stated"	"9"	Suppressed
+	"Johnson County, IN"	"18081"	"Vaginal"	"1"	1076
+	"Johnson County, IN"	"18081"	"Cesarean"	"2"	461
+	"Johnson County, IN"	"18081"	"Not Stated"	"9"	Suppressed
+	"Lake County, IN"	"18089"	"Vaginal"	"1"	3464
+	"Lake County, IN"	"18089"	"Cesarean"	"2"	1414
+	"Lake County, IN"	"18089"	"Not Stated"	"9"	Suppressed
+	"La Porte County, IN"	"18091"	"Vaginal"	"1"	757
+	"La Porte County, IN"	"18091"	"Cesarean"	"2"	294
+	"La Porte County, IN"	"18091"	"Not Stated"	"9"	Suppressed
+	"Madison County, IN"	"18095"	"Vaginal"	"1"	866
+	"Madison County, IN"	"18095"	"Cesarean"	"2"	399
+	"Madison County, IN"	"18095"	"Not Stated"	"9"	Suppressed
+	"Marion County, IN"	"18097"	"Vaginal"	"1"	8534
+	"Marion County, IN"	"18097"	"Cesarean"	"2"	3095
+	"Marion County, IN"	"18097"	"Not Stated"	"9"	Suppressed
+	"Monroe County, IN"	"18105"	"Vaginal"	"1"	816
+	"Monroe County, IN"	"18105"	"Cesarean"	"2"	305
+	"Monroe County, IN"	"18105"	"Not Stated"	"9"	Suppressed
+	"Porter County, IN"	"18127"	"Vaginal"	"1"	1023
+	"Porter County, IN"	"18127"	"Cesarean"	"2"	403
+	"Porter County, IN"	"18127"	"Not Stated"	"9"	Suppressed
+	"St. Joseph County, IN"	"18141"	"Vaginal"	"1"	2132
+	"St. Joseph County, IN"	"18141"	"Cesarean"	"2"	753
+	"St. Joseph County, IN"	"18141"	"Not Stated"	"9"	Suppressed
+	"Tippecanoe County, IN"	"18157"	"Vaginal"	"1"	1488
+	"Tippecanoe County, IN"	"18157"	"Cesarean"	"2"	456
+	"Tippecanoe County, IN"	"18157"	"Not Stated"	"9"	Suppressed
+	"Vanderburgh County, IN"	"18163"	"Vaginal"	"1"	1242
+	"Vanderburgh County, IN"	"18163"	"Cesarean"	"2"	614
+	"Vanderburgh County, IN"	"18163"	"Not Stated"	"9"	Suppressed
+	"Vigo County, IN"	"18167"	"Vaginal"	"1"	715
+	"Vigo County, IN"	"18167"	"Cesarean"	"2"	336
+	"Vigo County, IN"	"18167"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, IN"	"18999"	"Vaginal"	"1"	16521
+	"Unidentified Counties, IN"	"18999"	"Cesarean"	"2"	6651
+	"Unidentified Counties, IN"	"18999"	"Not Stated"	"9"	Suppressed
+	"Black Hawk County, IA"	"19013"	"Vaginal"	"1"	1130
+	"Black Hawk County, IA"	"19013"	"Cesarean"	"2"	292
+	"Black Hawk County, IA"	"19013"	"Not Stated"	"9"	Suppressed
+	"Johnson County, IA"	"19103"	"Vaginal"	"1"	1184
+	"Johnson County, IA"	"19103"	"Cesarean"	"2"	325
+	"Johnson County, IA"	"19103"	"Not Stated"	"9"	Suppressed
+	"Linn County, IA"	"19113"	"Vaginal"	"1"	1623
+	"Linn County, IA"	"19113"	"Cesarean"	"2"	639
+	"Linn County, IA"	"19113"	"Not Stated"	"9"	Suppressed
+	"Polk County, IA"	"19153"	"Vaginal"	"1"	4052
+	"Polk County, IA"	"19153"	"Cesarean"	"2"	1597
+	"Polk County, IA"	"19153"	"Not Stated"	"9"	Suppressed
+	"Scott County, IA"	"19163"	"Vaginal"	"1"	1331
+	"Scott County, IA"	"19163"	"Cesarean"	"2"	452
+	"Scott County, IA"	"19163"	"Not Stated"	"9"	Suppressed
+	"Woodbury County, IA"	"19193"	"Vaginal"	"1"	898
+	"Woodbury County, IA"	"19193"	"Cesarean"	"2"	342
+	"Woodbury County, IA"	"19193"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, IA"	"19999"	"Vaginal"	"1"	12682
+	"Unidentified Counties, IA"	"19999"	"Cesarean"	"2"	5159
+	"Unidentified Counties, IA"	"19999"	"Not Stated"	"9"	Suppressed
+	"Douglas County, KS"	"20045"	"Vaginal"	"1"	840
+	"Douglas County, KS"	"20045"	"Cesarean"	"2"	269
+	"Douglas County, KS"	"20045"	"Not Stated"	"9"	Suppressed
+	"Johnson County, KS"	"20091"	"Vaginal"	"1"	4730
+	"Johnson County, KS"	"20091"	"Cesarean"	"2"	1675
+	"Johnson County, KS"	"20091"	"Not Stated"	"9"	Suppressed
+	"Sedgwick County, KS"	"20173"	"Vaginal"	"1"	4534
+	"Sedgwick County, KS"	"20173"	"Cesarean"	"2"	1704
+	"Sedgwick County, KS"	"20173"	"Not Stated"	"9"	Suppressed
+	"Shawnee County, KS"	"20177"	"Vaginal"	"1"	1442
+	"Shawnee County, KS"	"20177"	"Cesarean"	"2"	490
+	"Shawnee County, KS"	"20177"	"Not Stated"	"9"	Suppressed
+	"Wyandotte County, KS"	"20209"	"Vaginal"	"1"	1782
+	"Wyandotte County, KS"	"20209"	"Cesarean"	"2"	541
+	"Wyandotte County, KS"	"20209"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, KS"	"20999"	"Vaginal"	"1"	10623
+	"Unidentified Counties, KS"	"20999"	"Cesarean"	"2"	4529
+	"Unidentified Counties, KS"	"20999"	"Not Stated"	"9"	Suppressed
+	"Boone County, KY"	"21015"	"Vaginal"	"1"	882
+	"Boone County, KY"	"21015"	"Cesarean"	"2"	460
+	"Boone County, KY"	"21015"	"Not Stated"	"9"	Suppressed
+	"Fayette County, KY"	"21067"	"Vaginal"	"1"	2297
+	"Fayette County, KY"	"21067"	"Cesarean"	"2"	998
+	"Fayette County, KY"	"21067"	"Not Stated"	"9"	Suppressed
+	"Hardin County, KY"	"21093"	"Vaginal"	"1"	791
+	"Hardin County, KY"	"21093"	"Cesarean"	"2"	354
+	"Hardin County, KY"	"21093"	"Not Stated"	"9"	Suppressed
+	"Jefferson County, KY"	"21111"	"Vaginal"	"1"	5411
+	"Jefferson County, KY"	"21111"	"Cesarean"	"2"	2366
+	"Jefferson County, KY"	"21111"	"Not Stated"	"9"	Suppressed
+	"Kenton County, KY"	"21117"	"Vaginal"	"1"	1237
+	"Kenton County, KY"	"21117"	"Cesarean"	"2"	531
+	"Kenton County, KY"	"21117"	"Not Stated"	"9"	Suppressed
+	"Warren County, KY"	"21227"	"Vaginal"	"1"	925
+	"Warren County, KY"	"21227"	"Cesarean"	"2"	343
+	"Warren County, KY"	"21227"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, KY"	"21999"	"Vaginal"	"1"	17424
+	"Unidentified Counties, KY"	"21999"	"Cesarean"	"2"	8886
+	"Unidentified Counties, KY"	"21999"	"Not Stated"	"9"	18
+	"Ascension Parish, LA"	"22005"	"Vaginal"	"1"	952
+	"Ascension Parish, LA"	"22005"	"Cesarean"	"2"	452
+	"Ascension Parish, LA"	"22005"	"Not Stated"	"9"	Suppressed
+	"Bossier Parish, LA"	"22015"	"Vaginal"	"1"	943
+	"Bossier Parish, LA"	"22015"	"Cesarean"	"2"	467
+	"Bossier Parish, LA"	"22015"	"Not Stated"	"9"	Suppressed
+	"Caddo Parish, LA"	"22017"	"Vaginal"	"1"	1675
+	"Caddo Parish, LA"	"22017"	"Cesarean"	"2"	816
+	"Caddo Parish, LA"	"22017"	"Not Stated"	"9"	Suppressed
+	"Calcasieu Parish, LA"	"22019"	"Vaginal"	"1"	1483
+	"Calcasieu Parish, LA"	"22019"	"Cesarean"	"2"	692
+	"Calcasieu Parish, LA"	"22019"	"Not Stated"	"9"	Suppressed
+	"East Baton Rouge Parish, LA"	"22033"	"Vaginal"	"1"	3533
+	"East Baton Rouge Parish, LA"	"22033"	"Cesarean"	"2"	1625
+	"East Baton Rouge Parish, LA"	"22033"	"Not Stated"	"9"	Suppressed
+	"Jefferson Parish, LA"	"22051"	"Vaginal"	"1"	2987
+	"Jefferson Parish, LA"	"22051"	"Cesarean"	"2"	1679
+	"Jefferson Parish, LA"	"22051"	"Not Stated"	"9"	Suppressed
+	"Lafayette Parish, LA"	"22055"	"Vaginal"	"1"	1843
+	"Lafayette Parish, LA"	"22055"	"Cesarean"	"2"	957
+	"Lafayette Parish, LA"	"22055"	"Not Stated"	"9"	Suppressed
+	"Livingston Parish, LA"	"22063"	"Vaginal"	"1"	1077
+	"Livingston Parish, LA"	"22063"	"Cesarean"	"2"	512
+	"Livingston Parish, LA"	"22063"	"Not Stated"	"9"	Suppressed
+	"Orleans Parish, LA"	"22071"	"Vaginal"	"1"	2535
+	"Orleans Parish, LA"	"22071"	"Cesarean"	"2"	1112
+	"Orleans Parish, LA"	"22071"	"Not Stated"	"9"	Suppressed
+	"Ouachita Parish, LA"	"22073"	"Vaginal"	"1"	1099
+	"Ouachita Parish, LA"	"22073"	"Cesarean"	"2"	586
+	"Ouachita Parish, LA"	"22073"	"Not Stated"	"9"	Suppressed
+	"Rapides Parish, LA"	"22079"	"Vaginal"	"1"	498
+	"Rapides Parish, LA"	"22079"	"Cesarean"	"2"	429
+	"Rapides Parish, LA"	"22079"	"Not Stated"	"9"	Suppressed
+	"St. Tammany Parish, LA"	"22103"	"Vaginal"	"1"	1540
+	"St. Tammany Parish, LA"	"22103"	"Cesarean"	"2"	850
+	"St. Tammany Parish, LA"	"22103"	"Not Stated"	"9"	Suppressed
+	"Tangipahoa Parish, LA"	"22105"	"Vaginal"	"1"	995
+	"Tangipahoa Parish, LA"	"22105"	"Cesarean"	"2"	514
+	"Tangipahoa Parish, LA"	"22105"	"Not Stated"	"9"	Suppressed
+	"Terrebonne Parish, LA"	"22109"	"Vaginal"	"1"	925
+	"Terrebonne Parish, LA"	"22109"	"Cesarean"	"2"	514
+	"Terrebonne Parish, LA"	"22109"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, LA"	"22999"	"Vaginal"	"1"	9832
+	"Unidentified Counties, LA"	"22999"	"Cesarean"	"2"	5836
+	"Unidentified Counties, LA"	"22999"	"Not Stated"	"9"	Suppressed
+	"Androscoggin County, ME"	"23001"	"Vaginal"	"1"	694
+	"Androscoggin County, ME"	"23001"	"Cesarean"	"2"	275
+	"Androscoggin County, ME"	"23001"	"Not Stated"	"9"	Suppressed
+	"Cumberland County, ME"	"23005"	"Vaginal"	"1"	1610
+	"Cumberland County, ME"	"23005"	"Cesarean"	"2"	563
+	"Cumberland County, ME"	"23005"	"Not Stated"	"9"	Suppressed
+	"Kennebec County, ME"	"23011"	"Vaginal"	"1"	653
+	"Kennebec County, ME"	"23011"	"Cesarean"	"2"	297
+	"Kennebec County, ME"	"23011"	"Not Stated"	"9"	Suppressed
+	"Penobscot County, ME"	"23019"	"Vaginal"	"1"	888
+	"Penobscot County, ME"	"23019"	"Cesarean"	"2"	307
+	"Penobscot County, ME"	"23019"	"Not Stated"	"9"	Suppressed
+	"York County, ME"	"23031"	"Vaginal"	"1"	1128
+	"York County, ME"	"23031"	"Cesarean"	"2"	350
+	"York County, ME"	"23031"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, ME"	"23999"	"Vaginal"	"1"	2231
+	"Unidentified Counties, ME"	"23999"	"Cesarean"	"2"	973
+	"Unidentified Counties, ME"	"23999"	"Not Stated"	"9"	Suppressed
+	"Anne Arundel County, MD"	"24003"	"Vaginal"	"1"	3703
+	"Anne Arundel County, MD"	"24003"	"Cesarean"	"2"	1827
+	"Anne Arundel County, MD"	"24003"	"Not Stated"	"9"	Suppressed
+	"Baltimore County, MD"	"24005"	"Vaginal"	"1"	5180
+	"Baltimore County, MD"	"24005"	"Cesarean"	"2"	2667
+	"Baltimore County, MD"	"24005"	"Not Stated"	"9"	21
+	"Carroll County, MD"	"24013"	"Vaginal"	"1"	957
+	"Carroll County, MD"	"24013"	"Cesarean"	"2"	457
+	"Carroll County, MD"	"24013"	"Not Stated"	"9"	Suppressed
+	"Cecil County, MD"	"24015"	"Vaginal"	"1"	626
+	"Cecil County, MD"	"24015"	"Cesarean"	"2"	243
+	"Cecil County, MD"	"24015"	"Not Stated"	"9"	Suppressed
+	"Charles County, MD"	"24017"	"Vaginal"	"1"	897
+	"Charles County, MD"	"24017"	"Cesarean"	"2"	569
+	"Charles County, MD"	"24017"	"Not Stated"	"9"	Suppressed
+	"Frederick County, MD"	"24021"	"Vaginal"	"1"	1543
+	"Frederick County, MD"	"24021"	"Cesarean"	"2"	689
+	"Frederick County, MD"	"24021"	"Not Stated"	"9"	Suppressed
+	"Harford County, MD"	"24025"	"Vaginal"	"1"	1490
+	"Harford County, MD"	"24025"	"Cesarean"	"2"	691
+	"Harford County, MD"	"24025"	"Not Stated"	"9"	Suppressed
+	"Howard County, MD"	"24027"	"Vaginal"	"1"	1942
+	"Howard County, MD"	"24027"	"Cesarean"	"2"	960
+	"Howard County, MD"	"24027"	"Not Stated"	"9"	Suppressed
+	"Montgomery County, MD"	"24031"	"Vaginal"	"1"	7172
+	"Montgomery County, MD"	"24031"	"Cesarean"	"2"	3512
+	"Montgomery County, MD"	"24031"	"Not Stated"	"9"	Suppressed
+	"Prince George's County, MD"	"24033"	"Vaginal"	"1"	6300
+	"Prince George's County, MD"	"24033"	"Cesarean"	"2"	3303
+	"Prince George's County, MD"	"24033"	"Not Stated"	"9"	Suppressed
+	"St. Mary's County, MD"	"24037"	"Vaginal"	"1"	859
+	"St. Mary's County, MD"	"24037"	"Cesarean"	"2"	290
+	"St. Mary's County, MD"	"24037"	"Not Stated"	"9"	Suppressed
+	"Washington County, MD"	"24043"	"Vaginal"	"1"	917
+	"Washington County, MD"	"24043"	"Cesarean"	"2"	382
+	"Washington County, MD"	"24043"	"Not Stated"	"9"	Suppressed
+	"Baltimore city, MD"	"24510"	"Vaginal"	"1"	4445
+	"Baltimore city, MD"	"24510"	"Cesarean"	"2"	2042
+	"Baltimore city, MD"	"24510"	"Not Stated"	"9"	25
+	"Unidentified Counties, MD"	"24999"	"Vaginal"	"1"	2926
+	"Unidentified Counties, MD"	"24999"	"Cesarean"	"2"	1383
+	"Unidentified Counties, MD"	"24999"	"Not Stated"	"9"	Suppressed
+	"Barnstable County, MA"	"25001"	"Vaginal"	"1"	828
+	"Barnstable County, MA"	"25001"	"Cesarean"	"2"	366
+	"Barnstable County, MA"	"25001"	"Not Stated"	"9"	Suppressed
+	"Berkshire County, MA"	"25003"	"Vaginal"	"1"	601
+	"Berkshire County, MA"	"25003"	"Cesarean"	"2"	224
+	"Berkshire County, MA"	"25003"	"Not Stated"	"9"	Suppressed
+	"Bristol County, MA"	"25005"	"Vaginal"	"1"	3137
+	"Bristol County, MA"	"25005"	"Cesarean"	"2"	1448
+	"Bristol County, MA"	"25005"	"Not Stated"	"9"	Suppressed
+	"Essex County, MA"	"25009"	"Vaginal"	"1"	4748
+	"Essex County, MA"	"25009"	"Cesarean"	"2"	2086
+	"Essex County, MA"	"25009"	"Not Stated"	"9"	Suppressed
+	"Hampden County, MA"	"25013"	"Vaginal"	"1"	2762
+	"Hampden County, MA"	"25013"	"Cesarean"	"2"	1255
+	"Hampden County, MA"	"25013"	"Not Stated"	"9"	Suppressed
+	"Hampshire County, MA"	"25015"	"Vaginal"	"1"	556
+	"Hampshire County, MA"	"25015"	"Cesarean"	"2"	268
+	"Hampshire County, MA"	"25015"	"Not Stated"	"9"	Suppressed
+	"Middlesex County, MA"	"25017"	"Vaginal"	"1"	10157
+	"Middlesex County, MA"	"25017"	"Cesarean"	"2"	4174
+	"Middlesex County, MA"	"25017"	"Not Stated"	"9"	Suppressed
+	"Norfolk County, MA"	"25021"	"Vaginal"	"1"	4260
+	"Norfolk County, MA"	"25021"	"Cesarean"	"2"	1811
+	"Norfolk County, MA"	"25021"	"Not Stated"	"9"	Suppressed
+	"Plymouth County, MA"	"25023"	"Vaginal"	"1"	2910
+	"Plymouth County, MA"	"25023"	"Cesarean"	"2"	1395
+	"Plymouth County, MA"	"25023"	"Not Stated"	"9"	Suppressed
+	"Suffolk County, MA"	"25025"	"Vaginal"	"1"	5668
+	"Suffolk County, MA"	"25025"	"Cesarean"	"2"	1894
+	"Suffolk County, MA"	"25025"	"Not Stated"	"9"	Suppressed
+	"Worcester County, MA"	"25027"	"Vaginal"	"1"	5007
+	"Worcester County, MA"	"25027"	"Cesarean"	"2"	1993
+	"Worcester County, MA"	"25027"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, MA"	"25999"	"Vaginal"	"1"	508
+	"Unidentified Counties, MA"	"25999"	"Cesarean"	"2"	169
+	"Unidentified Counties, MA"	"25999"	"Not Stated"	"9"	Suppressed
+	"Allegan County, MI"	"26005"	"Vaginal"	"1"	785
+	"Allegan County, MI"	"26005"	"Cesarean"	"2"	320
+	"Allegan County, MI"	"26005"	"Not Stated"	"9"	Suppressed
+	"Bay County, MI"	"26017"	"Vaginal"	"1"	599
+	"Bay County, MI"	"26017"	"Cesarean"	"2"	234
+	"Bay County, MI"	"26017"	"Not Stated"	"9"	Suppressed
+	"Berrien County, MI"	"26021"	"Vaginal"	"1"	984
+	"Berrien County, MI"	"26021"	"Cesarean"	"2"	400
+	"Berrien County, MI"	"26021"	"Not Stated"	"9"	Suppressed
+	"Calhoun County, MI"	"26025"	"Vaginal"	"1"	892
+	"Calhoun County, MI"	"26025"	"Cesarean"	"2"	385
+	"Calhoun County, MI"	"26025"	"Not Stated"	"9"	Suppressed
+	"Eaton County, MI"	"26045"	"Vaginal"	"1"	629
+	"Eaton County, MI"	"26045"	"Cesarean"	"2"	288
+	"Eaton County, MI"	"26045"	"Not Stated"	"9"	Suppressed
+	"Genesee County, MI"	"26049"	"Vaginal"	"1"	2320
+	"Genesee County, MI"	"26049"	"Cesarean"	"2"	1199
+	"Genesee County, MI"	"26049"	"Not Stated"	"9"	Suppressed
+	"Ingham County, MI"	"26065"	"Vaginal"	"1"	1770
+	"Ingham County, MI"	"26065"	"Cesarean"	"2"	732
+	"Ingham County, MI"	"26065"	"Not Stated"	"9"	Suppressed
+	"Jackson County, MI"	"26075"	"Vaginal"	"1"	986
+	"Jackson County, MI"	"26075"	"Cesarean"	"2"	344
+	"Jackson County, MI"	"26075"	"Not Stated"	"9"	Suppressed
+	"Kalamazoo County, MI"	"26077"	"Vaginal"	"1"	1826
+	"Kalamazoo County, MI"	"26077"	"Cesarean"	"2"	725
+	"Kalamazoo County, MI"	"26077"	"Not Stated"	"9"	Suppressed
+	"Kent County, MI"	"26081"	"Vaginal"	"1"	5050
+	"Kent County, MI"	"26081"	"Cesarean"	"2"	1859
+	"Kent County, MI"	"26081"	"Not Stated"	"9"	Suppressed
+	"Livingston County, MI"	"26093"	"Vaginal"	"1"	1004
+	"Livingston County, MI"	"26093"	"Cesarean"	"2"	430
+	"Livingston County, MI"	"26093"	"Not Stated"	"9"	Suppressed
+	"Macomb County, MI"	"26099"	"Vaginal"	"1"	5119
+	"Macomb County, MI"	"26099"	"Cesarean"	"2"	2361
+	"Macomb County, MI"	"26099"	"Not Stated"	"9"	Suppressed
+	"Monroe County, MI"	"26115"	"Vaginal"	"1"	842
+	"Monroe County, MI"	"26115"	"Cesarean"	"2"	409
+	"Monroe County, MI"	"26115"	"Not Stated"	"9"	Suppressed
+	"Muskegon County, MI"	"26121"	"Vaginal"	"1"	1152
+	"Muskegon County, MI"	"26121"	"Cesarean"	"2"	481
+	"Muskegon County, MI"	"26121"	"Not Stated"	"9"	Suppressed
+	"Oakland County, MI"	"26125"	"Vaginal"	"1"	7492
+	"Oakland County, MI"	"26125"	"Cesarean"	"2"	3242
+	"Oakland County, MI"	"26125"	"Not Stated"	"9"	Suppressed
+	"Ottawa County, MI"	"26139"	"Vaginal"	"1"	1903
+	"Ottawa County, MI"	"26139"	"Cesarean"	"2"	802
+	"Ottawa County, MI"	"26139"	"Not Stated"	"9"	Suppressed
+	"Saginaw County, MI"	"26145"	"Vaginal"	"1"	1258
+	"Saginaw County, MI"	"26145"	"Cesarean"	"2"	543
+	"Saginaw County, MI"	"26145"	"Not Stated"	"9"	Suppressed
+	"St. Clair County, MI"	"26147"	"Vaginal"	"1"	772
+	"St. Clair County, MI"	"26147"	"Cesarean"	"2"	393
+	"St. Clair County, MI"	"26147"	"Not Stated"	"9"	Suppressed
+	"Washtenaw County, MI"	"26161"	"Vaginal"	"1"	2145
+	"Washtenaw County, MI"	"26161"	"Cesarean"	"2"	753
+	"Washtenaw County, MI"	"26161"	"Not Stated"	"9"	Suppressed
+	"Wayne County, MI"	"26163"	"Vaginal"	"1"	13064
+	"Wayne County, MI"	"26163"	"Cesarean"	"2"	5146
+	"Wayne County, MI"	"26163"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, MI"	"26999"	"Vaginal"	"1"	11558
+	"Unidentified Counties, MI"	"26999"	"Cesarean"	"2"	5275
+	"Unidentified Counties, MI"	"26999"	"Not Stated"	"9"	Suppressed
+	"Anoka County, MN"	"27003"	"Vaginal"	"1"	2556
+	"Anoka County, MN"	"27003"	"Cesarean"	"2"	808
+	"Anoka County, MN"	"27003"	"Not Stated"	"9"	Suppressed
+	"Dakota County, MN"	"27037"	"Vaginal"	"1"	3082
+	"Dakota County, MN"	"27037"	"Cesarean"	"2"	1079
+	"Dakota County, MN"	"27037"	"Not Stated"	"9"	Suppressed
+	"Hennepin County, MN"	"27053"	"Vaginal"	"1"	10000
+	"Hennepin County, MN"	"27053"	"Cesarean"	"2"	3107
+	"Hennepin County, MN"	"27053"	"Not Stated"	"9"	Suppressed
+	"Olmsted County, MN"	"27109"	"Vaginal"	"1"	1356
+	"Olmsted County, MN"	"27109"	"Cesarean"	"2"	384
+	"Olmsted County, MN"	"27109"	"Not Stated"	"9"	Suppressed
+	"Ramsey County, MN"	"27123"	"Vaginal"	"1"	4824
+	"Ramsey County, MN"	"27123"	"Cesarean"	"2"	1284
+	"Ramsey County, MN"	"27123"	"Not Stated"	"9"	Suppressed
+	"St. Louis County, MN"	"27137"	"Vaginal"	"1"	1158
+	"St. Louis County, MN"	"27137"	"Cesarean"	"2"	366
+	"St. Louis County, MN"	"27137"	"Not Stated"	"9"	Suppressed
+	"Scott County, MN"	"27139"	"Vaginal"	"1"	1101
+	"Scott County, MN"	"27139"	"Cesarean"	"2"	387
+	"Scott County, MN"	"27139"	"Not Stated"	"9"	Suppressed
+	"Stearns County, MN"	"27145"	"Vaginal"	"1"	1208
+	"Stearns County, MN"	"27145"	"Cesarean"	"2"	403
+	"Stearns County, MN"	"27145"	"Not Stated"	"9"	Suppressed
+	"Washington County, MN"	"27163"	"Vaginal"	"1"	1713
+	"Washington County, MN"	"27163"	"Cesarean"	"2"	553
+	"Washington County, MN"	"27163"	"Not Stated"	"9"	Suppressed
+	"Wright County, MN"	"27171"	"Vaginal"	"1"	1039
+	"Wright County, MN"	"27171"	"Cesarean"	"2"	381
+	"Wright County, MN"	"27171"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, MN"	"27999"	"Vaginal"	"1"	13522
+	"Unidentified Counties, MN"	"27999"	"Cesarean"	"2"	4815
+	"Unidentified Counties, MN"	"27999"	"Not Stated"	"9"	Suppressed
+	"DeSoto County, MS"	"28033"	"Vaginal"	"1"	1159
+	"DeSoto County, MS"	"28033"	"Cesarean"	"2"	531
+	"DeSoto County, MS"	"28033"	"Not Stated"	"9"	Suppressed
+	"Harrison County, MS"	"28047"	"Vaginal"	"1"	1372
+	"Harrison County, MS"	"28047"	"Cesarean"	"2"	658
+	"Harrison County, MS"	"28047"	"Not Stated"	"9"	Suppressed
+	"Hinds County, MS"	"28049"	"Vaginal"	"1"	1465
+	"Hinds County, MS"	"28049"	"Cesarean"	"2"	907
+	"Hinds County, MS"	"28049"	"Not Stated"	"9"	Suppressed
+	"Jackson County, MS"	"28059"	"Vaginal"	"1"	814
+	"Jackson County, MS"	"28059"	"Cesarean"	"2"	378
+	"Jackson County, MS"	"28059"	"Not Stated"	"9"	Suppressed
+	"Rankin County, MS"	"28121"	"Vaginal"	"1"	848
+	"Rankin County, MS"	"28121"	"Cesarean"	"2"	605
+	"Rankin County, MS"	"28121"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, MS"	"28999"	"Vaginal"	"1"	12770
+	"Unidentified Counties, MS"	"28999"	"Cesarean"	"2"	6995
+	"Unidentified Counties, MS"	"28999"	"Not Stated"	"9"	Suppressed
+	"Boone County, MO"	"29019"	"Vaginal"	"1"	1150
+	"Boone County, MO"	"29019"	"Cesarean"	"2"	554
+	"Boone County, MO"	"29019"	"Not Stated"	"9"	Suppressed
+	"Clay County, MO"	"29047"	"Vaginal"	"1"	1795
+	"Clay County, MO"	"29047"	"Cesarean"	"2"	675
+	"Clay County, MO"	"29047"	"Not Stated"	"9"	10
+	"Franklin County, MO"	"29071"	"Vaginal"	"1"	625
+	"Franklin County, MO"	"29071"	"Cesarean"	"2"	338
+	"Franklin County, MO"	"29071"	"Not Stated"	"9"	Suppressed
+	"Greene County, MO"	"29077"	"Vaginal"	"1"	2164
+	"Greene County, MO"	"29077"	"Cesarean"	"2"	650
+	"Greene County, MO"	"29077"	"Not Stated"	"9"	Suppressed
+	"Jackson County, MO"	"29095"	"Vaginal"	"1"	5560
+	"Jackson County, MO"	"29095"	"Cesarean"	"2"	1814
+	"Jackson County, MO"	"29095"	"Not Stated"	"9"	Suppressed
+	"Jasper County, MO"	"29097"	"Vaginal"	"1"	976
+	"Jasper County, MO"	"29097"	"Cesarean"	"2"	389
+	"Jasper County, MO"	"29097"	"Not Stated"	"9"	Suppressed
+	"Jefferson County, MO"	"29099"	"Vaginal"	"1"	1349
+	"Jefferson County, MO"	"29099"	"Cesarean"	"2"	662
+	"Jefferson County, MO"	"29099"	"Not Stated"	"9"	Suppressed
+	"St. Charles County, MO"	"29183"	"Vaginal"	"1"	2543
+	"St. Charles County, MO"	"29183"	"Cesarean"	"2"	1094
+	"St. Charles County, MO"	"29183"	"Not Stated"	"9"	Suppressed
+	"St. Louis County, MO"	"29189"	"Vaginal"	"1"	6356
+	"St. Louis County, MO"	"29189"	"Cesarean"	"2"	2843
+	"St. Louis County, MO"	"29189"	"Not Stated"	"9"	Suppressed
+	"St. Louis city, MO"	"29510"	"Vaginal"	"1"	2499
+	"St. Louis city, MO"	"29510"	"Cesarean"	"2"	984
+	"St. Louis city, MO"	"29510"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, MO"	"29999"	"Vaginal"	"1"	17026
+	"Unidentified Counties, MO"	"29999"	"Cesarean"	"2"	6727
+	"Unidentified Counties, MO"	"29999"	"Not Stated"	"9"	42
+	"Missoula County, MT"	"30063"	"Vaginal"	"1"	711
+	"Missoula County, MT"	"30063"	"Cesarean"	"2"	267
+	"Missoula County, MT"	"30063"	"Not Stated"	"9"	Suppressed
+	"Yellowstone County, MT"	"30111"	"Vaginal"	"1"	1224
+	"Yellowstone County, MT"	"30111"	"Cesarean"	"2"	429
+	"Yellowstone County, MT"	"30111"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, MT"	"30999"	"Vaginal"	"1"	4994
+	"Unidentified Counties, MT"	"30999"	"Cesarean"	"2"	2083
+	"Unidentified Counties, MT"	"30999"	"Not Stated"	"9"	Suppressed
+	"Douglas County, NE"	"31055"	"Vaginal"	"1"	5015
+	"Douglas County, NE"	"31055"	"Cesarean"	"2"	1880
+	"Douglas County, NE"	"31055"	"Not Stated"	"9"	Suppressed
+	"Lancaster County, NE"	"31109"	"Vaginal"	"1"	2375
+	"Lancaster County, NE"	"31109"	"Cesarean"	"2"	986
+	"Lancaster County, NE"	"31109"	"Not Stated"	"9"	Suppressed
+	"Sarpy County, NE"	"31153"	"Vaginal"	"1"	1460
+	"Sarpy County, NE"	"31153"	"Cesarean"	"2"	565
+	"Sarpy County, NE"	"31153"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, NE"	"31999"	"Vaginal"	"1"	6448
+	"Unidentified Counties, NE"	"31999"	"Cesarean"	"2"	2693
+	"Unidentified Counties, NE"	"31999"	"Not Stated"	"9"	Suppressed
+	"Clark County, NV"	"32003"	"Vaginal"	"1"	13609
+	"Clark County, NV"	"32003"	"Cesarean"	"2"	7121
+	"Clark County, NV"	"32003"	"Not Stated"	"9"	Suppressed
+	"Washoe County, NV"	"32031"	"Vaginal"	"1"	3104
+	"Washoe County, NV"	"32031"	"Cesarean"	"2"	1060
+	"Washoe County, NV"	"32031"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, NV"	"32999"	"Vaginal"	"1"	2012
+	"Unidentified Counties, NV"	"32999"	"Cesarean"	"2"	797
+	"Unidentified Counties, NV"	"32999"	"Not Stated"	"9"	Suppressed
+	"Hillsborough County, NH"	"33011"	"Vaginal"	"1"	2369
+	"Hillsborough County, NH"	"33011"	"Cesarean"	"2"	1002
+	"Hillsborough County, NH"	"33011"	"Not Stated"	"9"	Suppressed
+	"Merrimack County, NH"	"33013"	"Vaginal"	"1"	764
+	"Merrimack County, NH"	"33013"	"Cesarean"	"2"	344
+	"Merrimack County, NH"	"33013"	"Not Stated"	"9"	Suppressed
+	"Rockingham County, NH"	"33015"	"Vaginal"	"1"	1506
+	"Rockingham County, NH"	"33015"	"Cesarean"	"2"	690
+	"Rockingham County, NH"	"33015"	"Not Stated"	"9"	Suppressed
+	"Strafford County, NH"	"33017"	"Vaginal"	"1"	690
+	"Strafford County, NH"	"33017"	"Cesarean"	"2"	267
+	"Strafford County, NH"	"33017"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, NH"	"33999"	"Vaginal"	"1"	1695
+	"Unidentified Counties, NH"	"33999"	"Cesarean"	"2"	601
+	"Unidentified Counties, NH"	"33999"	"Not Stated"	"9"	Suppressed
+	"Atlantic County, NJ"	"34001"	"Vaginal"	"1"	1434
+	"Atlantic County, NJ"	"34001"	"Cesarean"	"2"	887
+	"Atlantic County, NJ"	"34001"	"Not Stated"	"9"	10
+	"Bergen County, NJ"	"34003"	"Vaginal"	"1"	4694
+	"Bergen County, NJ"	"34003"	"Cesarean"	"2"	3025
+	"Bergen County, NJ"	"34003"	"Not Stated"	"9"	27
+	"Burlington County, NJ"	"34005"	"Vaginal"	"1"	2349
+	"Burlington County, NJ"	"34005"	"Cesarean"	"2"	1146
+	"Burlington County, NJ"	"34005"	"Not Stated"	"9"	Suppressed
+	"Camden County, NJ"	"34007"	"Vaginal"	"1"	3550
+	"Camden County, NJ"	"34007"	"Cesarean"	"2"	1343
+	"Camden County, NJ"	"34007"	"Not Stated"	"9"	26
+	"Cumberland County, NJ"	"34011"	"Vaginal"	"1"	1018
+	"Cumberland County, NJ"	"34011"	"Cesarean"	"2"	540
+	"Cumberland County, NJ"	"34011"	"Not Stated"	"9"	Suppressed
+	"Essex County, NJ"	"34013"	"Vaginal"	"1"	5193
+	"Essex County, NJ"	"34013"	"Cesarean"	"2"	2762
+	"Essex County, NJ"	"34013"	"Not Stated"	"9"	20
+	"Gloucester County, NJ"	"34015"	"Vaginal"	"1"	1573
+	"Gloucester County, NJ"	"34015"	"Cesarean"	"2"	758
+	"Gloucester County, NJ"	"34015"	"Not Stated"	"9"	Suppressed
+	"Hudson County, NJ"	"34017"	"Vaginal"	"1"	4991
+	"Hudson County, NJ"	"34017"	"Cesarean"	"2"	3161
+	"Hudson County, NJ"	"34017"	"Not Stated"	"9"	52
+	"Hunterdon County, NJ"	"34019"	"Vaginal"	"1"	557
+	"Hunterdon County, NJ"	"34019"	"Cesarean"	"2"	221
+	"Hunterdon County, NJ"	"34019"	"Not Stated"	"9"	Suppressed
+	"Mercer County, NJ"	"34021"	"Vaginal"	"1"	2271
+	"Mercer County, NJ"	"34021"	"Cesarean"	"2"	1009
+	"Mercer County, NJ"	"34021"	"Not Stated"	"9"	Suppressed
+	"Middlesex County, NJ"	"34023"	"Vaginal"	"1"	4947
+	"Middlesex County, NJ"	"34023"	"Cesarean"	"2"	2656
+	"Middlesex County, NJ"	"34023"	"Not Stated"	"9"	34
+	"Monmouth County, NJ"	"34025"	"Vaginal"	"1"	3199
+	"Monmouth County, NJ"	"34025"	"Cesarean"	"2"	1547
+	"Monmouth County, NJ"	"34025"	"Not Stated"	"9"	25
+	"Morris County, NJ"	"34027"	"Vaginal"	"1"	2419
+	"Morris County, NJ"	"34027"	"Cesarean"	"2"	1408
+	"Morris County, NJ"	"34027"	"Not Stated"	"9"	Suppressed
+	"Ocean County, NJ"	"34029"	"Vaginal"	"1"	5325
+	"Ocean County, NJ"	"34029"	"Cesarean"	"2"	1430
+	"Ocean County, NJ"	"34029"	"Not Stated"	"9"	15
+	"Passaic County, NJ"	"34031"	"Vaginal"	"1"	3167
+	"Passaic County, NJ"	"34031"	"Cesarean"	"2"	2262
+	"Passaic County, NJ"	"34031"	"Not Stated"	"9"	20
+	"Somerset County, NJ"	"34035"	"Vaginal"	"1"	1788
+	"Somerset County, NJ"	"34035"	"Cesarean"	"2"	888
+	"Somerset County, NJ"	"34035"	"Not Stated"	"9"	Suppressed
+	"Sussex County, NJ"	"34037"	"Vaginal"	"1"	628
+	"Sussex County, NJ"	"34037"	"Cesarean"	"2"	370
+	"Sussex County, NJ"	"34037"	"Not Stated"	"9"	Suppressed
+	"Union County, NJ"	"34039"	"Vaginal"	"1"	3622
+	"Union County, NJ"	"34039"	"Cesarean"	"2"	1826
+	"Union County, NJ"	"34039"	"Not Stated"	"9"	16
+	"Warren County, NJ"	"34041"	"Vaginal"	"1"	505
+	"Warren County, NJ"	"34041"	"Cesarean"	"2"	280
+	"Warren County, NJ"	"34041"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, NJ"	"34999"	"Vaginal"	"1"	732
+	"Unidentified Counties, NJ"	"34999"	"Cesarean"	"2"	462
+	"Unidentified Counties, NJ"	"34999"	"Not Stated"	"9"	Suppressed
+	"Bernalillo County, NM"	"35001"	"Vaginal"	"1"	4948
+	"Bernalillo County, NM"	"35001"	"Cesarean"	"2"	1242
+	"Bernalillo County, NM"	"35001"	"Not Stated"	"9"	Suppressed
+	"Dona Ana County, NM"	"35013"	"Vaginal"	"1"	1696
+	"Dona Ana County, NM"	"35013"	"Cesarean"	"2"	613
+	"Dona Ana County, NM"	"35013"	"Not Stated"	"9"	Suppressed
+	"Sandoval County, NM"	"35043"	"Vaginal"	"1"	885
+	"Sandoval County, NM"	"35043"	"Cesarean"	"2"	226
+	"Sandoval County, NM"	"35043"	"Not Stated"	"9"	Suppressed
+	"San Juan County, NM"	"35045"	"Vaginal"	"1"	1112
+	"San Juan County, NM"	"35045"	"Cesarean"	"2"	380
+	"San Juan County, NM"	"35045"	"Not Stated"	"9"	Suppressed
+	"Santa Fe County, NM"	"35049"	"Vaginal"	"1"	780
+	"Santa Fe County, NM"	"35049"	"Cesarean"	"2"	163
+	"Santa Fe County, NM"	"35049"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, NM"	"35999"	"Vaginal"	"1"	6278
+	"Unidentified Counties, NM"	"35999"	"Cesarean"	"2"	1821
+	"Unidentified Counties, NM"	"35999"	"Not Stated"	"9"	Suppressed
+	"Albany County, NY"	"36001"	"Vaginal"	"1"	1740
+	"Albany County, NY"	"36001"	"Cesarean"	"2"	765
+	"Albany County, NY"	"36001"	"Not Stated"	"9"	Suppressed
+	"Bronx County, NY"	"36005"	"Vaginal"	"1"	11917
+	"Bronx County, NY"	"36005"	"Cesarean"	"2"	5651
+	"Bronx County, NY"	"36005"	"Not Stated"	"9"	Suppressed
+	"Broome County, NY"	"36007"	"Vaginal"	"1"	1088
+	"Broome County, NY"	"36007"	"Cesarean"	"2"	528
+	"Broome County, NY"	"36007"	"Not Stated"	"9"	Suppressed
+	"Chautauqua County, NY"	"36013"	"Vaginal"	"1"	736
+	"Chautauqua County, NY"	"36013"	"Cesarean"	"2"	355
+	"Chautauqua County, NY"	"36013"	"Not Stated"	"9"	Suppressed
+	"Dutchess County, NY"	"36027"	"Vaginal"	"1"	1420
+	"Dutchess County, NY"	"36027"	"Cesarean"	"2"	697
+	"Dutchess County, NY"	"36027"	"Not Stated"	"9"	Suppressed
+	"Erie County, NY"	"36029"	"Vaginal"	"1"	5463
+	"Erie County, NY"	"36029"	"Cesarean"	"2"	2576
+	"Erie County, NY"	"36029"	"Not Stated"	"9"	Suppressed
+	"Jefferson County, NY"	"36045"	"Vaginal"	"1"	1317
+	"Jefferson County, NY"	"36045"	"Cesarean"	"2"	368
+	"Jefferson County, NY"	"36045"	"Not Stated"	"9"	Suppressed
+	"Kings County, NY"	"36047"	"Vaginal"	"1"	24404
+	"Kings County, NY"	"36047"	"Cesarean"	"2"	9367
+	"Kings County, NY"	"36047"	"Not Stated"	"9"	Suppressed
+	"Monroe County, NY"	"36055"	"Vaginal"	"1"	4671
+	"Monroe County, NY"	"36055"	"Cesarean"	"2"	1792
+	"Monroe County, NY"	"36055"	"Not Stated"	"9"	Suppressed
+	"Nassau County, NY"	"36059"	"Vaginal"	"1"	7379
+	"Nassau County, NY"	"36059"	"Cesarean"	"2"	4073
+	"Nassau County, NY"	"36059"	"Not Stated"	"9"	Suppressed
+	"New York County, NY"	"36061"	"Vaginal"	"1"	10337
+	"New York County, NY"	"36061"	"Cesarean"	"2"	4423
+	"New York County, NY"	"36061"	"Not Stated"	"9"	Suppressed
+	"Niagara County, NY"	"36063"	"Vaginal"	"1"	1075
+	"Niagara County, NY"	"36063"	"Cesarean"	"2"	641
+	"Niagara County, NY"	"36063"	"Not Stated"	"9"	Suppressed
+	"Oneida County, NY"	"36065"	"Vaginal"	"1"	1301
+	"Oneida County, NY"	"36065"	"Cesarean"	"2"	668
+	"Oneida County, NY"	"36065"	"Not Stated"	"9"	Suppressed
+	"Onondaga County, NY"	"36067"	"Vaginal"	"1"	3044
+	"Onondaga County, NY"	"36067"	"Cesarean"	"2"	1242
+	"Onondaga County, NY"	"36067"	"Not Stated"	"9"	Suppressed
+	"Ontario County, NY"	"36069"	"Vaginal"	"1"	585
+	"Ontario County, NY"	"36069"	"Cesarean"	"2"	205
+	"Ontario County, NY"	"36069"	"Not Stated"	"9"	Suppressed
+	"Orange County, NY"	"36071"	"Vaginal"	"1"	2867
+	"Orange County, NY"	"36071"	"Cesarean"	"2"	1058
+	"Orange County, NY"	"36071"	"Not Stated"	"9"	62
+	"Oswego County, NY"	"36075"	"Vaginal"	"1"	626
+	"Oswego County, NY"	"36075"	"Cesarean"	"2"	326
+	"Oswego County, NY"	"36075"	"Not Stated"	"9"	Suppressed
+	"Queens County, NY"	"36081"	"Vaginal"	"1"	16761
+	"Queens County, NY"	"36081"	"Cesarean"	"2"	8033
+	"Queens County, NY"	"36081"	"Not Stated"	"9"	Suppressed
+	"Rensselaer County, NY"	"36083"	"Vaginal"	"1"	899
+	"Rensselaer County, NY"	"36083"	"Cesarean"	"2"	372
+	"Rensselaer County, NY"	"36083"	"Not Stated"	"9"	Suppressed
+	"Richmond County, NY"	"36085"	"Vaginal"	"1"	2837
+	"Richmond County, NY"	"36085"	"Cesarean"	"2"	1431
+	"Richmond County, NY"	"36085"	"Not Stated"	"9"	Suppressed
+	"Rockland County, NY"	"36087"	"Vaginal"	"1"	3125
+	"Rockland County, NY"	"36087"	"Cesarean"	"2"	922
+	"Rockland County, NY"	"36087"	"Not Stated"	"9"	227
+	"St. Lawrence County, NY"	"36089"	"Vaginal"	"1"	504
+	"St. Lawrence County, NY"	"36089"	"Cesarean"	"2"	337
+	"St. Lawrence County, NY"	"36089"	"Not Stated"	"9"	Suppressed
+	"Saratoga County, NY"	"36091"	"Vaginal"	"1"	1211
+	"Saratoga County, NY"	"36091"	"Cesarean"	"2"	548
+	"Saratoga County, NY"	"36091"	"Not Stated"	"9"	Suppressed
+	"Schenectady County, NY"	"36093"	"Vaginal"	"1"	1015
+	"Schenectady County, NY"	"36093"	"Cesarean"	"2"	430
+	"Schenectady County, NY"	"36093"	"Not Stated"	"9"	Suppressed
+	"Suffolk County, NY"	"36103"	"Vaginal"	"1"	7495
+	"Suffolk County, NY"	"36103"	"Cesarean"	"2"	5105
+	"Suffolk County, NY"	"36103"	"Not Stated"	"9"	Suppressed
+	"Tompkins County, NY"	"36109"	"Vaginal"	"1"	461
+	"Tompkins County, NY"	"36109"	"Cesarean"	"2"	181
+	"Tompkins County, NY"	"36109"	"Not Stated"	"9"	Suppressed
+	"Ulster County, NY"	"36111"	"Vaginal"	"1"	769
+	"Ulster County, NY"	"36111"	"Cesarean"	"2"	421
+	"Ulster County, NY"	"36111"	"Not Stated"	"9"	Suppressed
+	"Westchester County, NY"	"36119"	"Vaginal"	"1"	5494
+	"Westchester County, NY"	"36119"	"Cesarean"	"2"	3087
+	"Westchester County, NY"	"36119"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, NY"	"36999"	"Vaginal"	"1"	9659
+	"Unidentified Counties, NY"	"36999"	"Cesarean"	"2"	4353
+	"Unidentified Counties, NY"	"36999"	"Not Stated"	"9"	Suppressed
+	"Alamance County, NC"	"37001"	"Vaginal"	"1"	966
+	"Alamance County, NC"	"37001"	"Cesarean"	"2"	357
+	"Alamance County, NC"	"37001"	"Not Stated"	"9"	Suppressed
+	"Brunswick County, NC"	"37019"	"Vaginal"	"1"	593
+	"Brunswick County, NC"	"37019"	"Cesarean"	"2"	199
+	"Brunswick County, NC"	"37019"	"Not Stated"	"9"	Suppressed
+	"Buncombe County, NC"	"37021"	"Vaginal"	"1"	1576
+	"Buncombe County, NC"	"37021"	"Cesarean"	"2"	614
+	"Buncombe County, NC"	"37021"	"Not Stated"	"9"	Suppressed
+	"Cabarrus County, NC"	"37025"	"Vaginal"	"1"	1337
+	"Cabarrus County, NC"	"37025"	"Cesarean"	"2"	554
+	"Cabarrus County, NC"	"37025"	"Not Stated"	"9"	Suppressed
+	"Catawba County, NC"	"37035"	"Vaginal"	"1"	1020
+	"Catawba County, NC"	"37035"	"Cesarean"	"2"	323
+	"Catawba County, NC"	"37035"	"Not Stated"	"9"	Suppressed
+	"Craven County, NC"	"37049"	"Vaginal"	"1"	828
+	"Craven County, NC"	"37049"	"Cesarean"	"2"	298
+	"Craven County, NC"	"37049"	"Not Stated"	"9"	Suppressed
+	"Cumberland County, NC"	"37051"	"Vaginal"	"1"	2909
+	"Cumberland County, NC"	"37051"	"Cesarean"	"2"	946
+	"Cumberland County, NC"	"37051"	"Not Stated"	"9"	Suppressed
+	"Davidson County, NC"	"37057"	"Vaginal"	"1"	879
+	"Davidson County, NC"	"37057"	"Cesarean"	"2"	405
+	"Davidson County, NC"	"37057"	"Not Stated"	"9"	Suppressed
+	"Durham County, NC"	"37063"	"Vaginal"	"1"	2378
+	"Durham County, NC"	"37063"	"Cesarean"	"2"	807
+	"Durham County, NC"	"37063"	"Not Stated"	"9"	Suppressed
+	"Forsyth County, NC"	"37067"	"Vaginal"	"1"	2390
+	"Forsyth County, NC"	"37067"	"Cesarean"	"2"	734
+	"Forsyth County, NC"	"37067"	"Not Stated"	"9"	Suppressed
+	"Gaston County, NC"	"37071"	"Vaginal"	"1"	1325
+	"Gaston County, NC"	"37071"	"Cesarean"	"2"	554
+	"Gaston County, NC"	"37071"	"Not Stated"	"9"	Suppressed
+	"Guilford County, NC"	"37081"	"Vaginal"	"1"	3486
+	"Guilford County, NC"	"37081"	"Cesarean"	"2"	1270
+	"Guilford County, NC"	"37081"	"Not Stated"	"9"	Suppressed
+	"Harnett County, NC"	"37085"	"Vaginal"	"1"	1032
+	"Harnett County, NC"	"37085"	"Cesarean"	"2"	344
+	"Harnett County, NC"	"37085"	"Not Stated"	"9"	Suppressed
+	"Henderson County, NC"	"37089"	"Vaginal"	"1"	607
+	"Henderson County, NC"	"37089"	"Cesarean"	"2"	258
+	"Henderson County, NC"	"37089"	"Not Stated"	"9"	Suppressed
+	"Iredell County, NC"	"37097"	"Vaginal"	"1"	980
+	"Iredell County, NC"	"37097"	"Cesarean"	"2"	458
+	"Iredell County, NC"	"37097"	"Not Stated"	"9"	Suppressed
+	"Johnston County, NC"	"37101"	"Vaginal"	"1"	1296
+	"Johnston County, NC"	"37101"	"Cesarean"	"2"	474
+	"Johnston County, NC"	"37101"	"Not Stated"	"9"	Suppressed
+	"Mecklenburg County, NC"	"37119"	"Vaginal"	"1"	8338
+	"Mecklenburg County, NC"	"37119"	"Cesarean"	"2"	3049
+	"Mecklenburg County, NC"	"37119"	"Not Stated"	"9"	34
+	"New Hanover County, NC"	"37129"	"Vaginal"	"1"	1386
+	"New Hanover County, NC"	"37129"	"Cesarean"	"2"	385
+	"New Hanover County, NC"	"37129"	"Not Stated"	"9"	Suppressed
+	"Onslow County, NC"	"37133"	"Vaginal"	"1"	2367
+	"Onslow County, NC"	"37133"	"Cesarean"	"2"	746
+	"Onslow County, NC"	"37133"	"Not Stated"	"9"	Suppressed
+	"Orange County, NC"	"37135"	"Vaginal"	"1"	680
+	"Orange County, NC"	"37135"	"Cesarean"	"2"	209
+	"Orange County, NC"	"37135"	"Not Stated"	"9"	Suppressed
+	"Pitt County, NC"	"37147"	"Vaginal"	"1"	1204
+	"Pitt County, NC"	"37147"	"Cesarean"	"2"	377
+	"Pitt County, NC"	"37147"	"Not Stated"	"9"	Suppressed
+	"Randolph County, NC"	"37151"	"Vaginal"	"1"	847
+	"Randolph County, NC"	"37151"	"Cesarean"	"2"	347
+	"Randolph County, NC"	"37151"	"Not Stated"	"9"	Suppressed
+	"Robeson County, NC"	"37155"	"Vaginal"	"1"	879
+	"Robeson County, NC"	"37155"	"Cesarean"	"2"	348
+	"Robeson County, NC"	"37155"	"Not Stated"	"9"	Suppressed
+	"Rowan County, NC"	"37159"	"Vaginal"	"1"	861
+	"Rowan County, NC"	"37159"	"Cesarean"	"2"	322
+	"Rowan County, NC"	"37159"	"Not Stated"	"9"	Suppressed
+	"Union County, NC"	"37179"	"Vaginal"	"1"	1370
+	"Union County, NC"	"37179"	"Cesarean"	"2"	473
+	"Union County, NC"	"37179"	"Not Stated"	"9"	Suppressed
+	"Wake County, NC"	"37183"	"Vaginal"	"1"	7417
+	"Wake County, NC"	"37183"	"Cesarean"	"2"	2752
+	"Wake County, NC"	"37183"	"Not Stated"	"9"	Suppressed
+	"Wayne County, NC"	"37191"	"Vaginal"	"1"	840
+	"Wayne County, NC"	"37191"	"Cesarean"	"2"	384
+	"Wayne County, NC"	"37191"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, NC"	"37999"	"Vaginal"	"1"	16955
+	"Unidentified Counties, NC"	"37999"	"Cesarean"	"2"	6949
+	"Unidentified Counties, NC"	"37999"	"Not Stated"	"9"	Suppressed
+	"Cass County, ND"	"38017"	"Vaginal"	"1"	1593
+	"Cass County, ND"	"38017"	"Cesarean"	"2"	521
+	"Cass County, ND"	"38017"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, ND"	"38999"	"Vaginal"	"1"	5287
+	"Unidentified Counties, ND"	"38999"	"Cesarean"	"2"	1779
+	"Unidentified Counties, ND"	"38999"	"Not Stated"	"9"	Suppressed
+	"Allen County, OH"	"39003"	"Vaginal"	"1"	714
+	"Allen County, OH"	"39003"	"Cesarean"	"2"	272
+	"Allen County, OH"	"39003"	"Not Stated"	"9"	Suppressed
+	"Ashtabula County, OH"	"39007"	"Vaginal"	"1"	635
+	"Ashtabula County, OH"	"39007"	"Cesarean"	"2"	212
+	"Ashtabula County, OH"	"39007"	"Not Stated"	"9"	Suppressed
+	"Butler County, OH"	"39017"	"Vaginal"	"1"	2547
+	"Butler County, OH"	"39017"	"Cesarean"	"2"	1069
+	"Butler County, OH"	"39017"	"Not Stated"	"9"	Suppressed
+	"Clark County, OH"	"39023"	"Vaginal"	"1"	878
+	"Clark County, OH"	"39023"	"Cesarean"	"2"	370
+	"Clark County, OH"	"39023"	"Not Stated"	"9"	Suppressed
+	"Clermont County, OH"	"39025"	"Vaginal"	"1"	1265
+	"Clermont County, OH"	"39025"	"Cesarean"	"2"	563
+	"Clermont County, OH"	"39025"	"Not Stated"	"9"	Suppressed
+	"Columbiana County, OH"	"39029"	"Vaginal"	"1"	552
+	"Columbiana County, OH"	"39029"	"Cesarean"	"2"	309
+	"Columbiana County, OH"	"39029"	"Not Stated"	"9"	Suppressed
+	"Cuyahoga County, OH"	"39035"	"Vaginal"	"1"	8663
+	"Cuyahoga County, OH"	"39035"	"Cesarean"	"2"	2843
+	"Cuyahoga County, OH"	"39035"	"Not Stated"	"9"	Suppressed
+	"Delaware County, OH"	"39041"	"Vaginal"	"1"	1304
+	"Delaware County, OH"	"39041"	"Cesarean"	"2"	496
+	"Delaware County, OH"	"39041"	"Not Stated"	"9"	Suppressed
+	"Fairfield County, OH"	"39045"	"Vaginal"	"1"	994
+	"Fairfield County, OH"	"39045"	"Cesarean"	"2"	360
+	"Fairfield County, OH"	"39045"	"Not Stated"	"9"	Suppressed
+	"Franklin County, OH"	"39049"	"Vaginal"	"1"	11066
+	"Franklin County, OH"	"39049"	"Cesarean"	"2"	3978
+	"Franklin County, OH"	"39049"	"Not Stated"	"9"	Suppressed
+	"Greene County, OH"	"39057"	"Vaginal"	"1"	1106
+	"Greene County, OH"	"39057"	"Cesarean"	"2"	388
+	"Greene County, OH"	"39057"	"Not Stated"	"9"	Suppressed
+	"Hamilton County, OH"	"39061"	"Vaginal"	"1"	5888
+	"Hamilton County, OH"	"39061"	"Cesarean"	"2"	2583
+	"Hamilton County, OH"	"39061"	"Not Stated"	"9"	Suppressed
+	"Lake County, OH"	"39085"	"Vaginal"	"1"	1435
+	"Lake County, OH"	"39085"	"Cesarean"	"2"	485
+	"Lake County, OH"	"39085"	"Not Stated"	"9"	Suppressed
+	"Licking County, OH"	"39089"	"Vaginal"	"1"	1075
+	"Licking County, OH"	"39089"	"Cesarean"	"2"	381
+	"Licking County, OH"	"39089"	"Not Stated"	"9"	Suppressed
+	"Lorain County, OH"	"39093"	"Vaginal"	"1"	1998
+	"Lorain County, OH"	"39093"	"Cesarean"	"2"	717
+	"Lorain County, OH"	"39093"	"Not Stated"	"9"	Suppressed
+	"Lucas County, OH"	"39095"	"Vaginal"	"1"	3186
+	"Lucas County, OH"	"39095"	"Cesarean"	"2"	1258
+	"Lucas County, OH"	"39095"	"Not Stated"	"9"	Suppressed
+	"Mahoning County, OH"	"39099"	"Vaginal"	"1"	1238
+	"Mahoning County, OH"	"39099"	"Cesarean"	"2"	633
+	"Mahoning County, OH"	"39099"	"Not Stated"	"9"	Suppressed
+	"Medina County, OH"	"39103"	"Vaginal"	"1"	952
+	"Medina County, OH"	"39103"	"Cesarean"	"2"	401
+	"Medina County, OH"	"39103"	"Not Stated"	"9"	Suppressed
+	"Miami County, OH"	"39109"	"Vaginal"	"1"	634
+	"Miami County, OH"	"39109"	"Cesarean"	"2"	346
+	"Miami County, OH"	"39109"	"Not Stated"	"9"	Suppressed
+	"Montgomery County, OH"	"39113"	"Vaginal"	"1"	3571
+	"Montgomery County, OH"	"39113"	"Cesarean"	"2"	1561
+	"Montgomery County, OH"	"39113"	"Not Stated"	"9"	Suppressed
+	"Portage County, OH"	"39133"	"Vaginal"	"1"	776
+	"Portage County, OH"	"39133"	"Cesarean"	"2"	305
+	"Portage County, OH"	"39133"	"Not Stated"	"9"	Suppressed
+	"Richland County, OH"	"39139"	"Vaginal"	"1"	787
+	"Richland County, OH"	"39139"	"Cesarean"	"2"	302
+	"Richland County, OH"	"39139"	"Not Stated"	"9"	Suppressed
+	"Stark County, OH"	"39151"	"Vaginal"	"1"	2367
+	"Stark County, OH"	"39151"	"Cesarean"	"2"	942
+	"Stark County, OH"	"39151"	"Not Stated"	"9"	Suppressed
+	"Summit County, OH"	"39153"	"Vaginal"	"1"	3372
+	"Summit County, OH"	"39153"	"Cesarean"	"2"	1337
+	"Summit County, OH"	"39153"	"Not Stated"	"9"	Suppressed
+	"Trumbull County, OH"	"39155"	"Vaginal"	"1"	1106
+	"Trumbull County, OH"	"39155"	"Cesarean"	"2"	555
+	"Trumbull County, OH"	"39155"	"Not Stated"	"9"	Suppressed
+	"Warren County, OH"	"39165"	"Vaginal"	"1"	1331
+	"Warren County, OH"	"39165"	"Cesarean"	"2"	522
+	"Warren County, OH"	"39165"	"Not Stated"	"9"	Suppressed
+	"Wayne County, OH"	"39169"	"Vaginal"	"1"	783
+	"Wayne County, OH"	"39169"	"Cesarean"	"2"	295
+	"Wayne County, OH"	"39169"	"Not Stated"	"9"	Suppressed
+	"Wood County, OH"	"39173"	"Vaginal"	"1"	830
+	"Wood County, OH"	"39173"	"Cesarean"	"2"	306
+	"Wood County, OH"	"39173"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, OH"	"39999"	"Vaginal"	"1"	17050
+	"Unidentified Counties, OH"	"39999"	"Cesarean"	"2"	6947
+	"Unidentified Counties, OH"	"39999"	"Not Stated"	"9"	Suppressed
+	"Canadian County, OK"	"40017"	"Vaginal"	"1"	956
+	"Canadian County, OK"	"40017"	"Cesarean"	"2"	444
+	"Canadian County, OK"	"40017"	"Not Stated"	"9"	Suppressed
+	"Cleveland County, OK"	"40027"	"Vaginal"	"1"	1587
+	"Cleveland County, OK"	"40027"	"Cesarean"	"2"	695
+	"Cleveland County, OK"	"40027"	"Not Stated"	"9"	Suppressed
+	"Comanche County, OK"	"40031"	"Vaginal"	"1"	989
+	"Comanche County, OK"	"40031"	"Cesarean"	"2"	401
+	"Comanche County, OK"	"40031"	"Not Stated"	"9"	Suppressed
+	"Oklahoma County, OK"	"40109"	"Vaginal"	"1"	6746
+	"Oklahoma County, OK"	"40109"	"Cesarean"	"2"	2824
+	"Oklahoma County, OK"	"40109"	"Not Stated"	"9"	Suppressed
+	"Tulsa County, OK"	"40143"	"Vaginal"	"1"	5336
+	"Tulsa County, OK"	"40143"	"Cesarean"	"2"	2192
+	"Tulsa County, OK"	"40143"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, OK"	"40999"	"Vaginal"	"1"	12964
+	"Unidentified Counties, OK"	"40999"	"Cesarean"	"2"	5881
+	"Unidentified Counties, OK"	"40999"	"Not Stated"	"9"	Suppressed
+	"Clackamas County, OR"	"41005"	"Vaginal"	"1"	2449
+	"Clackamas County, OR"	"41005"	"Cesarean"	"2"	807
+	"Clackamas County, OR"	"41005"	"Not Stated"	"9"	Suppressed
+	"Deschutes County, OR"	"41017"	"Vaginal"	"1"	1033
+	"Deschutes County, OR"	"41017"	"Cesarean"	"2"	354
+	"Deschutes County, OR"	"41017"	"Not Stated"	"9"	Suppressed
+	"Douglas County, OR"	"41019"	"Vaginal"	"1"	625
+	"Douglas County, OR"	"41019"	"Cesarean"	"2"	203
+	"Douglas County, OR"	"41019"	"Not Stated"	"9"	Suppressed
+	"Jackson County, OR"	"41029"	"Vaginal"	"1"	1285
+	"Jackson County, OR"	"41029"	"Cesarean"	"2"	555
+	"Jackson County, OR"	"41029"	"Not Stated"	"9"	Suppressed
+	"Lane County, OR"	"41039"	"Vaginal"	"1"	1909
+	"Lane County, OR"	"41039"	"Cesarean"	"2"	815
+	"Lane County, OR"	"41039"	"Not Stated"	"9"	Suppressed
+	"Linn County, OR"	"41043"	"Vaginal"	"1"	839
+	"Linn County, OR"	"41043"	"Cesarean"	"2"	317
+	"Linn County, OR"	"41043"	"Not Stated"	"9"	Suppressed
+	"Marion County, OR"	"41047"	"Vaginal"	"1"	2606
+	"Marion County, OR"	"41047"	"Cesarean"	"2"	827
+	"Marion County, OR"	"41047"	"Not Stated"	"9"	Suppressed
+	"Multnomah County, OR"	"41051"	"Vaginal"	"1"	5470
+	"Multnomah County, OR"	"41051"	"Cesarean"	"2"	1889
+	"Multnomah County, OR"	"41051"	"Not Stated"	"9"	Suppressed
+	"Washington County, OR"	"41067"	"Vaginal"	"1"	4180
+	"Washington County, OR"	"41067"	"Cesarean"	"2"	1394
+	"Washington County, OR"	"41067"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, OR"	"41999"	"Vaginal"	"1"	5936
+	"Unidentified Counties, OR"	"41999"	"Cesarean"	"2"	2004
+	"Unidentified Counties, OR"	"41999"	"Not Stated"	"9"	Suppressed
+	"Adams County, PA"	"42001"	"Vaginal"	"1"	594
+	"Adams County, PA"	"42001"	"Cesarean"	"2"	227
+	"Adams County, PA"	"42001"	"Not Stated"	"9"	Suppressed
+	"Allegheny County, PA"	"42003"	"Vaginal"	"1"	7720
+	"Allegheny County, PA"	"42003"	"Cesarean"	"2"	2962
+	"Allegheny County, PA"	"42003"	"Not Stated"	"9"	Suppressed
+	"Beaver County, PA"	"42007"	"Vaginal"	"1"	974
+	"Beaver County, PA"	"42007"	"Cesarean"	"2"	438
+	"Beaver County, PA"	"42007"	"Not Stated"	"9"	Suppressed
+	"Berks County, PA"	"42011"	"Vaginal"	"1"	2647
+	"Berks County, PA"	"42011"	"Cesarean"	"2"	1049
+	"Berks County, PA"	"42011"	"Not Stated"	"9"	Suppressed
+	"Blair County, PA"	"42013"	"Vaginal"	"1"	780
+	"Blair County, PA"	"42013"	"Cesarean"	"2"	261
+	"Blair County, PA"	"42013"	"Not Stated"	"9"	Suppressed
+	"Bucks County, PA"	"42017"	"Vaginal"	"1"	3118
+	"Bucks County, PA"	"42017"	"Cesarean"	"2"	1684
+	"Bucks County, PA"	"42017"	"Not Stated"	"9"	Suppressed
+	"Butler County, PA"	"42019"	"Vaginal"	"1"	1099
+	"Butler County, PA"	"42019"	"Cesarean"	"2"	425
+	"Butler County, PA"	"42019"	"Not Stated"	"9"	Suppressed
+	"Cambria County, PA"	"42021"	"Vaginal"	"1"	826
+	"Cambria County, PA"	"42021"	"Cesarean"	"2"	214
+	"Cambria County, PA"	"42021"	"Not Stated"	"9"	Suppressed
+	"Centre County, PA"	"42027"	"Vaginal"	"1"	737
+	"Centre County, PA"	"42027"	"Cesarean"	"2"	212
+	"Centre County, PA"	"42027"	"Not Stated"	"9"	Suppressed
+	"Chester County, PA"	"42029"	"Vaginal"	"1"	3103
+	"Chester County, PA"	"42029"	"Cesarean"	"2"	1230
+	"Chester County, PA"	"42029"	"Not Stated"	"9"	Suppressed
+	"Cumberland County, PA"	"42041"	"Vaginal"	"1"	1482
+	"Cumberland County, PA"	"42041"	"Cesarean"	"2"	538
+	"Cumberland County, PA"	"42041"	"Not Stated"	"9"	Suppressed
+	"Dauphin County, PA"	"42043"	"Vaginal"	"1"	1916
+	"Dauphin County, PA"	"42043"	"Cesarean"	"2"	736
+	"Dauphin County, PA"	"42043"	"Not Stated"	"9"	Suppressed
+	"Delaware County, PA"	"42045"	"Vaginal"	"1"	3772
+	"Delaware County, PA"	"42045"	"Cesarean"	"2"	1659
+	"Delaware County, PA"	"42045"	"Not Stated"	"9"	Suppressed
+	"Erie County, PA"	"42049"	"Vaginal"	"1"	1638
+	"Erie County, PA"	"42049"	"Cesarean"	"2"	881
+	"Erie County, PA"	"42049"	"Not Stated"	"9"	Suppressed
+	"Fayette County, PA"	"42051"	"Vaginal"	"1"	787
+	"Fayette County, PA"	"42051"	"Cesarean"	"2"	332
+	"Fayette County, PA"	"42051"	"Not Stated"	"9"	Suppressed
+	"Franklin County, PA"	"42055"	"Vaginal"	"1"	1024
+	"Franklin County, PA"	"42055"	"Cesarean"	"2"	368
+	"Franklin County, PA"	"42055"	"Not Stated"	"9"	Suppressed
+	"Lackawanna County, PA"	"42069"	"Vaginal"	"1"	1136
+	"Lackawanna County, PA"	"42069"	"Cesarean"	"2"	566
+	"Lackawanna County, PA"	"42069"	"Not Stated"	"9"	Suppressed
+	"Lancaster County, PA"	"42071"	"Vaginal"	"1"	3252
+	"Lancaster County, PA"	"42071"	"Cesarean"	"2"	1456
+	"Lancaster County, PA"	"42071"	"Not Stated"	"9"	Suppressed
+	"Lebanon County, PA"	"42075"	"Vaginal"	"1"	809
+	"Lebanon County, PA"	"42075"	"Cesarean"	"2"	373
+	"Lebanon County, PA"	"42075"	"Not Stated"	"9"	Suppressed
+	"Lehigh County, PA"	"42077"	"Vaginal"	"1"	2493
+	"Lehigh County, PA"	"42077"	"Cesarean"	"2"	902
+	"Lehigh County, PA"	"42077"	"Not Stated"	"9"	Suppressed
+	"Luzerne County, PA"	"42079"	"Vaginal"	"1"	1714
+	"Luzerne County, PA"	"42079"	"Cesarean"	"2"	797
+	"Luzerne County, PA"	"42079"	"Not Stated"	"9"	Suppressed
+	"Lycoming County, PA"	"42081"	"Vaginal"	"1"	656
+	"Lycoming County, PA"	"42081"	"Cesarean"	"2"	290
+	"Lycoming County, PA"	"42081"	"Not Stated"	"9"	Suppressed
+	"Mercer County, PA"	"42085"	"Vaginal"	"1"	632
+	"Mercer County, PA"	"42085"	"Cesarean"	"2"	220
+	"Mercer County, PA"	"42085"	"Not Stated"	"9"	Suppressed
+	"Monroe County, PA"	"42089"	"Vaginal"	"1"	773
+	"Monroe County, PA"	"42089"	"Cesarean"	"2"	353
+	"Monroe County, PA"	"42089"	"Not Stated"	"9"	Suppressed
+	"Montgomery County, PA"	"42091"	"Vaginal"	"1"	5106
+	"Montgomery County, PA"	"42091"	"Cesarean"	"2"	2081
+	"Montgomery County, PA"	"42091"	"Not Stated"	"9"	Suppressed
+	"Northampton County, PA"	"42095"	"Vaginal"	"1"	1577
+	"Northampton County, PA"	"42095"	"Cesarean"	"2"	672
+	"Northampton County, PA"	"42095"	"Not Stated"	"9"	Suppressed
+	"Philadelphia County, PA"	"42101"	"Vaginal"	"1"	12842
+	"Philadelphia County, PA"	"42101"	"Cesarean"	"2"	4671
+	"Philadelphia County, PA"	"42101"	"Not Stated"	"9"	Suppressed
+	"Schuylkill County, PA"	"42107"	"Vaginal"	"1"	740
+	"Schuylkill County, PA"	"42107"	"Cesarean"	"2"	298
+	"Schuylkill County, PA"	"42107"	"Not Stated"	"9"	Suppressed
+	"Washington County, PA"	"42125"	"Vaginal"	"1"	1151
+	"Washington County, PA"	"42125"	"Cesarean"	"2"	414
+	"Washington County, PA"	"42125"	"Not Stated"	"9"	Suppressed
+	"Westmoreland County, PA"	"42129"	"Vaginal"	"1"	1918
+	"Westmoreland County, PA"	"42129"	"Cesarean"	"2"	683
+	"Westmoreland County, PA"	"42129"	"Not Stated"	"9"	Suppressed
+	"York County, PA"	"42133"	"Vaginal"	"1"	2780
+	"York County, PA"	"42133"	"Cesarean"	"2"	1099
+	"York County, PA"	"42133"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, PA"	"42999"	"Vaginal"	"1"	8770
+	"Unidentified Counties, PA"	"42999"	"Cesarean"	"2"	3585
+	"Unidentified Counties, PA"	"42999"	"Not Stated"	"9"	Suppressed
+	"Kent County, RI"	"44003"	"Vaginal"	"1"	921
+	"Kent County, RI"	"44003"	"Cesarean"	"2"	425
+	"Kent County, RI"	"44003"	"Not Stated"	"9"	Suppressed
+	"Providence County, RI"	"44007"	"Vaginal"	"1"	4340
+	"Providence County, RI"	"44007"	"Cesarean"	"2"	1619
+	"Providence County, RI"	"44007"	"Not Stated"	"9"	Suppressed
+	"Washington County, RI"	"44009"	"Vaginal"	"1"	500
+	"Washington County, RI"	"44009"	"Cesarean"	"2"	230
+	"Washington County, RI"	"44009"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, RI"	"44999"	"Vaginal"	"1"	572
+	"Unidentified Counties, RI"	"44999"	"Cesarean"	"2"	288
+	"Unidentified Counties, RI"	"44999"	"Not Stated"	"9"	Suppressed
+	"Aiken County, SC"	"45003"	"Vaginal"	"1"	1043
+	"Aiken County, SC"	"45003"	"Cesarean"	"2"	501
+	"Aiken County, SC"	"45003"	"Not Stated"	"9"	Suppressed
+	"Anderson County, SC"	"45007"	"Vaginal"	"1"	1233
+	"Anderson County, SC"	"45007"	"Cesarean"	"2"	531
+	"Anderson County, SC"	"45007"	"Not Stated"	"9"	Suppressed
+	"Beaufort County, SC"	"45013"	"Vaginal"	"1"	1143
+	"Beaufort County, SC"	"45013"	"Cesarean"	"2"	493
+	"Beaufort County, SC"	"45013"	"Not Stated"	"9"	Suppressed
+	"Berkeley County, SC"	"45015"	"Vaginal"	"1"	1373
+	"Berkeley County, SC"	"45015"	"Cesarean"	"2"	703
+	"Berkeley County, SC"	"45015"	"Not Stated"	"9"	Suppressed
+	"Charleston County, SC"	"45019"	"Vaginal"	"1"	2620
+	"Charleston County, SC"	"45019"	"Cesarean"	"2"	1188
+	"Charleston County, SC"	"45019"	"Not Stated"	"9"	Suppressed
+	"Dorchester County, SC"	"45035"	"Vaginal"	"1"	962
+	"Dorchester County, SC"	"45035"	"Cesarean"	"2"	433
+	"Dorchester County, SC"	"45035"	"Not Stated"	"9"	Suppressed
+	"Florence County, SC"	"45041"	"Vaginal"	"1"	772
+	"Florence County, SC"	"45041"	"Cesarean"	"2"	504
+	"Florence County, SC"	"45041"	"Not Stated"	"9"	Suppressed
+	"Greenville County, SC"	"45045"	"Vaginal"	"1"	3527
+	"Greenville County, SC"	"45045"	"Cesarean"	"2"	1403
+	"Greenville County, SC"	"45045"	"Not Stated"	"9"	Suppressed
+	"Horry County, SC"	"45051"	"Vaginal"	"1"	1613
+	"Horry County, SC"	"45051"	"Cesarean"	"2"	806
+	"Horry County, SC"	"45051"	"Not Stated"	"9"	Suppressed
+	"Lexington County, SC"	"45063"	"Vaginal"	"1"	1759
+	"Lexington County, SC"	"45063"	"Cesarean"	"2"	819
+	"Lexington County, SC"	"45063"	"Not Stated"	"9"	Suppressed
+	"Pickens County, SC"	"45077"	"Vaginal"	"1"	707
+	"Pickens County, SC"	"45077"	"Cesarean"	"2"	257
+	"Pickens County, SC"	"45077"	"Not Stated"	"9"	Suppressed
+	"Richland County, SC"	"45079"	"Vaginal"	"1"	2599
+	"Richland County, SC"	"45079"	"Cesarean"	"2"	1172
+	"Richland County, SC"	"45079"	"Not Stated"	"9"	Suppressed
+	"Spartanburg County, SC"	"45083"	"Vaginal"	"1"	1874
+	"Spartanburg County, SC"	"45083"	"Cesarean"	"2"	838
+	"Spartanburg County, SC"	"45083"	"Not Stated"	"9"	Suppressed
+	"Sumter County, SC"	"45085"	"Vaginal"	"1"	852
+	"Sumter County, SC"	"45085"	"Cesarean"	"2"	345
+	"Sumter County, SC"	"45085"	"Not Stated"	"9"	Suppressed
+	"York County, SC"	"45091"	"Vaginal"	"1"	1581
+	"York County, SC"	"45091"	"Cesarean"	"2"	660
+	"York County, SC"	"45091"	"Not Stated"	"9"	28
+	"Unidentified Counties, SC"	"45999"	"Vaginal"	"1"	6863
+	"Unidentified Counties, SC"	"45999"	"Cesarean"	"2"	3402
+	"Unidentified Counties, SC"	"45999"	"Not Stated"	"9"	Suppressed
+	"Minnehaha County, SD"	"46099"	"Vaginal"	"1"	1860
+	"Minnehaha County, SD"	"46099"	"Cesarean"	"2"	549
+	"Minnehaha County, SD"	"46099"	"Not Stated"	"9"	Suppressed
+	"Pennington County, SD"	"46103"	"Vaginal"	"1"	1010
+	"Pennington County, SD"	"46103"	"Cesarean"	"2"	234
+	"Pennington County, SD"	"46103"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, SD"	"46999"	"Vaginal"	"1"	4672
+	"Unidentified Counties, SD"	"46999"	"Cesarean"	"2"	1519
+	"Unidentified Counties, SD"	"46999"	"Not Stated"	"9"	Suppressed
+	"Blount County, TN"	"47009"	"Vaginal"	"1"	757
+	"Blount County, TN"	"47009"	"Cesarean"	"2"	238
+	"Blount County, TN"	"47009"	"Not Stated"	"9"	Suppressed
+	"Davidson County, TN"	"47037"	"Vaginal"	"1"	5744
+	"Davidson County, TN"	"47037"	"Cesarean"	"2"	2661
+	"Davidson County, TN"	"47037"	"Not Stated"	"9"	Suppressed
+	"Hamilton County, TN"	"47065"	"Vaginal"	"1"	2357
+	"Hamilton County, TN"	"47065"	"Cesarean"	"2"	1032
+	"Hamilton County, TN"	"47065"	"Not Stated"	"9"	Suppressed
+	"Knox County, TN"	"47093"	"Vaginal"	"1"	3081
+	"Knox County, TN"	"47093"	"Cesarean"	"2"	1302
+	"Knox County, TN"	"47093"	"Not Stated"	"9"	Suppressed
+	"Montgomery County, TN"	"47125"	"Vaginal"	"1"	2022
+	"Montgomery County, TN"	"47125"	"Cesarean"	"2"	861
+	"Montgomery County, TN"	"47125"	"Not Stated"	"9"	Suppressed
+	"Rutherford County, TN"	"47149"	"Vaginal"	"1"	2107
+	"Rutherford County, TN"	"47149"	"Cesarean"	"2"	1104
+	"Rutherford County, TN"	"47149"	"Not Stated"	"9"	Suppressed
+	"Shelby County, TN"	"47157"	"Vaginal"	"1"	7129
+	"Shelby County, TN"	"47157"	"Cesarean"	"2"	3180
+	"Shelby County, TN"	"47157"	"Not Stated"	"9"	Suppressed
+	"Sullivan County, TN"	"47163"	"Vaginal"	"1"	810
+	"Sullivan County, TN"	"47163"	"Cesarean"	"2"	459
+	"Sullivan County, TN"	"47163"	"Not Stated"	"9"	Suppressed
+	"Sumner County, TN"	"47165"	"Vaginal"	"1"	1124
+	"Sumner County, TN"	"47165"	"Cesarean"	"2"	552
+	"Sumner County, TN"	"47165"	"Not Stated"	"9"	Suppressed
+	"Washington County, TN"	"47179"	"Vaginal"	"1"	809
+	"Washington County, TN"	"47179"	"Cesarean"	"2"	344
+	"Washington County, TN"	"47179"	"Not Stated"	"9"	Suppressed
+	"Williamson County, TN"	"47187"	"Vaginal"	"1"	1333
+	"Williamson County, TN"	"47187"	"Cesarean"	"2"	565
+	"Williamson County, TN"	"47187"	"Not Stated"	"9"	Suppressed
+	"Wilson County, TN"	"47189"	"Vaginal"	"1"	762
+	"Wilson County, TN"	"47189"	"Cesarean"	"2"	419
+	"Wilson County, TN"	"47189"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, TN"	"47999"	"Vaginal"	"1"	16662
+	"Unidentified Counties, TN"	"47999"	"Cesarean"	"2"	7405
+	"Unidentified Counties, TN"	"47999"	"Not Stated"	"9"	Suppressed
+	"Bell County, TX"	"48027"	"Vaginal"	"1"	3769
+	"Bell County, TX"	"48027"	"Cesarean"	"2"	1248
+	"Bell County, TX"	"48027"	"Not Stated"	"9"	Suppressed
+	"Bexar County, TX"	"48029"	"Vaginal"	"1"	14944
+	"Bexar County, TX"	"48029"	"Cesarean"	"2"	7610
+	"Bexar County, TX"	"48029"	"Not Stated"	"9"	Suppressed
+	"Brazoria County, TX"	"48039"	"Vaginal"	"1"	2526
+	"Brazoria County, TX"	"48039"	"Cesarean"	"2"	1314
+	"Brazoria County, TX"	"48039"	"Not Stated"	"9"	Suppressed
+	"Brazos County, TX"	"48041"	"Vaginal"	"1"	1691
+	"Brazos County, TX"	"48041"	"Cesarean"	"2"	646
+	"Brazos County, TX"	"48041"	"Not Stated"	"9"	Suppressed
+	"Cameron County, TX"	"48061"	"Vaginal"	"1"	2918
+	"Cameron County, TX"	"48061"	"Cesarean"	"2"	2668
+	"Cameron County, TX"	"48061"	"Not Stated"	"9"	Suppressed
+	"Collin County, TX"	"48085"	"Vaginal"	"1"	5671
+	"Collin County, TX"	"48085"	"Cesarean"	"2"	3197
+	"Collin County, TX"	"48085"	"Not Stated"	"9"	Suppressed
+	"Comal County, TX"	"48091"	"Vaginal"	"1"	856
+	"Comal County, TX"	"48091"	"Cesarean"	"2"	405
+	"Comal County, TX"	"48091"	"Not Stated"	"9"	Suppressed
+	"Dallas County, TX"	"48113"	"Vaginal"	"1"	24515
+	"Dallas County, TX"	"48113"	"Cesarean"	"2"	7659
+	"Dallas County, TX"	"48113"	"Not Stated"	"9"	Suppressed
+	"Denton County, TX"	"48121"	"Vaginal"	"1"	5462
+	"Denton County, TX"	"48121"	"Cesarean"	"2"	2750
+	"Denton County, TX"	"48121"	"Not Stated"	"9"	Suppressed
+	"Ector County, TX"	"48135"	"Vaginal"	"1"	1772
+	"Ector County, TX"	"48135"	"Cesarean"	"2"	680
+	"Ector County, TX"	"48135"	"Not Stated"	"9"	Suppressed
+	"Ellis County, TX"	"48139"	"Vaginal"	"1"	1230
+	"Ellis County, TX"	"48139"	"Cesarean"	"2"	424
+	"Ellis County, TX"	"48139"	"Not Stated"	"9"	Suppressed
+	"El Paso County, TX"	"48141"	"Vaginal"	"1"	6882
+	"El Paso County, TX"	"48141"	"Cesarean"	"2"	3938
+	"El Paso County, TX"	"48141"	"Not Stated"	"9"	Suppressed
+	"Fort Bend County, TX"	"48157"	"Vaginal"	"1"	5077
+	"Fort Bend County, TX"	"48157"	"Cesarean"	"2"	2908
+	"Fort Bend County, TX"	"48157"	"Not Stated"	"9"	Suppressed
+	"Galveston County, TX"	"48167"	"Vaginal"	"1"	2088
+	"Galveston County, TX"	"48167"	"Cesarean"	"2"	1157
+	"Galveston County, TX"	"48167"	"Not Stated"	"9"	Suppressed
+	"Grayson County, TX"	"48181"	"Vaginal"	"1"	807
+	"Grayson County, TX"	"48181"	"Cesarean"	"2"	451
+	"Grayson County, TX"	"48181"	"Not Stated"	"9"	Suppressed
+	"Gregg County, TX"	"48183"	"Vaginal"	"1"	962
+	"Gregg County, TX"	"48183"	"Cesarean"	"2"	448
+	"Gregg County, TX"	"48183"	"Not Stated"	"9"	Suppressed
+	"Guadalupe County, TX"	"48187"	"Vaginal"	"1"	1053
+	"Guadalupe County, TX"	"48187"	"Cesarean"	"2"	447
+	"Guadalupe County, TX"	"48187"	"Not Stated"	"9"	Suppressed
+	"Harris County, TX"	"48201"	"Vaginal"	"1"	39919
+	"Harris County, TX"	"48201"	"Cesarean"	"2"	18704
+	"Harris County, TX"	"48201"	"Not Stated"	"9"	Suppressed
+	"Hays County, TX"	"48209"	"Vaginal"	"1"	1363
+	"Hays County, TX"	"48209"	"Cesarean"	"2"	621
+	"Hays County, TX"	"48209"	"Not Stated"	"9"	Suppressed
+	"Hidalgo County, TX"	"48215"	"Vaginal"	"1"	7463
+	"Hidalgo County, TX"	"48215"	"Cesarean"	"2"	4901
+	"Hidalgo County, TX"	"48215"	"Not Stated"	"9"	Suppressed
+	"Jefferson County, TX"	"48245"	"Vaginal"	"1"	1762
+	"Jefferson County, TX"	"48245"	"Cesarean"	"2"	1296
+	"Jefferson County, TX"	"48245"	"Not Stated"	"9"	Suppressed
+	"Johnson County, TX"	"48251"	"Vaginal"	"1"	1200
+	"Johnson County, TX"	"48251"	"Cesarean"	"2"	474
+	"Johnson County, TX"	"48251"	"Not Stated"	"9"	Suppressed
+	"Kaufman County, TX"	"48257"	"Vaginal"	"1"	812
+	"Kaufman County, TX"	"48257"	"Cesarean"	"2"	426
+	"Kaufman County, TX"	"48257"	"Not Stated"	"9"	Suppressed
+	"Lubbock County, TX"	"48303"	"Vaginal"	"1"	2442
+	"Lubbock County, TX"	"48303"	"Cesarean"	"2"	813
+	"Lubbock County, TX"	"48303"	"Not Stated"	"9"	Suppressed
+	"McLennan County, TX"	"48309"	"Vaginal"	"1"	1957
+	"McLennan County, TX"	"48309"	"Cesarean"	"2"	796
+	"McLennan County, TX"	"48309"	"Not Stated"	"9"	Suppressed
+	"Midland County, TX"	"48329"	"Vaginal"	"1"	1820
+	"Midland County, TX"	"48329"	"Cesarean"	"2"	767
+	"Midland County, TX"	"48329"	"Not Stated"	"9"	Suppressed
+	"Montgomery County, TX"	"48339"	"Vaginal"	"1"	3898
+	"Montgomery County, TX"	"48339"	"Cesarean"	"2"	2054
+	"Montgomery County, TX"	"48339"	"Not Stated"	"9"	Suppressed
+	"Nueces County, TX"	"48355"	"Vaginal"	"1"	2621
+	"Nueces County, TX"	"48355"	"Cesarean"	"2"	1429
+	"Nueces County, TX"	"48355"	"Not Stated"	"9"	Suppressed
+	"Parker County, TX"	"48367"	"Vaginal"	"1"	889
+	"Parker County, TX"	"48367"	"Cesarean"	"2"	305
+	"Parker County, TX"	"48367"	"Not Stated"	"9"	Suppressed
+	"Potter County, TX"	"48375"	"Vaginal"	"1"	1141
+	"Potter County, TX"	"48375"	"Cesarean"	"2"	384
+	"Potter County, TX"	"48375"	"Not Stated"	"9"	Suppressed
+	"Randall County, TX"	"48381"	"Vaginal"	"1"	997
+	"Randall County, TX"	"48381"	"Cesarean"	"2"	335
+	"Randall County, TX"	"48381"	"Not Stated"	"9"	Suppressed
+	"Smith County, TX"	"48423"	"Vaginal"	"1"	1709
+	"Smith County, TX"	"48423"	"Cesarean"	"2"	680
+	"Smith County, TX"	"48423"	"Not Stated"	"9"	Suppressed
+	"Tarrant County, TX"	"48439"	"Vaginal"	"1"	15707
+	"Tarrant County, TX"	"48439"	"Cesarean"	"2"	6827
+	"Tarrant County, TX"	"48439"	"Not Stated"	"9"	Suppressed
+	"Taylor County, TX"	"48441"	"Vaginal"	"1"	1136
+	"Taylor County, TX"	"48441"	"Cesarean"	"2"	511
+	"Taylor County, TX"	"48441"	"Not Stated"	"9"	Suppressed
+	"Tom Green County, TX"	"48451"	"Vaginal"	"1"	962
+	"Tom Green County, TX"	"48451"	"Cesarean"	"2"	403
+	"Tom Green County, TX"	"48451"	"Not Stated"	"9"	Suppressed
+	"Travis County, TX"	"48453"	"Vaginal"	"1"	8850
+	"Travis County, TX"	"48453"	"Cesarean"	"2"	4141
+	"Travis County, TX"	"48453"	"Not Stated"	"9"	Suppressed
+	"Webb County, TX"	"48479"	"Vaginal"	"1"	2422
+	"Webb County, TX"	"48479"	"Cesarean"	"2"	2033
+	"Webb County, TX"	"48479"	"Not Stated"	"9"	Suppressed
+	"Wichita County, TX"	"48485"	"Vaginal"	"1"	1144
+	"Wichita County, TX"	"48485"	"Cesarean"	"2"	370
+	"Wichita County, TX"	"48485"	"Not Stated"	"9"	Suppressed
+	"Williamson County, TX"	"48491"	"Vaginal"	"1"	3610
+	"Williamson County, TX"	"48491"	"Cesarean"	"2"	1650
+	"Williamson County, TX"	"48491"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, TX"	"48999"	"Vaginal"	"1"	31849
+	"Unidentified Counties, TX"	"48999"	"Cesarean"	"2"	15947
+	"Unidentified Counties, TX"	"48999"	"Not Stated"	"9"	Suppressed
+	"Cache County, UT"	"49005"	"Vaginal"	"1"	1622
+	"Cache County, UT"	"49005"	"Cesarean"	"2"	345
+	"Cache County, UT"	"49005"	"Not Stated"	"9"	Suppressed
+	"Davis County, UT"	"49011"	"Vaginal"	"1"	3832
+	"Davis County, UT"	"49011"	"Cesarean"	"2"	974
+	"Davis County, UT"	"49011"	"Not Stated"	"9"	Suppressed
+	"Salt Lake County, UT"	"49035"	"Vaginal"	"1"	10916
+	"Salt Lake County, UT"	"49035"	"Cesarean"	"2"	2904
+	"Salt Lake County, UT"	"49035"	"Not Stated"	"9"	Suppressed
+	"Utah County, UT"	"49049"	"Vaginal"	"1"	7810
+	"Utah County, UT"	"49049"	"Cesarean"	"2"	1766
+	"Utah County, UT"	"49049"	"Not Stated"	"9"	Suppressed
+	"Washington County, UT"	"49053"	"Vaginal"	"1"	1396
+	"Washington County, UT"	"49053"	"Cesarean"	"2"	316
+	"Washington County, UT"	"49053"	"Not Stated"	"9"	Suppressed
+	"Weber County, UT"	"49057"	"Vaginal"	"1"	2434
+	"Weber County, UT"	"49057"	"Cesarean"	"2"	688
+	"Weber County, UT"	"49057"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, UT"	"49999"	"Vaginal"	"1"	4252
+	"Unidentified Counties, UT"	"49999"	"Cesarean"	"2"	1347
+	"Unidentified Counties, UT"	"49999"	"Not Stated"	"9"	Suppressed
+	"Chittenden County, VT"	"50007"	"Vaginal"	"1"	961
+	"Chittenden County, VT"	"50007"	"Cesarean"	"2"	254
+	"Chittenden County, VT"	"50007"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, VT"	"50999"	"Vaginal"	"1"	2568
+	"Unidentified Counties, VT"	"50999"	"Cesarean"	"2"	862
+	"Unidentified Counties, VT"	"50999"	"Not Stated"	"9"	Suppressed
+	"Arlington County, VA"	"51013"	"Vaginal"	"1"	1810
+	"Arlington County, VA"	"51013"	"Cesarean"	"2"	813
+	"Arlington County, VA"	"51013"	"Not Stated"	"9"	Suppressed
+	"Chesterfield County, VA"	"51041"	"Vaginal"	"1"	2096
+	"Chesterfield County, VA"	"51041"	"Cesarean"	"2"	842
+	"Chesterfield County, VA"	"51041"	"Not Stated"	"9"	Suppressed
+	"Fairfax County, VA"	"51059"	"Vaginal"	"1"	7565
+	"Fairfax County, VA"	"51059"	"Cesarean"	"2"	4201
+	"Fairfax County, VA"	"51059"	"Not Stated"	"9"	Suppressed
+	"Henrico County, VA"	"51087"	"Vaginal"	"1"	2197
+	"Henrico County, VA"	"51087"	"Cesarean"	"2"	1036
+	"Henrico County, VA"	"51087"	"Not Stated"	"9"	Suppressed
+	"Loudoun County, VA"	"51107"	"Vaginal"	"1"	2813
+	"Loudoun County, VA"	"51107"	"Cesarean"	"2"	1536
+	"Loudoun County, VA"	"51107"	"Not Stated"	"9"	Suppressed
+	"Prince William County, VA"	"51153"	"Vaginal"	"1"	3724
+	"Prince William County, VA"	"51153"	"Cesarean"	"2"	1735
+	"Prince William County, VA"	"51153"	"Not Stated"	"9"	Suppressed
+	"Spotsylvania County, VA"	"51177"	"Vaginal"	"1"	802
+	"Spotsylvania County, VA"	"51177"	"Cesarean"	"2"	444
+	"Spotsylvania County, VA"	"51177"	"Not Stated"	"9"	Suppressed
+	"Stafford County, VA"	"51179"	"Vaginal"	"1"	865
+	"Stafford County, VA"	"51179"	"Cesarean"	"2"	440
+	"Stafford County, VA"	"51179"	"Not Stated"	"9"	Suppressed
+	"Alexandria city, VA"	"51510"	"Vaginal"	"1"	1520
+	"Alexandria city, VA"	"51510"	"Cesarean"	"2"	824
+	"Alexandria city, VA"	"51510"	"Not Stated"	"9"	Suppressed
+	"Chesapeake city, VA"	"51550"	"Vaginal"	"1"	1582
+	"Chesapeake city, VA"	"51550"	"Cesarean"	"2"	681
+	"Chesapeake city, VA"	"51550"	"Not Stated"	"9"	Suppressed
+	"Hampton city, VA"	"51650"	"Vaginal"	"1"	943
+	"Hampton city, VA"	"51650"	"Cesarean"	"2"	355
+	"Hampton city, VA"	"51650"	"Not Stated"	"9"	Suppressed
+	"Newport News city, VA"	"51700"	"Vaginal"	"1"	1649
+	"Newport News city, VA"	"51700"	"Cesarean"	"2"	549
+	"Newport News city, VA"	"51700"	"Not Stated"	"9"	Suppressed
+	"Norfolk city, VA"	"51710"	"Vaginal"	"1"	2022
+	"Norfolk city, VA"	"51710"	"Cesarean"	"2"	804
+	"Norfolk city, VA"	"51710"	"Not Stated"	"9"	Suppressed
+	"Richmond city, VA"	"51760"	"Vaginal"	"1"	1709
+	"Richmond city, VA"	"51760"	"Cesarean"	"2"	682
+	"Richmond city, VA"	"51760"	"Not Stated"	"9"	Suppressed
+	"Virginia Beach city, VA"	"51810"	"Vaginal"	"1"	3377
+	"Virginia Beach city, VA"	"51810"	"Cesarean"	"2"	1423
+	"Virginia Beach city, VA"	"51810"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, VA"	"51999"	"Vaginal"	"1"	21721
+	"Unidentified Counties, VA"	"51999"	"Cesarean"	"2"	8714
+	"Unidentified Counties, VA"	"51999"	"Not Stated"	"9"	Suppressed
+	"Benton County, WA"	"53005"	"Vaginal"	"1"	1582
+	"Benton County, WA"	"53005"	"Cesarean"	"2"	522
+	"Benton County, WA"	"53005"	"Not Stated"	"9"	Suppressed
+	"Clark County, WA"	"53011"	"Vaginal"	"1"	3380
+	"Clark County, WA"	"53011"	"Cesarean"	"2"	1039
+	"Clark County, WA"	"53011"	"Not Stated"	"9"	Suppressed
+	"Cowlitz County, WA"	"53015"	"Vaginal"	"1"	742
+	"Cowlitz County, WA"	"53015"	"Cesarean"	"2"	216
+	"Cowlitz County, WA"	"53015"	"Not Stated"	"9"	Suppressed
+	"King County, WA"	"53033"	"Vaginal"	"1"	14358
+	"King County, WA"	"53033"	"Cesarean"	"2"	5840
+	"King County, WA"	"53033"	"Not Stated"	"9"	Suppressed
+	"Kitsap County, WA"	"53035"	"Vaginal"	"1"	1761
+	"Kitsap County, WA"	"53035"	"Cesarean"	"2"	633
+	"Kitsap County, WA"	"53035"	"Not Stated"	"9"	Suppressed
+	"Pierce County, WA"	"53053"	"Vaginal"	"1"	6554
+	"Pierce County, WA"	"53053"	"Cesarean"	"2"	2331
+	"Pierce County, WA"	"53053"	"Not Stated"	"9"	Suppressed
+	"Skagit County, WA"	"53057"	"Vaginal"	"1"	806
+	"Skagit County, WA"	"53057"	"Cesarean"	"2"	244
+	"Skagit County, WA"	"53057"	"Not Stated"	"9"	Suppressed
+	"Snohomish County, WA"	"53061"	"Vaginal"	"1"	5476
+	"Snohomish County, WA"	"53061"	"Cesarean"	"2"	2089
+	"Snohomish County, WA"	"53061"	"Not Stated"	"9"	Suppressed
+	"Spokane County, WA"	"53063"	"Vaginal"	"1"	3618
+	"Spokane County, WA"	"53063"	"Cesarean"	"2"	1000
+	"Spokane County, WA"	"53063"	"Not Stated"	"9"	Suppressed
+	"Thurston County, WA"	"53067"	"Vaginal"	"1"	1722
+	"Thurston County, WA"	"53067"	"Cesarean"	"2"	580
+	"Thurston County, WA"	"53067"	"Not Stated"	"9"	Suppressed
+	"Whatcom County, WA"	"53073"	"Vaginal"	"1"	1258
+	"Whatcom County, WA"	"53073"	"Cesarean"	"2"	470
+	"Whatcom County, WA"	"53073"	"Not Stated"	"9"	Suppressed
+	"Yakima County, WA"	"53077"	"Vaginal"	"1"	2619
+	"Yakima County, WA"	"53077"	"Cesarean"	"2"	545
+	"Yakima County, WA"	"53077"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, WA"	"53999"	"Vaginal"	"1"	7157
+	"Unidentified Counties, WA"	"53999"	"Cesarean"	"2"	2607
+	"Unidentified Counties, WA"	"53999"	"Not Stated"	"9"	Suppressed
+	"Berkeley County, WV"	"54003"	"Vaginal"	"1"	780
+	"Berkeley County, WV"	"54003"	"Cesarean"	"2"	300
+	"Berkeley County, WV"	"54003"	"Not Stated"	"9"	Suppressed
+	"Kanawha County, WV"	"54039"	"Vaginal"	"1"	988
+	"Kanawha County, WV"	"54039"	"Cesarean"	"2"	619
+	"Kanawha County, WV"	"54039"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, WV"	"54999"	"Vaginal"	"1"	8539
+	"Unidentified Counties, WV"	"54999"	"Cesarean"	"2"	4119
+	"Unidentified Counties, WV"	"54999"	"Not Stated"	"9"	Suppressed
+	"Brown County, WI"	"55009"	"Vaginal"	"1"	2148
+	"Brown County, WI"	"55009"	"Cesarean"	"2"	613
+	"Brown County, WI"	"55009"	"Not Stated"	"9"	Suppressed
+	"Dane County, WI"	"55025"	"Vaginal"	"1"	3838
+	"Dane County, WI"	"55025"	"Cesarean"	"2"	1173
+	"Dane County, WI"	"55025"	"Not Stated"	"9"	Suppressed
+	"Fond du Lac County, WI"	"55039"	"Vaginal"	"1"	671
+	"Fond du Lac County, WI"	"55039"	"Cesarean"	"2"	187
+	"Fond du Lac County, WI"	"55039"	"Not Stated"	"9"	Suppressed
+	"Kenosha County, WI"	"55059"	"Vaginal"	"1"	1069
+	"Kenosha County, WI"	"55059"	"Cesarean"	"2"	408
+	"Kenosha County, WI"	"55059"	"Not Stated"	"9"	Suppressed
+	"La Crosse County, WI"	"55063"	"Vaginal"	"1"	882
+	"La Crosse County, WI"	"55063"	"Cesarean"	"2"	181
+	"La Crosse County, WI"	"55063"	"Not Stated"	"9"	Suppressed
+	"Marathon County, WI"	"55073"	"Vaginal"	"1"	921
+	"Marathon County, WI"	"55073"	"Cesarean"	"2"	347
+	"Marathon County, WI"	"55073"	"Not Stated"	"9"	Suppressed
+	"Milwaukee County, WI"	"55079"	"Vaginal"	"1"	8406
+	"Milwaukee County, WI"	"55079"	"Cesarean"	"2"	2500
+	"Milwaukee County, WI"	"55079"	"Not Stated"	"9"	Suppressed
+	"Outagamie County, WI"	"55087"	"Vaginal"	"1"	1432
+	"Outagamie County, WI"	"55087"	"Cesarean"	"2"	489
+	"Outagamie County, WI"	"55087"	"Not Stated"	"9"	Suppressed
+	"Racine County, WI"	"55101"	"Vaginal"	"1"	1369
+	"Racine County, WI"	"55101"	"Cesarean"	"2"	549
+	"Racine County, WI"	"55101"	"Not Stated"	"9"	Suppressed
+	"Rock County, WI"	"55105"	"Vaginal"	"1"	1119
+	"Rock County, WI"	"55105"	"Cesarean"	"2"	447
+	"Rock County, WI"	"55105"	"Not Stated"	"9"	Suppressed
+	"Sheboygan County, WI"	"55117"	"Vaginal"	"1"	825
+	"Sheboygan County, WI"	"55117"	"Cesarean"	"2"	247
+	"Sheboygan County, WI"	"55117"	"Not Stated"	"9"	Suppressed
+	"Walworth County, WI"	"55127"	"Vaginal"	"1"	602
+	"Walworth County, WI"	"55127"	"Cesarean"	"2"	242
+	"Walworth County, WI"	"55127"	"Not Stated"	"9"	Suppressed
+	"Washington County, WI"	"55131"	"Vaginal"	"1"	802
+	"Washington County, WI"	"55131"	"Cesarean"	"2"	319
+	"Washington County, WI"	"55131"	"Not Stated"	"9"	Suppressed
+	"Waukesha County, WI"	"55133"	"Vaginal"	"1"	2335
+	"Waukesha County, WI"	"55133"	"Cesarean"	"2"	685
+	"Waukesha County, WI"	"55133"	"Not Stated"	"9"	Suppressed
+	"Winnebago County, WI"	"55139"	"Vaginal"	"1"	1184
+	"Winnebago County, WI"	"55139"	"Cesarean"	"2"	358
+	"Winnebago County, WI"	"55139"	"Not Stated"	"9"	Suppressed
+	"Unidentified Counties, WI"	"55999"	"Vaginal"	"1"	12507
+	"Unidentified Counties, WI"	"55999"	"Cesarean"	"2"	4227
+	"Unidentified Counties, WI"	"55999"	"Not Stated"	"9"	11
+	"Unidentified Counties, WY"	"56999"	"Vaginal"	"1"	4563
+	"Unidentified Counties, WY"	"56999"	"Cesarean"	"2"	1538
+	"Unidentified Counties, WY"	"56999"	"Not Stated"	"9"	Suppressed
+"---"
+"Dataset: Natality, 2007-2015"
+"Query Parameters:"
+"Title:"
+"Age of Mother 9: All"
+"Birthplace: In Hospital"
+"Birth Weight 12: All"
+"Chronic Hypertension: All"
+"Delivery Method: All"
+"Diabetes: All"
+"Eclampsia: All"
+"Education: All"
+"Gender: All"
+"Hispanic Origin: All"
+"Live Birth Order: All"
+"LMP Gestational Age 11: 37-38 weeks, 39 weeks, 40 weeks, 41 weeks"
+"Marital Status: All"
+"Medical Attendant: All"
+"Month: All"
+"Month Prenatal Care Began: All"
+"OE Gestational Age 11: 37-38 weeks, 39 weeks, 40 weeks, 41 weeks"
+"Plurality or Multiple Birth: Single"
+"Pregnancy-associated Hypertension: All"
+"Race: All"
+"States: All"
+"Tobacco Use: All"
+"Weekday: All"
+"Year: 2015"
+"Group By: County, Delivery Method"
+"Show Totals: Disabled"
+"Show Zero Values: False"
+"Show Suppressed: True"
+"Calculate Rates Per: 1,000"
+"Population Option: No populations shown because rates were not selected."
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality.html for more information."
+"---"
+"Query Date: Dec 30, 2017 12:42:33 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2015, on CDC"
+"WONDER Online Database, February 2017. Accessed at http://wonder.cdc.gov/natality-current.html on Dec 30, 2017 12:42:33 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"2. Rows with zero Births are hidden. Use Quick Options above to show zero rows."
+"---"
+Caveats:
+"1. 'Missing' appears when county data is not available for a certain year. This occurs because the county did not meet minimum"
+"population standards and thus the data for the county was recoded to the ""Unidentified Counties"" category for the state of the"
+"county."
+"2. 'Suppressed' appears when the data do not meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/Natality.html#Assurance of Confidentiality."
+"3. Each birth record represents one living baby."
+"4. County-level data are shown only for counties with populations of 100,000 persons or more. Within each state, data for all"
+"counties with fewer than 100,000 persons are combined together under the label ""Unidentified Counties."""
+"5. As a result of population changes the following counties do not have data available for all years.<br/> Before 2014 the data"
+"for the following counties was recoded to the ""Unidentified Counties"" category within the state of the county because they did"
+"not meet minimum population standards. Houston County, AL (01069); Navajo County, AZ (04017); Faulkner County, AR (05045);"
+"Saline County, AR (05125); Bartow County, GA (13015); Carroll County, GA (13045); Columbia County, GA (13073); Coweta County, GA"
+"(13077); Douglas County, GA (13097); Fayette County, GA (13113); Forsyth County, GA (13117); Lowndes County, GA (13185);"
+"Paulding County, GA (13223); Whitfield County, GA (13313); Bonneville County, ID (16019); DeKalb County, IL (17037); Kendall"
+"County, IL (17093); Clark County, IN (18019); Douglas County, KS (20045); Boone County, KY (21015); Hardin County, KY (21093);"
+"Warren County, KY (21227); Ascension Parish, LA (22005); Bossier Parish, LA (22015); Livingston Parish, LA (22063); Cecil"
+"County, MD (24015); St. Mary's County, MD (24037); Scott County, MN (27139); Wright County, MN (27171); Franklin County, MO"
+"(29071); Missoula County, MT (30063); Sandoval County, NM (35043); Tompkins County, NY (36109); Brunswick County, NC (37019);"
+"Craven County, NC (37049); Harnett County, NC (37085); Henderson County, NC (37089); Miami County, OH (39109); Canadian County,"
+"OK (40017); Adams County, PA (42001); Dorchester County, SC (45035); Pennington County, SD (46103); Wilson County, TN (47189);"
+"Comal County, TX (48091); Guadalupe County, TX (48187); Hays County, TX (48209); Kaufman County, TX (48257); Parker County, TX"
+"(48367); Cache County, UT (49005); Washington County, UT (49053); Spotsylvania County, VA (51177); Stafford County, VA (51179);"
+"Cowlitz County, WA (53015); Berkeley County, WV (54003); Fond du Lac County, WI (55039); Walworth County, WI (55127). <br/>"
+"After 2013 the data for the following counties was recoded to the ""Unidentified Counties"" category within the state of the"
+"county because they did not meet minimum population standards. Cape May County, NJ (34009); Portsmouth city, VA (51740)."
+"6. Dade County, Florida (FIPS code 12025) was renamed Miami-Dade County (FIPS code 12086) effective November 13, 1997. The area"
+"is coded to Miami-Dade (12086) after 2002 and Dade (12025) for earlier years in other natality datasets."
+"7. The independent city of Baltimore, Maryland (FIPS code 24510) is reported separately from Baltimore County (FIPS code 24005)."
+"8. The independent city of St. Louis, Missouri (FIPS code 29510) is reported separately from St. Louis County (FIPS code 29189)."
+"9. Bronx, New York (FIPS code 36005) represents Bronx Borough, New York City."
+"10. Kings County, New York (FIPS code 36047) represents Brooklyn Borough, New York City."
+"11. New York County, New York (FIPS code 36061) represents Manhattan Borough, New York City."
+"12. Queens, New York (FIPS code 36081) represents Queens Borough, New York City."
+"13. Richmond County, New York (FIPS code 36085) represents Staten Island Borough, New York City."
