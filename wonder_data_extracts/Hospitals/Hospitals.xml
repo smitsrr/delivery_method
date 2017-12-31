@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+<idinfo>
+<citation>
+<citeinfo>
+<origin/>
+<pubdate>20170519</pubdate>
+<title>Hospitals</title>
+<geoform>Vector Digital Data Set (Point)</geoform>
+<onlink>https://hifld-dhs-gii.opendata.arcgis.com</onlink>
+<lworkcit>
+<citeinfo>
+<title>HIFLD Open and HIFLD Secure</title>
+</citeinfo>
+</lworkcit>
+</citeinfo>
+</citation>
+<descript>
+<abstract>This feature class/shapefile contains locations of Hospitals for 50 US states, Washington D.C., US territories of Puerto Rico, Guam, American Samoa, Northern Mariana Islands, Palau, and Virgin Islands. The dataset only includes hospital facilities based on data acquired from various state departments or federal sources which has been referenced in the SOURCE field. Hospital facilities which do not occur in these sources will be not present in the database. The source data was available in a variety of formats (pdfs, tables, webpages, etc.) which was cleaned and geocoded and then converted into a spatial database. The database does not contain nursing homes or health centers. Hospitals have been categorized into children, chronic disease, critical access, general acute care, long term care, military, psychiatric, rehabilitation, special, and women based on the range of the available values from the various sources after removing similarities.</abstract>
+<purpose>This feature class/shapefile contains Hospitals derived from various sources (refer SOURCE field) for the Homeland Infrastructure Foundation-Level Data (HIFLD) database. (https://gii.dhs.gov/HIFLD)</purpose>
+<supplinf>This feature class/shapefile has a one-to-many relationship class (HospitalsToTrauma) relate with the “Trauma_Levels” table. This table captures the relationship between Hospitals and the state trauma level designations. “Hospitals” is the origin using STATE as the primary key. “Trauma_Levels” table is the destination using STATE as the foreign key.</supplinf>
+</descript>
+<timeperd>
+<timeinfo>
+<rngdates>
+<begdate>20120605</begdate>
+<enddate>20170329</enddate>
+</rngdates>
+</timeinfo>
+<current>Time period date range corresponds to the data range covered by the SOURCEDATE field</current>
+</timeperd>
+<status>
+<progress>Complete</progress>
+<update>Continually</update>
+</status>
+<spdom>
+<bounding>
+<westbc>-176.639171</westbc>
+<eastbc>145.724324</eastbc>
+<northbc>71.292847</northbc>
+<southbc>-14.290242</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>None</themekt>
+<themekey>homeland security</themekey>
+<themekey>name</themekey>
+<themekey>children hospitals</themekey>
+<themekey>specialty hospitals</themekey>
+<themekey>address</themekey>
+<themekey>type</themekey>
+<themekey>homeland defense</themekey>
+<themekey>facility characteristics</themekey>
+<themekey>hospitals</themekey>
+<themekey>emergency response</themekey>
+<themekey>trauma</themekey>
+<themekey>status</themekey>
+<themekey>population</themekey>
+<themekey>helipad</themekey>
+</theme>
+<place>
+<placekt>None</placekt>
+<placekey>American Samoa</placekey>
+<placekey>Northern Mariana Islands</placekey>
+<placekey>Guam</placekey>
+<placekey>Puerto Rico</placekey>
+<placekey>District of Columbia</placekey>
+<placekey>Hawaii</placekey>
+<placekey>Alaska</placekey>
+<placekey>Virgin Islands</placekey>
+<placekey>Continental United States</placekey>
+<placekey>USA</placekey>
+<placekey>Palau</placekey>
+</place>
+</keywords>
+<accconst>None (Public Domain Information)</accconst>
+<useconst>None (Public Use). Users are advised to read the data sets metadata thoroughly to understand appropriate use and data limitations.</useconst>
+<ptcontac>
+<cntinfo>
+<cntorgp>
+<cntorg>Oak Ridge National Laboratory</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>One Bethel Valley Rd, MS-6017</address>
+<city>Oak Ridge</city>
+<state>TN</state>
+<postal>37831</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>865-241-3976</cntvoice>
+<cntfax>865-241-6261</cntfax>
+</cntinfo>
+</ptcontac>
+<datacred>Oak Ridge National Laboratory (ORNL) Geographic Information Science and Technology (GIST) Group; National Geospatial-Intelligence Agency (NGA) Homeland Security Infrastructure Program (HSIP) Team.</datacred>
+<native>Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.3.0.4322</native>
+</idinfo>
+<dataqual>
+<attracc>
+<attraccr>No formal attribute accuracy test was conducted. Data from the authoritative sources (as identified in other sections of this metadata) is assumed to be correct and accurate. See also “Overview Description” in the “Entities and Attributes” metadata section.</attraccr>
+</attracc>
+<logic>Data were extracted from sources (identified in the SOURCE field) and other open source websites to populate the attribute fields. For string and date data types, NOT AVAILABLE values donate missing data that was not present in the source data. For numeric data types, -999 denotes missing data that was not present in the source data. During quality control, attributes were checked to ensure that they fell within the expected ranges or had expected/valid values. Text attribute values were checked for spelling and usage consistency. No topology tests were conducted. All records were verified to occur within the spatial domain of the feature class/shapefile.</logic>
+<complete>Data is complete as of the most recent date indicated in the Time Period section.</complete>
+<posacc>
+<horizpa>
+<horizpar>None; all efforts are made to place the geographic representation of the facility on-entity using the best available imagery from a wide variety of sources. Users should read and understand the VAL_METHOD metadata as well as the Processing Steps.</horizpar>
+</horizpa>
+<vertacc>
+<vertaccr>None; dataset contains no vertical data.</vertaccr>
+</vertacc>
+</posacc>
+<lineage>
+<srcinfo>
+<srccite>
+<citeinfo>
+<title>see SOURCE field</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<rngdates>
+<begdate>20120605</begdate>
+<enddate>20170329</enddate>
+</rngdates>
+</timeinfo>
+<srccurr>observed</srccurr>
+</srctime>
+<srccitea>see SOURCE field</srccitea>
+</srcinfo>
+<procstep>
+<procdesc>Authoritative data sources are identified through open source research. That data is then acquired and transformed into a usable data format. The properly formatted data then goes through preprocessing steps that includes a geocoding operation to give spatial context to the data. The data goes through further refinement using remote sensing techniques. After preprocessing, every record goes through a review process and each point is moved to a facility based on-entity location based on interpretation of the best available imagery and open source information. Hospitals with multi-building campus were located on a large building towards the center of campus. The VAL_DATE field indicates the date in which the review step took place.</procdesc>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<ptvctcnt>7496</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+<eainfo>
+<detailed>
+<enttyp>
+<enttypl>Hospitals</enttypl>
+<enttypd>Attribute fields were populated using sources identified in the SOURCE field for the period covered in the Time Period metadata and other open source data. For string and date data types, NOT AVAILABLE values denote missing data that was not present in the source data. For numeric data types, -999 denotes missing data that was not present in the source data. However, the missing data may be present in other sources not yet discovered and used in the creation and/or maintenance of this dataset. These records may be populated with valid information in future update cycles.</enttypd>
+<enttypds>Oak Ridge National Laboratory</enttypds>
+</enttyp>
+<attr>
+<attrlabl>TTL_STAFF</attrlabl>
+<attrdef>Total number of personnel working at the hospital. Not populated in current version.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<rdom>
+						<rdommin>0</rdommin>
+						<rdommax>0</rdommax>
+						<attrunit>Person</attrunit>
+					</rdom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>WEBSITE</attrlabl>
+<attrdef>The feature specific website.</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+</attr>
+<attr>
+<attrlabl>OWNER</attrlabl>
+<attrdef>Type of owner of the feature (Private, Federal, VA etc.)</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>GOVERNMENT - DISTRICT/AUTHORITY</edomv>
+						<edomvd>Hospital owned by a district or an authority</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>GOVERNMENT - FEDERAL</edomv>
+						<edomvd>Hospital owned by the federal government.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>NOT AVAILABLE</edomv>
+						<edomvd>Please see "Entity Type Definition" section</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>NON-PROFIT</edomv>
+						<edomvd>Hospital owned by a voluntary non-profit like a church.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>PROPRIETARY</edomv>
+						<edomvd>Hospital owned by a private entity.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>GOVERNMENT - LOCAL</edomv>
+						<edomvd>Hospital owned by a local government entity like a city or county.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>GOVERNMENT - STATE</edomv>
+						<edomvd>Hospital owned by a state.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>OBJECTID</attrlabl>
+<attrdef>Internal feature number.</attrdef>
+<attrdefs>Esri</attrdefs>
+<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>DATECREATE</attrlabl>
+<attrdef>Date on which the feature was created.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+</attr>
+<attr>
+<attrlabl>HELIPAD</attrlabl>
+<attrdef>Y or N indicating on the presence or absence of a helipad. This field was populated using a 1000 buffer around the Airports/Heliports data layer in HSIP and visual inspection of imagery.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>N</edomv>
+						<edomvd>Helipad Absent</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>Y</edomv>
+						<edomvd>Helipad Present</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>NOT AVAILABLE</edomv>
+						<edomvd>Please see "Entity Type Definition" section.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>TRAUMA</attrlabl>
+<attrdef>The trauma level(s) for the hospital as provided by each state.</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+</attr>
+<attr>
+<attrlabl>BEDS</attrlabl>
+<attrdef>Total number of beds available.</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+<attrdomv>
+					<rdom>
+						<rdommin>8</rdommin>
+						<rdommax>1763</rdommax>
+						<attrunit>None</attrunit>
+					</rdom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>ST_FIPS</attrlabl>
+<attrdef>US State FIPS Code (2 digits).</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<codesetd>
+						<codesetn>North American Industry Classification System, 2017</codesetn>
+						<codesets>US Census (http://www.census.gov/eos/www/naics/)</codesets>
+					</codesetd>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>TYPE</attrlabl>
+<attrdef>The type of hospitals defined by each individual state which have been grouped into 10 common types based on the range of values after removing similarities.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>CRITICAL ACCESS</edomv>
+						<edomvd>A facility that provides outpatient services, as well as inpatient services on a limited basis, to people in rural areas.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>WOMEN</edomv>
+						<edomvd>A hospital that specializes in providing health care for women and infants.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>CHILDREN</edomv>
+						<edomvd>A hospital with a majority of its inpatients under 18 years.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>GENERAL ACUTE CARE</edomv>
+						<edomvd>A hospital that provides inpatient medical care and other related services for acute medical conditions or injuries (usually for a short-term illness or condition).</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>REHABILITATION</edomv>
+						<edomvd>A hospital that specializes in improving or restoring a patients functional ability through therapies.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>PSYCHIATRIC</edomv>
+						<edomvd>A hospital that provides inpatient psychiatric services for the diagnosis and treatment of mental illness.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>NOT AVAILABLE</edomv>
+						<edomvd>Please see “Entity Type Definition” section.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>LONG TERM CARE</edomv>
+						<edomvd>Hospitals which focus on patients who, on average, stay more than 25 days.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>CHRONIC DISEASE</edomv>
+						<edomvd>A hospital that specializes in providing health care for chronic diseases (asthma, cancer, ALS etc.).</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>SPECIAL</edomv>
+						<edomvd>A hospital that specializes in providing health care for specific type of diseases.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>MILITARY</edomv>
+						<edomvd>A hospital which is managed by the army, air force, navy or the veteran administration.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>TELEPHONE</attrlabl>
+<attrdef>General telephone number in the following format or reformatted from the SOURCE to: (xxx) xxx-xxxx EXT xxx.</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+</attr>
+<attr>
+<attrlabl>ZIP4</attrlabl>
+<attrdef>Extended zip code (4 digits).</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+<attrdomv>
+					<codesetd>
+						<codesetn>US Postal Zip Codes</codesetn>
+						<codesets>United States Postal Service (https://www.usps.com)</codesets>
+					</codesetd>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>COUNTYFIPS</attrlabl>
+<attrdef>US County Federal Information Processing Standards (FIPS) Code (5 digit)</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<codesetd>
+						<codesetn>2010 FIPS Codes for Counties and County Equivalent Entities</codesetn>
+						<codesets>FIPS/Census (http://www.census.gov/geo/reference/codes/cou.html)</codesets>
+					</codesetd>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>ALT_NAME</attrlabl>
+<attrdef>Any other name for the feature present in data.</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+</attr>
+<attr>
+<attrlabl>ZIP</attrlabl>
+<attrdef>Zip code (5 digit).</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+<attrdomv>
+					<codesetd>
+						<codesetn>US Postal Zip Codes</codesetn>
+						<codesets>United States Postal Service (https://www.usps.com)</codesets>
+					</codesetd>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>CITY</attrlabl>
+<attrdef>City name.</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+</attr>
+<attr>
+<attrlabl>ADDRESS2</attrlabl>
+<attrdef>Supplemental street address (e.g., Apt, Suite, Floor).</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+</attr>
+<attr>
+<attrlabl>ADDRESS</attrlabl>
+<attrdef>Primary street address, PO Box or location description (i.e. 5th Avenue and Main Street).</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+</attr>
+<attr>
+<attrlabl>NAICS_CODE</attrlabl>
+<attrdef>The North American Industry Classification System (NAICS) is the standard used by Federal statistical agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the U.S. business economy.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<codesetd>
+						<codesetn>North American Industry Classification System, 2017</codesetn>
+						<codesets>US Census (http://www.census.gov/eos/www/naics/)</codesets>
+					</codesetd>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>STATE</attrlabl>
+<attrdef>State abbreviation (United States and its Territories).</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<codesetd>
+						<codesetn>Two-Letter State and Possession Abbreviations</codesetn>
+						<codesets>United States Postal Service (https://www.usps.com)</codesets>
+					</codesetd>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>LONGITUDE</attrlabl>
+<attrdef>The angular distance east or west from the prime meridian on the earth’s surface.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<rdom>
+						<rdommin>-170.685745239258</rdommin>
+						<rdommax>145.724319458008</rdommax>
+						<attrunit>Decimal Degrees</attrunit>
+					</rdom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>POPULATION</attrlabl>
+<attrdef>Sum of TTL_STAFF and BEDS field. For this version population is total number of beds.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<rdom>
+						<rdommin>3</rdommin>
+						<rdommax>1592</rdommax>
+						<attrunit>person</attrunit>
+					</rdom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>ID</attrlabl>
+<attrdef>Unique ID for each feature.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+</attr>
+<attr>
+<attrlabl>COUNTRY</attrlabl>
+<attrdef>Country Code (3 character).</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<codesetd>
+						<codesetn>Geopolitical Entities, Names, and Codes (GENC) Standard</codesetn>
+						<codesets>National System for Geospatial Intelligence (NSG) Standards Registry (https://nsgreg.nga.mil/genc/discovery)</codesets>
+					</codesetd>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>VAL_METHOD</attrlabl>
+<attrdef>Methodology used to validate geospatial location and/or attribution for the feature.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>UNVERIFIED</edomv>
+						<edomvd>Feature could not be located or the feature has not yet been validated.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>IMAGERY</edomv>
+						<edomvd>The best available imagery used to determine the location.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>GEOCODE</edomv>
+						<edomvd>Street address geocoding used to determine the location.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>IMAGERY WITH OTHER</edomv>
+						<edomvd>Imagery and supplemental open source information used to determine the location.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>NAME</attrlabl>
+<attrdef>Feature name.</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+</attr>
+<attr>
+<attrlabl>SOURCEDATE</attrlabl>
+<attrdef>Date of the source, or, if not available, the date ORNL accessed the source.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<rdom>
+						<rdommin>0</rdommin>
+						<rdommax>0</rdommax>
+						<attrunit>Date</attrunit>
+					</rdom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>COUNTY</attrlabl>
+<attrdef>United States and its Territories county name and legal/statistical area description (county, borough, parish, municipality, census area).</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+</attr>
+<attr>
+<attrlabl>LATITUDE</attrlabl>
+<attrdef>The angular distance north or south from the equator of a point on the earth’s surface.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<rdom>
+						<rdommin>-14.2902421951294</rdommin>
+						<rdommax>66.8960037231445</rdommax>
+						<attrunit>Decimal Degrees</attrunit>
+					</rdom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>VAL_DATE</attrlabl>
+<attrdef>Date when geospatial location and/or attribution were last validated for the feature.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<rdom>
+						<rdommin>0</rdommin>
+						<rdommax>0</rdommax>
+						<attrunit>Date</attrunit>
+					</rdom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>STATUS</attrlabl>
+<attrdef>Operational status of the feature.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>OPEN</edomv>
+						<edomvd>Operational.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>NOT AVAILABLE</edomv>
+						<edomvd>Please see "Entity Type Definition" section.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+<attrdomv>
+					<edom>
+						<edomv>CLOSED</edomv>
+						<edomvd>Not operational.</edomvd>
+						<edomvds>Oak Ridge National Laboratory</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>Shape</attrlabl>
+<attrdef>Feature geometry.</attrdef>
+<attrdefs>Esri</attrdefs>
+<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>STATE_ID</attrlabl>
+<attrdef>Feature ID maintained by individual state.</attrdef>
+<attrdefs>The responsible organization as identified in the SOURCE field.</attrdefs>
+</attr>
+<attr>
+<attrlabl>SOURCE</attrlabl>
+<attrdef>Original source used to identify geospatial location and/or attributes for the feature.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+</attr>
+<attr>
+<attrlabl>NAICS_DESC</attrlabl>
+<attrdef>The North American Industry Classification System (NAICS) is the standard used by Federal statistical agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the U.S. business economy.</attrdef>
+<attrdefs>Oak Ridge National Laboratory</attrdefs>
+<attrdomv>
+					<codesetd>
+						<codesetn>North American Industry Classification System, 2017</codesetn>
+						<codesets>US Census http://www.census.gov/eos/www/naics/</codesets>
+					</codesetd>
+				</attrdomv>
+</attr>
+</detailed>
+<overview>
+<eaover>The entity and attribute information provided here describes the tabular data associated with the data set. Please review the detailed descriptions that are provided (the individual attribute descriptions) for information on the values that appear as fields/table entries of the data set. Please see the “Processing Steps” section for further methodology .Some features within this dataset were collected using image processing. For string and date data types, NOT AVAILABLE values donate missing data that was not present in the source data. For numeric data types, -999 denotes missing data that was not present in the source data. However, the missing data may be present in other sources not yet discovered and used in the creation and/or maintenance of this dataset. These records may be populated with valid information in future update cycles.</eaover>
+<eadetcit>Oak Ridge National Laboratory</eadetcit>
+</overview>
+</eainfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntorgp>
+<cntorg>HIFLD Subcommittee</cntorg>
+</cntorgp>
+<cntemail>hifld@hq.dhs.gov</cntemail>
+</cntinfo>
+</distrib>
+<distliab>Distributor assumes no liability for misuse of data.</distliab>
+<stdorder>
+<digform>
+<digtinfo>
+<formname>Vector Digital Data Set (Point)</formname>
+</digtinfo>
+</digform>
+<fees>None. No fees are applicable for obtaining the data set.</fees>
+</stdorder>
+</distinfo>
+<metainfo>
+<metd>20170418</metd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>Oak Ridge National Laboratory</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>One Bethel Valley Rd, MS-6017</address>
+<city>Oak Ridge</city>
+<state>TN</state>
+<postal>37831</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>865-241- 3976</cntvoice>
+<cntfax>865-241-6261</cntfax>
+</cntinfo>
+</metc>
+<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+</metainfo>
+</metadata>
