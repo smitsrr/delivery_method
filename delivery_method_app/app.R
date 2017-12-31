@@ -19,8 +19,12 @@ setwd("C:/Users/smits/Documents/GitHub/delivery_method")
     # Note, you have to delete the comments at the end of the text files. 
     # due to supression, the totals likely won't be able to be calculated when
     # you include segments. 
+
+    # age and race - use this for the pop-up next to the map. 
 natality<- read.delim("wonder_data_extracts/Natality_12_15_race_age_v2.txt", 
                    header = TRUE, colClasses = "character")
+
+
 
     #total county rates - first born children
 natality_counties<- read.delim("wonder_data_extracts/Natality_12_15_county_totals_v2.txt", 
@@ -67,17 +71,18 @@ county.pop <- read.csv("co-est2016-alldata.csv", colClasses = "character") %>%
   select(fips, POPESTIMATE2012)
 
   #join in unidentified counties
-# unidentified<- filter(natality_counties, str_detect(County, "Unidentified")) %>%
-#  mutate(state_code = substr(County.Code, 1,2)) 
+unidentified<- filter(natality, str_detect(County, "Unidentified")) %>%
+ mutate(state_code = substr(County.Code, 1,2))
 
 counties_3<- left_join(counties_2, county.pop) %>%
-  left_join(natality, by=c("fips" = "County.Code")) 
-  # left_join(unidentified, by = c("fips_state" = "state_code")) %>%
-  # mutate(County.x = ifelse(is.na(County.x), County.y, County.x),
-  #        cesarean_rate.x = ifelse(is.na(cesarean_rate.x), cesarean_rate.y, cesarean_rate.x),
-  #        births.x = ifelse(is.na(births.x), births.y, births.x),
-  #        population = as.numeric(POPESTIMATE2012)) %>%
-  # select(-County.Code, -County.y, -cesarean_rate.y, -births.y, -POPESTIMATE2012)
+  left_join(natality, by=c("fips" = "County.Code")) %>%
+  left_join(unidentified, by = c("fips_state" = "state_code")) %>%
+  mutate(County_all_pop = ifelse(is.na(County.x), County.y, County.x),
+         cesarean_rate_all_pop = ifelse(is.na(cesarean_rate_all.x), cesarean_rate_all.y, cesarean_rate_all.x),
+         births_all_pop = ifelse(is.na(births_all.x), births_all.y, births_all.x),
+         population = as.numeric(POPESTIMATE2012)) %>%
+  group_by(County_all_pop) %>%
+  mutate(population_all_pop = sum(population))
 
     # if you join in and expand the unidentified counties:
     ##take either county.x or county.y
@@ -110,13 +115,16 @@ county.data2 <- county.data %>%
   data.table()
 setkey(county.data2,id)
 
-map.df[county.data2,cesarean_rate_first:=cesarean_rate_first]
-map.df[county.data2,births_first:=births_first]
-map.df[county.data2,cesarean_rate_all:=cesarean_rate_all]
-map.df[county.data2,births_all:=births_all]
-map.df[county.data2,population:=POPESTIMATE2012]
+#map.df[county.data2,cesarean_rate_first:=cesarean_rate_first]
+#map.df[county.data2,births_first:=births_first]
+map.df[county.data2,cesarean_rate_all_pop:=cesarean_rate_all_pop]
+map.df[county.data2,cesarean_rate_all:=cesarean_rate_all.x]
+map.df[county.data2,births_all_pop:=births_all_pop]
+map.df[county.data2,births_all:=births_all.x]
+map.df[county.data2,population:=population]
+map.df[county.data2,population_unidentified:=population_all_pop]
 map.df[county.data2,county:=NAME]
-# map.df[county.data2,county2:=County.x]
+map.df[county.data2,county_all_pop:=County_all_pop]
 map.df[county.data2,FIPS:=FIPS]
 
 
@@ -150,26 +158,14 @@ hospitals.df<- as.data.frame(hospitals) %>%
 #   theme_bw()
 # ggplotly(p)
 
-
-
-
-    # NOTES
-# choose age of mother
-# [extension, choose medical risk factor]
-# Choose month prenatal care began
-# display US map of c-section rate (using bi-directional color scale)
-# compare only first-births to 'all births'
-# show/remove hospital layer. 
-
-
 # Define UI for application that draws a histogram
 ui <- fluidPage(
    
    # Application title
    titlePanel("Cesarean section rate"),
 
-   checkboxInput(inputId="first_births",
-                 label = "Show First Births Only", 
+   checkboxInput(inputId="unidentified_counties",
+                 label = "Show counties with population <100,000", 
                  value = FALSE),
    
   plotlyOutput("county_map")
@@ -179,7 +175,8 @@ ui <- fluidPage(
 server <- function(input, output) {
    
   output$county_map <- renderPlotly({
-    if(input$first_births == FALSE) {
+    
+    if(input$unidentified_counties == FALSE) {
       p<-ggplot(map.df, aes(x=long, y=lat, group=group, fill=cesarean_rate_all, 
                             text = paste0(county, " County",
                                           "<br>Pop: ", format(population,big.mark = ","),
@@ -190,25 +187,44 @@ server <- function(input, output) {
         labs(title="2012-2015 Cesarean Section Rate by Country, percent",x="",y="")+
         theme_bw()
     } else {
-      p<-ggplot(map.df, aes(x=long, y=lat, group=group, fill=cesarean_rate_first, 
-                            text = paste0(county, " County",
-                                          "<br>Pop: ", format(population,big.mark = ","),
-                                          "<br>Cesarean Rate: ", cesarean_rate_first, "%",
-                                          "<br>First Births: ", births_first,
-                                          "<br>All Births: ", births_all))) +
+        # show imputed counties as well
+      p<-ggplot(map.df, aes(x=long, y=lat, group=group, fill=cesarean_rate_all_pop, 
+                            text = paste0(county_all_pop,
+                                          "<br>Pop: ", format(population_unidentified, big.mark = ","),
+                                          "<br>Cesarean Rate: ", cesarean_rate_all_pop, "%",
+                                          "<br>Births: ", births_all_pop))) +
         scale_fill_gradientn("",colours=brewer.pal(9,"YlOrRd"))+
         geom_polygon()+coord_map()+
         labs(title="2012-2015 Cesarean Section Rate by Country, percent",x="",y="")+
         theme_bw()
     }
     ggplotly(p)
-
    })
 }
 
 # Run the application 
 shinyApp(ui = ui, server = server)
 
+## TO DO
+# add state lines
+# add faint lines between counties. 
+# click on a county, get rates by ethnicity/age
+# age of mom = color of point, x-axis = race, y-axis = cesarean rate
+# if age is too cluttered, we could facet by race (there are only 4 )
+# resize the map - figure out where the other graphs are going to go
+
 ## NOTES
 # I don't know if I'm a huge fan of having the county name for unidentified counties. 
 # it feels a little deceptive. 
+
+# after comparing, it's pretty clear that first birth rates are not different from all
+# I think I could just present all. 
+
+
+# NOTES
+# choose age of mother
+# [extension, choose medical risk factor]
+# Choose month prenatal care began
+# display US map of c-section rate (using bi-directional color scale)
+# compare only first-births to 'all births'
+# show/remove hospital layer. 
