@@ -12,6 +12,7 @@ library(mapproj)
 library(RColorBrewer) # for brewer.pal(...)
 library(plotly)
 library(stringr)  # for str_detect(...)
+library(ggthemes)
 
 
 setwd("C:/Users/smits/Documents/GitHub/delivery_method")
@@ -23,6 +24,26 @@ setwd("C:/Users/smits/Documents/GitHub/delivery_method")
     # age and race - use this for the pop-up next to the map. 
 natality_race_age<- read.delim("wonder_data_extracts/Natality_12_15_race_age_v2.txt",
                   header = TRUE, colClasses = "character")
+
+race_age<- natality_race_age %>%
+  mutate(Births = as.numeric(Births)) %>%
+  group_by(County.Code, Race.Code, Age.of.Mother.9.Code) %>%
+  mutate(cesarean_rate = Births/sum(Births)) %>%
+  filter(Delivery.Method == "Cesarean")
+
+    # validate against aggregated age/race totals
+race_age_totals<- read.delim("wonder_data_extracts/Natality_12_2015_race_age_totals_v2.txt",
+                             header = TRUE, colClasses = "character") %>%
+  mutate(Births = as.numeric(Births)) %>%
+         # race_recode = case_when(.$Race.Code == '1002-5' ~ "Other", 
+         #                         .$Race.Code == 'A-PI' ~ "Other",
+         #                         TRUE ~ .$Race))%>%
+  group_by(Race.Code, Age.of.Mother.9.Code) %>%
+  mutate(cesarean_rate = Births/sum(Births)) %>%
+  filter(Delivery.Method == "Cesarean")
+
+ggplot(race_age_totals,aes(x=Age.of.Mother.9, y=cesarean_rate, color = Race))+
+  geom_point()
 
     # county totals, all births
 natality<- read.delim("wonder_data_extracts/Natality_12_15_county_totals_all_births_v2.txt", 
@@ -81,20 +102,25 @@ birth_map <- data.table(birth_map)
 setkey(birth_map,state.x,county.x)
 map.df      <- map.county[birth_map]
 
-
-
 # Define UI for application that draws a histogram
 ui <- fluidPage(
    
    # Application title
    titlePanel("Cesarean section rate"),
-   
+   hr(),
+   h3("Rate as a factor of geographic location", align = "center"),
    div(
      style = "position:relative",
      plotOutput("county_map", 
                 hover = hoverOpts("plot_hover", delay = 100, delayType = "debounce")),
      uiOutput("hover_info")
-   )
+   ),
+   hr(),
+   h3("Rate as a factor of race and age of mother", align = "center"),
+   plotOutput("race_age_plot"),
+   h4("Each data point is a county. Only counties with population >100,000 are shown.
+      Horizontal line is the median, top and bottom of boxes are the 25th and 75th percentile,
+      respectively. The lines extend to ____, with data points indicating outliers. ")
 
 )
 
@@ -106,11 +132,10 @@ server <- function(input, output) {
       p<- ggplot(map.df, aes(x=long, y=lat, group = group)) +
         geom_polygon( colour = "grey" , aes( fill = cesarean_rate_all.x )) +
         scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))+
-        coord_map() +
-        # coord_map("polyconic" ) + #causes the tooltips to not work as well
-        geom_path(data = state_map, colour="black")
-      # +
-      #   theme_void()
+       # coord_map() +
+        coord_map("polyconic" ) + #causes the tooltips to not work as well
+        geom_path(data = state_map, colour="black")+
+        theme_void()
 
       # unfilled is unavailable due to population changes. 
       # grey/NA is an 'unidentified' county
@@ -150,6 +175,16 @@ server <- function(input, output) {
     )
   })
   
+  output$race_age_plot <- renderPlot({
+    ggplot(race_age, aes(x=Age.of.Mother.9.Code, y=cesarean_rate, fill = Race)) + 
+      geom_boxplot()+ 
+      theme_few()+
+      theme(legend.position="top", legend.title = element_blank()) + 
+      ylab("Cesarean Rate") + 
+      xlab("Age of Mother") + 
+      scale_fill_brewer()
+  })
+  
 }
 
 # Run the application 
@@ -158,9 +193,14 @@ runApp(list(ui = ui, server = server))
 ## TO DO
 # tooltips to ggmap/plot object - 'nearpoint' is definitely OFF
 # click on a county, get rates by ethnicity/age
-# age of mom = color of point, x-axis = race, y-axis = cesarean rate
-# if age is too cluttered, we could facet by race (there are only 4 )
+
+# add tooltips for the age and race graph with distribution stats. 
+
 # Since i'm not going to use plotly, think about having a zoom feature for states? 
+
+# write methods
+
+#formatting stuff in shiny - make the map bigger, move legend? 
 
 ## NOTES
 # I don't know if I'm a huge fan of having the county name for unidentified counties. 

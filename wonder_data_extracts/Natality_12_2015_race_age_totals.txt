@@ -1,0 +1,151 @@
+"Notes"	"Race"	"Race Code"	"Age of Mother 9"	"Age of Mother 9 Code"	"Delivery Method"	"Delivery Method Code"	Births
+	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	"Vaginal"	"1"	163
+	"American Indian or Alaska Native"	"1002-5"	"Under 15 years"	"15"	"Cesarean"	"2"	27
+	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	"Vaginal"	"1"	13856
+	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	"Cesarean"	"2"	2793
+	"American Indian or Alaska Native"	"1002-5"	"15-19 years"	"15-19"	"Not Stated"	"9"	9
+	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	"Vaginal"	"1"	34305
+	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	"Cesarean"	"2"	10267
+	"American Indian or Alaska Native"	"1002-5"	"20-24 years"	"20-24"	"Not Stated"	"9"	24
+	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	"Vaginal"	"1"	28082
+	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	"Cesarean"	"2"	10804
+	"American Indian or Alaska Native"	"1002-5"	"25-29 years"	"25-29"	"Not Stated"	"9"	28
+	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	"Vaginal"	"1"	17029
+	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	"Cesarean"	"2"	8068
+	"American Indian or Alaska Native"	"1002-5"	"30-34 years"	"30-34"	"Not Stated"	"9"	15
+	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	"Vaginal"	"1"	6812
+	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	"Cesarean"	"2"	3798
+	"American Indian or Alaska Native"	"1002-5"	"35-39 years"	"35-39"	"Not Stated"	"9"	8
+	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	"Vaginal"	"1"	1364
+	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	"Cesarean"	"2"	883
+	"American Indian or Alaska Native"	"1002-5"	"40-44 years"	"40-44"	"Not Stated"	"9"	3
+	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	"Vaginal"	"1"	79
+	"American Indian or Alaska Native"	"1002-5"	"45-49 years"	"45-49"	"Cesarean"	"2"	50
+	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	"Vaginal"	"1"	5
+	"American Indian or Alaska Native"	"1002-5"	"50 years and over"	"50+"	"Cesarean"	"2"	1
+	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	"Vaginal"	"1"	123
+	"Asian or Pacific Islander"	"A-PI"	"Under 15 years"	"15"	"Cesarean"	"2"	13
+	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	"Vaginal"	"1"	12650
+	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	"Cesarean"	"2"	2176
+	"Asian or Pacific Islander"	"A-PI"	"15-19 years"	"15-19"	"Not Stated"	"9"	12
+	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	"Vaginal"	"1"	70034
+	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	"Cesarean"	"2"	17805
+	"Asian or Pacific Islander"	"A-PI"	"20-24 years"	"20-24"	"Not Stated"	"9"	75
+	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"Vaginal"	"1"	179236
+	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"Cesarean"	"2"	65997
+	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"Not Stated"	"9"	195
+	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"Vaginal"	"1"	229434
+	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"Cesarean"	"2"	108962
+	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"Not Stated"	"9"	324
+	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"Vaginal"	"1"	110459
+	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"Cesarean"	"2"	69359
+	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"Not Stated"	"9"	165
+	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"Vaginal"	"1"	21821
+	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"Cesarean"	"2"	18357
+	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"Not Stated"	"9"	58
+	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"Vaginal"	"1"	1045
+	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"Cesarean"	"2"	1262
+	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"Not Stated"	"9"	4
+	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	"Vaginal"	"1"	81
+	"Asian or Pacific Islander"	"A-PI"	"50 years and over"	"50+"	"Cesarean"	"2"	107
+	"Black or African American"	"2054-5"	"Under 15 years"	"15"	"Vaginal"	"1"	2361
+	"Black or African American"	"2054-5"	"Under 15 years"	"15"	"Cesarean"	"2"	552
+	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	"Vaginal"	"1"	152151
+	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	"Cesarean"	"2"	42173
+	"Black or African American"	"2054-5"	"15-19 years"	"15-19"	"Not Stated"	"9"	145
+	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	"Vaginal"	"1"	429800
+	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	"Cesarean"	"2"	169922
+	"Black or African American"	"2054-5"	"20-24 years"	"20-24"	"Not Stated"	"9"	520
+	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"Vaginal"	"1"	344684
+	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"Cesarean"	"2"	174001
+	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"Not Stated"	"9"	585
+	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"Vaginal"	"1"	231080
+	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"Cesarean"	"2"	141533
+	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"Not Stated"	"9"	444
+	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"Vaginal"	"1"	100747
+	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"Cesarean"	"2"	77555
+	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"Not Stated"	"9"	230
+	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"Vaginal"	"1"	21430
+	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"Cesarean"	"2"	21211
+	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"Not Stated"	"9"	68
+	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"Vaginal"	"1"	1160
+	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"Cesarean"	"2"	1503
+	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"Not Stated"	"9"	7
+	"Black or African American"	"2054-5"	"50 years and over"	"50+"	"Vaginal"	"1"	87
+	"Black or African American"	"2054-5"	"50 years and over"	"50+"	"Cesarean"	"2"	132
+	"Black or African American"	"2054-5"	"50 years and over"	"50+"	"Not Stated"	"9"	2
+	"White"	"2106-3"	"Under 15 years"	"15"	"Vaginal"	"1"	4314
+	"White"	"2106-3"	"Under 15 years"	"15"	"Cesarean"	"2"	892
+	"White"	"2106-3"	"Under 15 years"	"15"	"Not Stated"	"9"	3
+	"White"	"2106-3"	"15-19 years"	"15-19"	"Vaginal"	"1"	479206
+	"White"	"2106-3"	"15-19 years"	"15-19"	"Cesarean"	"2"	115396
+	"White"	"2106-3"	"15-19 years"	"15-19"	"Not Stated"	"9"	386
+	"White"	"2106-3"	"20-24 years"	"20-24"	"Vaginal"	"1"	1545438
+	"White"	"2106-3"	"20-24 years"	"20-24"	"Cesarean"	"2"	514740
+	"White"	"2106-3"	"20-24 years"	"20-24"	"Not Stated"	"9"	1695
+	"White"	"2106-3"	"25-29 years"	"25-29"	"Vaginal"	"1"	2013692
+	"White"	"2106-3"	"25-29 years"	"25-29"	"Cesarean"	"2"	803870
+	"White"	"2106-3"	"25-29 years"	"25-29"	"Not Stated"	"9"	2317
+	"White"	"2106-3"	"30-34 years"	"30-34"	"Vaginal"	"1"	1781665
+	"White"	"2106-3"	"30-34 years"	"30-34"	"Cesarean"	"2"	852818
+	"White"	"2106-3"	"30-34 years"	"30-34"	"Not Stated"	"9"	2382
+	"White"	"2106-3"	"35-39 years"	"35-39"	"Vaginal"	"1"	735825
+	"White"	"2106-3"	"35-39 years"	"35-39"	"Cesarean"	"2"	452468
+	"White"	"2106-3"	"35-39 years"	"35-39"	"Not Stated"	"9"	1182
+	"White"	"2106-3"	"40-44 years"	"40-44"	"Vaginal"	"1"	136475
+	"White"	"2106-3"	"40-44 years"	"40-44"	"Cesarean"	"2"	108670
+	"White"	"2106-3"	"40-44 years"	"40-44"	"Not Stated"	"9"	281
+	"White"	"2106-3"	"45-49 years"	"45-49"	"Vaginal"	"1"	6501
+	"White"	"2106-3"	"45-49 years"	"45-49"	"Cesarean"	"2"	7052
+	"White"	"2106-3"	"45-49 years"	"45-49"	"Not Stated"	"9"	26
+	"White"	"2106-3"	"50 years and over"	"50+"	"Vaginal"	"1"	344
+	"White"	"2106-3"	"50 years and over"	"50+"	"Cesarean"	"2"	552
+	"White"	"2106-3"	"50 years and over"	"50+"	"Not Stated"	"9"	5
+"---"
+"Dataset: Natality, 2007-2015"
+"Query Parameters:"
+"Title:"
+"Age of Mother 9: All"
+"Birthplace: In Hospital"
+"Birth Weight 12: All"
+"Chronic Hypertension: All"
+"Delivery Method: All"
+"Diabetes: All"
+"Eclampsia: All"
+"Education: All"
+"Gender: All"
+"Hispanic Origin: All"
+"Live Birth Order: All"
+"LMP Gestational Age 11: 37-38 weeks, 39 weeks, 40 weeks, 41 weeks"
+"Marital Status: All"
+"Medical Attendant: All"
+"Month: All"
+"Month Prenatal Care Began: All"
+"OE Gestational Age 11: 37-38 weeks, 39 weeks, 40 weeks, 41 weeks"
+"Plurality or Multiple Birth: Single"
+"Pregnancy-associated Hypertension: All"
+"Race: All"
+"States: All"
+"Tobacco Use: All"
+"Weekday: All"
+"Year: 2012, 2013, 2014, 2015"
+"Group By: Race, Age of Mother 9, Delivery Method"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 1,000"
+"Population Option: No populations shown because rates were not selected."
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality.html for more information."
+"---"
+"Query Date: Dec 31, 2017 4:26:19 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2015, on CDC"
+"WONDER Online Database, February 2017. Accessed at http://wonder.cdc.gov/natality-current.html on Dec 31, 2017 4:26:19 PM"
+"---"
+Messages:
+"1. Rows with zero Births are hidden. Use Quick Options above to show zero rows."
+"---"
+Caveats:
+"1. Each birth record represents one living baby."
