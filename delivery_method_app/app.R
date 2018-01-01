@@ -1,4 +1,3 @@
-#create a web app to explore prevalence of C-sections versus vaginal deliveries
 
     # initialize libraries
 library(shiny)
@@ -13,7 +12,7 @@ library(RColorBrewer) # for brewer.pal(...)
 library(plotly)
 library(stringr)  # for str_detect(...)
 library(ggthemes)
-
+library(shinyWidgets)
 
 setwd("C:/Users/smits/Documents/GitHub/delivery_method")
     #import some data
@@ -105,17 +104,24 @@ map.df      <- map.county[birth_map]
 # Define UI for application that draws a histogram
 ui <- fluidPage(
    
+  # Make this height = 0 : div class="ggiraph-toolbar" 
+  tags$div(class = "ggiraph-toolbar", 
+           height = "0px"),
+  
    # Application title
    titlePanel("Cesarean section rate"),
    hr(),
    h3("Rate as a factor of geographic location", align = "center"),
-   div(
-     style = "position:relative",
-     plotOutput("county_map", 
-                hover = hoverOpts("plot_hover", delay = 100, delayType = "debounce")),
-     uiOutput("hover_info")
-   ),
-   h4("Grey counties have population < 100,000, for which the CDC combines all state counties. 
+   pickerInput(inputId = "select_state",
+              label = "Display: ",
+              choices = sort(unique(counties$region)),
+              multiple = TRUE,
+              options = list(`actions-box` = TRUE)), 
+  fluidRow(
+     column(width = 7, offset=3,
+            div(style="width:800px;height:600px;", ggiraphOutput("county_map")))),
+   h4("All counties in a state with population 
+      <100,000 are presented together (grey). 
       White counties have had population changes and therefore data are not available. "),
    hr(),
    h3("Rate as a factor of race and age of mother", align = "center"),
@@ -127,56 +133,26 @@ ui <- fluidPage(
 )
 
 # Define server logic required to draw a histogram
-server <- function(input, output) {
+server <- function(input, output, session) {
    
-  output$county_map <- renderPlot({
-      # plot the birth rate minus unidentified counties. 
+  output$county_map <- renderggiraph({
       p<- ggplot(map.df, aes(x=long, y=lat, group = group)) +
         geom_polygon(colour = "grey" , aes(fill = cesarean_rate_all.x )) +
-        scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))+
-       # coord_map() +
-        coord_map("polyconic" ) + #causes the tooltips to not work as well
+        coord_map("polyconic",
+                  xlim = c(-120, -70),ylim = c(24.9, 49.9))  +
         geom_path(data = state_map, colour="black")+
         theme_void() + 
-        theme(legend.position = c(.15,.2))
+        theme(legend.position = c(.9,.25)) + 
+        geom_polygon_interactive(aes(tooltip = paste0(County_all_pop, 
+                                                      "<br>Population: ", format(population_all_pop,big.mark=","),
+                                                      "<br>C-section Rate: ", cesarean_rate_all_pop, "%")
+                                     , fill = cesarean_rate_all.x))+
+        scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
 
       # unfilled is unavailable due to population changes. 
       # grey/NA is an 'unidentified' county
-    p
+    ggiraph(code = print(p), selection_type = "multiple") #takes a super long time to render...
    })
-  
-  output$hover_info<-renderUI({
-    hover <- input$plot_hover
-    point <- nearPoints(map.df, hover, threshold = 5, maxpoints = 1, addDist = TRUE)
-    if (nrow(point) == 0) return(NULL)
-    
-    # calculate point position INSIDE the image as percent of total dimensions
-    # from left (horizontal) and from top (vertical)
-    left_pct <- (hover$x - hover$domain$left) / (hover$domain$right - hover$domain$left)
-    top_pct <- (hover$domain$top - hover$y) / (hover$domain$top - hover$domain$bottom)
-    
-    # calculate distance from left and bottom side of the picture in pixels
-    left_px <- hover$range$left + left_pct * (hover$range$right - hover$range$left)
-    top_px <- hover$range$top + top_pct * (hover$range$bottom - hover$range$top)
-    
-    # create style property fot tooltip
-    # background color is set so tooltip is a bit transparent
-    # z-index is set so we are sure are tooltip will be on top
-    style <- paste0("position:absolute; z-index:100; background-color: rgba(245, 245, 245, 0.85); ",
-                    "left:", left_px + 2, "px; top:", top_px + 2, "px;")
-    
-    # actual tooltip created as wellPanel
-    wellPanel(
-      style = style,
-      p(HTML(paste0("<b></b>", point$County_all_pop, "<br/>",
-                    "<b> Region Population</b>", point$population_all_pop, "<br/>",
-                    "<b> County Population: </b>", point$population, "<br/>",
-                    "<b> Region Cesarean Rate: </b>", point$cesarean_rate_all_pop, "<br/>",
-                    "<b> County Cesarean Rate: </b>", point$cesarean_rate_all.x, "<br/>",
-                    "<b> Distance from left: </b>", left_px, 
-                    "<b>, from top: </b>", top_px)))
-    )
-  })
   
   output$race_age_plot <- renderPlot({
     ggplot(race_age, aes(x=Age.of.Mother.9.Code, y=cesarean_rate, fill = Race)) + 
@@ -203,6 +179,7 @@ runApp(list(ui = ui, server = server))
 # Since i'm not going to use plotly, think about having a zoom feature for states? 
 
 # write methods
+# add tooltip to age/race data to see those outlier counties. add # births
 
 #formatting stuff in shiny - make the map bigger, move legend? 
 

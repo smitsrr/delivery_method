@@ -1,10 +1,9 @@
 library(ggplot2)
 library(mapdata)
+library(shiny)
 
 map.county <- map_data('county')
 counties<- data.table(map.county)
-
-library(shiny)
 
 ui <- fluidPage(
   
@@ -22,8 +21,7 @@ server <- function(input, output) {
       coord_map("polyconic" ) +
       geom_polygon_interactive(aes(tooltip = county))
     
-    ggiraph(code = print(p), 
-            hover_css = "fill:#FF3333;stroke:black;cursor:pointer;")
+    ggiraph(code = print(p))
   })
   
 }
