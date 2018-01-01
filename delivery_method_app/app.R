@@ -14,6 +14,7 @@ library(stringr)      # for str_detect(...)
 library(ggthemes)
 library(shinyWidgets)
 library(ggiraph)      # for Geom_polygon_interactive(...)
+library(tools)        # for toTitleCase(...)
 
 setwd("C:/Users/smits/Documents/GitHub/delivery_method")
     #import some data
@@ -68,7 +69,7 @@ natality<- read.delim("wonder_data_extracts/Natality_12_15_county_totals_all_bir
 setwd("C:/Users/smits/Documents/GitHub/delivery_method/")
 county.pop <- read.csv("co-est2016-alldata.csv", colClasses = "character") %>%
   mutate(fips = paste0(STATE, COUNTY),
-         state = tolower(STNAME), 
+         state = toTitleCase(STNAME), 
          county = tolower(gsub(" .*$", "", CTYNAME)))%>%
   select(fips, POPESTIMATE2012, state, county)
 
@@ -84,8 +85,10 @@ counties_3<- county.pop %>%
          cesarean_rate_all_pop = ifelse(is.na(cesarean_rate_all.x), cesarean_rate_all.y, cesarean_rate_all.x),
          births_all_pop = ifelse(is.na(births_all.x), births_all.y, births_all.x),
          population = as.numeric(POPESTIMATE2012)) %>%
+  filter(tolower(state) != county) %>% #this was super exagerating the population!
   group_by(County_all_pop) %>%
-  mutate(population_all_pop = sum(population))
+  mutate(population_all_pop = sum(population)) 
+  
 
     # if you join in and expand the unidentified counties:
     ##take either county.x or county.y
@@ -96,54 +99,46 @@ counties_3<- county.pop %>%
     # check that we have cesarean rates for all counties with >100,000 2013 pop
 #unidentified_check<- filter(counties_3, population<100000)
 
+    # check population sums
+#unidentified_check<- filter(counties_3, state == 'Alabama')
+
     ## setup mapping data
-map.county <- map_data('county')
+map.county <- map_data('county') %>%
+  mutate(region = toTitleCase(region))
 counties   <- unique(map.county[,5:6])
-state_map <- map_data("state")
+state_map <- map_data("state") %>%
+  mutate(region = toTitleCase(region))
 
     #join natality with county.pop
 birth_map<- left_join(counties_3, county.pop, by=c("County.Code" = "fips"))
-map.county <- data.table(map_data('county'))
+
+map.county <- data.table(map.county)
 setkey(map.county,region,subregion)
 birth_map <- data.table(birth_map)
 setkey(birth_map,state.x,county.x)
 map.df      <- map.county[birth_map]
 
-    # create the ggplot object
-p<- ggplot(map.df, aes(x=long, y=lat, group = group)) +
-  geom_polygon(colour = "grey" , aes(fill = cesarean_rate_all.x )) +
-  coord_map("polyconic",
-            xlim = c(-120, -70),ylim = c(24.9, 49.9))  +
-  geom_path(data = state_map, colour="black")+
-  theme_void() + 
-  theme(legend.position = c(.9,.25)) + 
-  geom_polygon_interactive(aes(tooltip = paste0(County_all_pop, 
-                                                "<br>Population: ", format(population_all_pop,big.mark=","),
-                                                "<br>C-section Rate: ", cesarean_rate_all_pop, "%")
-                               , fill = cesarean_rate_all.x))+
-  scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
 
-# Define UI for application that draws a histogram
 ui <- fluidPage(
    
-  # Make this height = 0 : div class="ggiraph-toolbar" 
-  tags$div(class = "ggiraph-toolbar", 
-           height = "0px"),
-  
    # Application title
   titlePanel("Cesarean section rate"),
   tabsetPanel(type="tabs",
     tabPanel(title = "Background", 
-             
-             ),
+             fluidRow(
+               column(width = 6, offset = 3,
+                      tags$div(
+                         tags$p(""))
+             ))),
     tabPanel(title = "Visualizations",
            hr(),
-           h3("Percent of Births Delivered Via Cesarian as a Factor of Geographic Location", align = "center"),
+           h3("Percent of Births Delivered Via Cesarean as a Factor of Geographic Location", align = "center"),
            pickerInput(inputId = "select_state",
                        label = "Display: ",
                        choices = sort(unique(counties$region)),
                        multiple = TRUE,
-                       options = list(`actions-box` = TRUE)), 
+                       options = list(`actions-box` = TRUE), 
+                       selected = unique(counties$region)), 
            fluidRow(
              column(width = 7, offset=3,
                     div(style="width:800px;height:600px;", 
@@ -160,6 +155,7 @@ ui <- fluidPage(
      tabPanel(title = "Technical Details",
            fluidRow(
              column(width = 8, offset=2,
+                    br(),
                     tags$div(
                       tags$p("All data were obtained through the CDC's Wonder data query tool between
                              December 20 and December 31, 2017. Queries had the following restrictions:")),
@@ -186,9 +182,23 @@ ui <- fluidPage(
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
    
+  county_data<- reactive({
+    map.df[map.df$region %in% input$select_state,]
+  })
+
   output$county_map <- renderggiraph({
-      # unfilled is unavailable due to population changes. 
-      # grey/NA is an 'unidentified' county
+        # take the filtered data from the reactive portion above
+    p<- ggplot(county_data(), aes(x=long, y=lat, group = group)) +
+      geom_polygon(colour = "grey" , aes(fill = cesarean_rate_all.x )) +
+      coord_map("polyconic")+
+      geom_path(data = state_map[state_map$region %in% input$select_state,], colour="black")+
+      theme_void() + 
+      geom_polygon_interactive(aes(tooltip = paste0(County_all_pop, 
+                                                    "<br>Population: ", format(population_all_pop,big.mark=","),
+                                                    "<br>C-section Rate: ", cesarean_rate_all_pop, "%")
+                                   , fill = cesarean_rate_all.x))+
+      scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
+    
     ggiraph(code = print(p), selection_type = "multiple") #takes a super long time to render...
    })
   
@@ -205,18 +215,6 @@ server <- function(input, output, session) {
       scale_y_continuous(labels = scales::percent)+
       scale_fill_brewer()
     
-     # ggplot(race_age[race_age$Births>20,], aes(x=Age.of.Mother.9.Code, y=cesarean_rate, color = Race, group = Race)) + 
-    #   stat_summary(fun.y = median, geom="line", size = 1)+ 
-    #   theme_bw()+
-    #   theme(legend.position=c(.2, .82), legend.title = element_blank(), 
-    #         axis.title = element_text(color = "black"), 
-    #         text = element_text(color = "black"), 
-    #         axis.text = element_text(color = "black")) + 
-    #   ylab("")+
-    #   xlab("Age of Mother") + 
-    #   scale_y_continuous(labels = scales::percent,
-    #                      limits = c(0,1))
-    
   })
   
 }
@@ -225,14 +223,11 @@ server <- function(input, output, session) {
 runApp(list(ui = ui, server = server))
 
 ## TO DO
-# tooltips to ggmap/plot object - 'nearpoint' is definitely OFF
-
 # Since i'm not going to use plotly, think about having a zoom feature for states? 
+# damn map size. individual states look great, but the whole US is WAY too tiny. 
 
+# fill in the data for 'white' counties = 'county name', 'data not available'
 # write methods
-# add tooltip to age/race data to see those outlier counties. add # births
-
-#formatting stuff in shiny - make the map bigger, move legend? 
 
 # maybe add a table to show multiple counties data at once? I like the
 #  ggiraph example using on_click, and then have to have a 'reset' button. 
@@ -243,17 +238,3 @@ runApp(list(ui = ui, server = server))
 
 # after comparing, it's pretty clear that first birth rates are not different from all
 # I think I could just present all. 
-
-
-# plot hospital layer?
-# https://hifld-dhs-gii.opendata.arcgis.com/datasets/5eafb083e43a457b9810c36b2414d3d3_0
-# setwd("C:/Users/smits/Documents/GitHub/delivery_method/wonder_data_extracts/Hospitals")
-#     # US.counties <- readOGR(dsn=".",layer="gz_2010_us_050_00_5m")
-# hospitals = readOGR(dsn=".", layer="Hospitals")
-# hospitals.df<- as.data.frame(hospitals) %>%
-#   filter(STATE != "AK",
-#          STATE != "HI",
-#          STATE!= "PW", 
-#          STATE != "GU",     # Exclude guam
-#          COUNTRY == "USA"
-#          )
