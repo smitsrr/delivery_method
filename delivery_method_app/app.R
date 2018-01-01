@@ -10,9 +10,10 @@ library(data.table)
 library(mapproj)
 library(RColorBrewer) # for brewer.pal(...)
 library(plotly)
-library(stringr)  # for str_detect(...)
+library(stringr)      # for str_detect(...)
 library(ggthemes)
 library(shinyWidgets)
+library(ggiraph)      # for Geom_polygon_interactive(...)
 
 setwd("C:/Users/smits/Documents/GitHub/delivery_method")
     #import some data
@@ -20,29 +21,36 @@ setwd("C:/Users/smits/Documents/GitHub/delivery_method")
     # due to supression, the totals likely won't be able to be calculated when
     # you include segments. 
 
-    # age and race - use this for the pop-up next to the map. 
+    # age and race - use this for the analysis of race and age. 
 natality_race_age<- read.delim("wonder_data_extracts/Natality_12_15_race_age_v2.txt",
                   header = TRUE, colClasses = "character")
 
 race_age<- natality_race_age %>%
   mutate(Births = as.numeric(Births)) %>%
   group_by(County.Code, Race.Code, Age.of.Mother.9.Code) %>%
-  mutate(cesarean_rate = Births/sum(Births)) %>%
+  mutate(cesarean_rate = Births/sum(Births),
+         Race = factor(Race, levels=c("American Indian or Alaska Native",
+                                      "Asian or Pacific Islander",
+                                      "White", 
+                                      "Black or African American"),
+                              ordered = TRUE)) %>%
   filter(Delivery.Method == "Cesarean")
 
     # validate against aggregated age/race totals
-race_age_totals<- read.delim("wonder_data_extracts/Natality_12_2015_race_age_totals_v2.txt",
-                             header = TRUE, colClasses = "character") %>%
-  mutate(Births = as.numeric(Births)) %>%
-         # race_recode = case_when(.$Race.Code == '1002-5' ~ "Other", 
-         #                         .$Race.Code == 'A-PI' ~ "Other",
-         #                         TRUE ~ .$Race))%>%
-  group_by(Race.Code, Age.of.Mother.9.Code) %>%
-  mutate(cesarean_rate = Births/sum(Births)) %>%
-  filter(Delivery.Method == "Cesarean")
-
-ggplot(race_age_totals,aes(x=Age.of.Mother.9, y=cesarean_rate, color = Race))+
-  geom_point()
+# race_age_totals<- read.delim("wonder_data_extracts/Natality_12_2015_race_age_totals_v2.txt",
+#                              header = TRUE, colClasses = "character") %>%
+#   mutate(Births = as.numeric(Births)) %>%
+#          # race_recode = case_when(.$Race.Code == '1002-5' ~ "Other", 
+#          #                         .$Race.Code == 'A-PI' ~ "Other",
+#          #                         TRUE ~ .$Race))%>%
+#   group_by(Race.Code, Age.of.Mother.9.Code) %>%
+#   mutate(cesarean_rate = Births/sum(Births)) %>%
+#   filter(Delivery.Method == "Cesarean",
+#          Births >= 100)
+# 
+# ggplot(race_age_totals,aes(x=Age.of.Mother.9.Code, y=cesarean_rate, color = Race, group = Race))+
+#   geom_point() + 
+#   geom_path()
 
     # county totals, all births
 natality<- read.delim("wonder_data_extracts/Natality_12_15_county_totals_all_births_v2.txt", 
@@ -101,6 +109,20 @@ birth_map <- data.table(birth_map)
 setkey(birth_map,state.x,county.x)
 map.df      <- map.county[birth_map]
 
+    # create the ggplot object
+p<- ggplot(map.df, aes(x=long, y=lat, group = group)) +
+  geom_polygon(colour = "grey" , aes(fill = cesarean_rate_all.x )) +
+  coord_map("polyconic",
+            xlim = c(-120, -70),ylim = c(24.9, 49.9))  +
+  geom_path(data = state_map, colour="black")+
+  theme_void() + 
+  theme(legend.position = c(.9,.25)) + 
+  geom_polygon_interactive(aes(tooltip = paste0(County_all_pop, 
+                                                "<br>Population: ", format(population_all_pop,big.mark=","),
+                                                "<br>C-section Rate: ", cesarean_rate_all_pop, "%")
+                               , fill = cesarean_rate_all.x))+
+  scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
+
 # Define UI for application that draws a histogram
 ui <- fluidPage(
    
@@ -109,53 +131,69 @@ ui <- fluidPage(
            height = "0px"),
   
    # Application title
-   titlePanel("Cesarean section rate"),
-   hr(),
-   h3("Rate as a factor of geographic location", align = "center"),
-   pickerInput(inputId = "select_state",
-              label = "Display: ",
-              choices = sort(unique(counties$region)),
-              multiple = TRUE,
-              options = list(`actions-box` = TRUE)), 
-  fluidRow(
-     column(width = 7, offset=3,
-            div(style="width:800px;height:600px;", ggiraphOutput("county_map")))),
-   h4("All counties in a state with population 
-      <100,000 are presented together (grey). 
-      White counties have had population changes and therefore data are not available. "),
-   hr(),
-   h3("Rate as a factor of race and age of mother", align = "center"),
-   plotOutput("race_age_plot"),
-   h4("Each data point is a county. Only counties with population >100,000 are shown.
-      Horizontal line is the median, top and bottom of boxes are the 25th and 75th percentile,
-      respectively. The lines extend to ____, with data points indicating outliers. ")
-
+  titlePanel("Cesarean section rate"),
+  tabsetPanel(type="tabs",
+    tabPanel(title = "Background", 
+             
+             ),
+    tabPanel(title = "Visualizations",
+           hr(),
+           h3("Percent of Births Delivered Via Cesarian as a Factor of Geographic Location", align = "center"),
+           pickerInput(inputId = "select_state",
+                       label = "Display: ",
+                       choices = sort(unique(counties$region)),
+                       multiple = TRUE,
+                       options = list(`actions-box` = TRUE)), 
+           fluidRow(
+             column(width = 7, offset=3,
+                    div(style="width:800px;height:600px;", 
+                        ggiraphOutput("county_map")))),
+           h4("Grey counties have population < 100,000. CDC aggregates all counties in a state
+              with population < 100,000.    
+               White counties have had population changes and therefore data are not available. "),
+           hr(),
+           h3("Median Percent of Births Delivered via Cesarean as a Factor of Mother Age and Race", align = "center"),
+           fluidRow(
+             column(width = 6, offset = 3, 
+                    plotOutput("race_age_plot")))
+     ),
+     tabPanel(title = "Technical Details",
+           fluidRow(
+             column(width = 8, offset=2,
+                    tags$div(
+                      tags$p("All data were obtained through the CDC's Wonder data query tool between
+                             December 20 and December 31, 2017. Queries had the following restrictions:")),
+                    tags$li(
+                      tags$li("Births 2012-2015"), 
+                      tags$li("Single live births"), 
+                      tags$li("In hospitals"), 
+                      tags$li("gestational age between 37-41 weeks"),
+                      tags$li("In hospitals")),
+                    tags$div(
+                      tags$p("County data were grouped only by County and Delivery Method. 
+                             Age and race data were grouped by County, Race, Age of Mother 9, and
+                             Delivery Method. Counties and race categories with fewer than 20 births
+                             were excluded from the calculation. ")),
+                    hr(),
+                    tags$div(
+                      tags$p("Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention
+                             (CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2015, on CDC
+                             WONDER Online Database, February 2017. Accessed at http://wonder.cdc.gov/natality-current.html on Jan 1, 2018 9:42:30 AM"))
+           ))))
+  
 )
 
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
    
   output$county_map <- renderggiraph({
-      p<- ggplot(map.df, aes(x=long, y=lat, group = group)) +
-        geom_polygon(colour = "grey" , aes(fill = cesarean_rate_all.x )) +
-        coord_map("polyconic",
-                  xlim = c(-120, -70),ylim = c(24.9, 49.9))  +
-        geom_path(data = state_map, colour="black")+
-        theme_void() + 
-        theme(legend.position = c(.9,.25)) + 
-        geom_polygon_interactive(aes(tooltip = paste0(County_all_pop, 
-                                                      "<br>Population: ", format(population_all_pop,big.mark=","),
-                                                      "<br>C-section Rate: ", cesarean_rate_all_pop, "%")
-                                     , fill = cesarean_rate_all.x))+
-        scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
-
       # unfilled is unavailable due to population changes. 
       # grey/NA is an 'unidentified' county
     ggiraph(code = print(p), selection_type = "multiple") #takes a super long time to render...
    })
   
   output$race_age_plot <- renderPlot({
-    ggplot(race_age, aes(x=Age.of.Mother.9.Code, y=cesarean_rate, fill = Race)) + 
+    ggplot(race_age[race_age$Births>20,], aes(x=Age.of.Mother.9.Code, y=cesarean_rate, fill = Race)) + 
       geom_boxplot()+ 
       theme_few()+
       theme(legend.position="top", legend.title = element_blank(), 
@@ -166,6 +204,19 @@ server <- function(input, output, session) {
       xlab("Age of Mother") + 
       scale_y_continuous(labels = scales::percent)+
       scale_fill_brewer()
+    
+     # ggplot(race_age[race_age$Births>20,], aes(x=Age.of.Mother.9.Code, y=cesarean_rate, color = Race, group = Race)) + 
+    #   stat_summary(fun.y = median, geom="line", size = 1)+ 
+    #   theme_bw()+
+    #   theme(legend.position=c(.2, .82), legend.title = element_blank(), 
+    #         axis.title = element_text(color = "black"), 
+    #         text = element_text(color = "black"), 
+    #         axis.text = element_text(color = "black")) + 
+    #   ylab("")+
+    #   xlab("Age of Mother") + 
+    #   scale_y_continuous(labels = scales::percent,
+    #                      limits = c(0,1))
+    
   })
   
 }
