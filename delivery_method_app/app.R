@@ -115,6 +115,8 @@ ui <- fluidPage(
                 hover = hoverOpts("plot_hover", delay = 100, delayType = "debounce")),
      uiOutput("hover_info")
    ),
+   h4("Grey counties have population < 100,000, for which the CDC combines all state counties. 
+      White counties have had population changes and therefore data are not available. "),
    hr(),
    h3("Rate as a factor of race and age of mother", align = "center"),
    plotOutput("race_age_plot"),
@@ -130,12 +132,13 @@ server <- function(input, output) {
   output$county_map <- renderPlot({
       # plot the birth rate minus unidentified counties. 
       p<- ggplot(map.df, aes(x=long, y=lat, group = group)) +
-        geom_polygon( colour = "grey" , aes( fill = cesarean_rate_all.x )) +
+        geom_polygon(colour = "grey" , aes(fill = cesarean_rate_all.x )) +
         scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))+
        # coord_map() +
         coord_map("polyconic" ) + #causes the tooltips to not work as well
         geom_path(data = state_map, colour="black")+
-        theme_void()
+        theme_void() + 
+        theme(legend.position = c(.15,.2))
 
       # unfilled is unavailable due to population changes. 
       # grey/NA is an 'unidentified' county
@@ -170,8 +173,8 @@ server <- function(input, output) {
                     "<b> County Population: </b>", point$population, "<br/>",
                     "<b> Region Cesarean Rate: </b>", point$cesarean_rate_all_pop, "<br/>",
                     "<b> County Cesarean Rate: </b>", point$cesarean_rate_all.x, "<br/>",
-                    "<b> Distance from left: </b>", left_pct, "/", left_px, 
-                    "<b>, from top: </b>", top_pct, "/", top_px)))
+                    "<b> Distance from left: </b>", left_px, 
+                    "<b>, from top: </b>", top_px)))
     )
   })
   
@@ -179,9 +182,13 @@ server <- function(input, output) {
     ggplot(race_age, aes(x=Age.of.Mother.9.Code, y=cesarean_rate, fill = Race)) + 
       geom_boxplot()+ 
       theme_few()+
-      theme(legend.position="top", legend.title = element_blank()) + 
-      ylab("Cesarean Rate") + 
+      theme(legend.position="top", legend.title = element_blank(), 
+            axis.title = element_text(color = "black"), 
+            text = element_text(color = "black"), 
+            axis.text = element_text(color = "black")) + 
+      ylab("Percent of Births Delivered via Cesarean") + 
       xlab("Age of Mother") + 
+      scale_y_continuous(labels = scales::percent)+
       scale_fill_brewer()
   })
   
@@ -192,15 +199,15 @@ runApp(list(ui = ui, server = server))
 
 ## TO DO
 # tooltips to ggmap/plot object - 'nearpoint' is definitely OFF
-# click on a county, get rates by ethnicity/age
-
-# add tooltips for the age and race graph with distribution stats. 
 
 # Since i'm not going to use plotly, think about having a zoom feature for states? 
 
 # write methods
 
 #formatting stuff in shiny - make the map bigger, move legend? 
+
+# maybe add a table to show multiple counties data at once? I like the
+#  ggiraph example using on_click, and then have to have a 'reset' button. 
 
 ## NOTES
 # I don't know if I'm a huge fan of having the county name for unidentified counties. 
