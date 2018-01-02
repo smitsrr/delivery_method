@@ -73,7 +73,8 @@ natality.2<- county.pop %>%
          births = ifelse(is.na(births_all.x), births_all.y, births_all.x),
          population = as.numeric(POPESTIMATE2012)) %>%
   group_by(county_display) %>%
-  mutate(population_display = sum(population)) %>%
+  mutate(population_display = sum(population), 
+         fips = ifelse(fips == "46102", "46113", fips)) %>%
   select(fips,                     #take only the variables I need going forward
          county_display, 
          cesarean_rate,
@@ -82,6 +83,11 @@ natality.2<- county.pop %>%
          population_display,
          state,
          county)
+
+    # change Shannon county to Okglala lakota...just change the county part of the fips code
+# county.data <- county.data %>%
+                       #   mutate(COUNTY = ifelse(COUNTY == "113" &
+                       #                            STATE == "46", "102", COUNTY))
 
 
     # check that we have cesarean rates for all counties with >100,000 2013 pop
@@ -120,23 +126,6 @@ setkey(county.data, id)
     # merge the mapping information with natality/county data
 map.df<- map.df[county.data]  # should be joined on ID
 
-    # troubleshooting
-selected_states<- c("Utah", "Colorado", "Idaho")
-# [map.df$region %in% selected_states,]
-# [state_map$region %in% selected_states,]
-p<- ggplot(map.df, aes(x=long, y=lat, group = group)) +
-  geom_polygon(colour = "grey" , aes(fill = cesarean_rate)) +
-  coord_map("polyconic")+
-  geom_path(data = state_map, colour="black", size = .5)+
-  theme_void() +
-  geom_polygon_interactive(aes(tooltip = paste0(gsub("'", "", county_display),
-                                                "<br>Population: ", format(population,big.mark=","),
-                                                "<br>C-section Rate: ", cesarean_rate, "%")
-                               , fill = cesarean_rate))+
-  scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
-
-ggiraph(code = print(p)) #takes a super long time to render...
-
 ui <- fluidPage(
    
    # Application title
@@ -153,7 +142,7 @@ ui <- fluidPage(
            h3("Percent of Births Delivered Via Cesarean as a Factor of Geographic Location", align = "center"),
            pickerInput(inputId = "select_state",
                        label = "Display: ",
-                       choices = sort(unique(counties$region)),
+                       choices = sort(unique(map.df$state)),
                        multiple = TRUE,
                        options = list(`actions-box` = TRUE), 
                        selected = unique(counties$region)), 
@@ -194,27 +183,28 @@ ui <- fluidPage(
                              (CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2015, on CDC
                              WONDER Online Database, February 2017. Accessed at http://wonder.cdc.gov/natality-current.html on Jan 1, 2018 9:42:30 AM"))
            ))))
-  
 )
 
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
    
   county_data<- reactive({
-    map.df[map.df$region %in% input$select_state,]
+    map.df[map.df$state %in% input$select_state,]
   })
 
   output$county_map <- renderggiraph({
         # take the filtered data from the reactive portion above
     p<- ggplot(county_data(), aes(x=long, y=lat, group = group)) +
-      geom_polygon(colour = "grey" , aes(fill = cesarean_rate_all.x )) +
-      coord_map("polyconic")+
+      geom_polygon(color = "grey") +
+      coord_map("polyconic") +
       geom_path(data = state_map[state_map$region %in% input$select_state,], colour="black")+
-      theme_void() + 
-      geom_polygon_interactive(aes(tooltip = paste0(County_all_pop, 
-                                                    "<br>Population: ", format(population_all_pop,big.mark=","),
-                                                    "<br>C-section Rate: ", cesarean_rate_all_pop, "%")
-                                   , fill = cesarean_rate_all.x))+
+      theme_void() +
+      geom_polygon_interactive(aes(tooltip = paste0(gsub("'", "", county_display),
+                                                    "<br>Population: ", format(population,big.mark=","),
+                                                    "<br>Births: ", format(births, big.mark=","),
+                                                    "<br>C-section Rate: ", cesarean_rate, "%")
+                                   , 
+                                   fill = cesarean_rate))+
       scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
     
     ggiraph(code = print(p)) #takes a super long time to render...
@@ -242,16 +232,10 @@ runApp(list(ui = ui, server = server))
 
 ## TO DO
 # damn map size. individual states look great, but the whole US is WAY too tiny. 
+# contingency for no state selected. 
+# now I think that the ggplot map for states doesn't line up perfectly with the TIGER file...
 
-# fill in the data for 'white' counties = 'county name', 'data not available'
 # write methods
-
-# maybe add a table to show multiple counties data at once? I like the
-#  ggiraph example using on_click, and then have to have a 'reset' button. 
-
-## NOTES
-# I don't know if I'm a huge fan of having the county name for unidentified counties. 
-# it feels a little deceptive. 
 
 # after comparing, it's pretty clear that first birth rates are not different from all
 # I think I could just present all. 

@@ -1,0 +1,100 @@
+"Notes"	"Month Prenatal Care Began"	"Month Prenatal Care Began Code"	"Delivery Method"	"Delivery Method Code"	Births
+	"No prenatal care"	"00"	"Vaginal"	"1"	99047
+	"No prenatal care"	"00"	"Cesarean"	"2"	33033
+	"No prenatal care"	"00"	"Not Stated"	"9"	52
+	"1st month"	"01"	"Vaginal"	"1"	454843
+	"1st month"	"01"	"Cesarean"	"2"	222114
+	"1st month"	"01"	"Not Stated"	"9"	262
+	"2nd month"	"02"	"Vaginal"	"1"	2953893
+	"2nd month"	"02"	"Cesarean"	"2"	1331955
+	"2nd month"	"02"	"Not Stated"	"9"	1359
+	"3rd month"	"03"	"Vaginal"	"1"	2532436
+	"3rd month"	"03"	"Cesarean"	"2"	1090405
+	"3rd month"	"03"	"Not Stated"	"9"	1066
+	"4th month"	"04"	"Vaginal"	"1"	776090
+	"4th month"	"04"	"Cesarean"	"2"	318641
+	"4th month"	"04"	"Not Stated"	"9"	342
+	"5th month"	"05"	"Vaginal"	"1"	383461
+	"5th month"	"05"	"Cesarean"	"2"	151883
+	"5th month"	"05"	"Not Stated"	"9"	163
+	"6th month"	"06"	"Vaginal"	"1"	230697
+	"6th month"	"06"	"Cesarean"	"2"	90909
+	"6th month"	"06"	"Not Stated"	"9"	108
+	"7th month"	"07"	"Vaginal"	"1"	167249
+	"7th month"	"07"	"Cesarean"	"2"	68487
+	"7th month"	"07"	"Not Stated"	"9"	58
+	"8th month"	"08"	"Vaginal"	"1"	123802
+	"8th month"	"08"	"Cesarean"	"2"	51590
+	"8th month"	"08"	"Not Stated"	"9"	45
+	"9th month"	"09"	"Vaginal"	"1"	56565
+	"9th month"	"09"	"Cesarean"	"2"	23647
+	"9th month"	"09"	"Not Stated"	"9"	22
+	"10th month"	"10"	"Vaginal"	"1"	3000
+	"10th month"	"10"	"Cesarean"	"2"	1179
+	"10th month"	"10"	"Not Stated"	"9"	4
+	"Not stated/Not on certificate"	"99"	"Vaginal"	"1"	292286
+	"Not stated/Not on certificate"	"99"	"Cesarean"	"2"	119029
+	"Not stated/Not on certificate"	"99"	"Not Stated"	"9"	1841
+	"Excluded"	"98"	"Vaginal"	"1"	640169
+	"Excluded"	"98"	"Cesarean"	"2"	302897
+	"Excluded"	"98"	"Not Stated"	"9"	5876
+"---"
+"Dataset: Natality, 2007-2015"
+"Query Parameters:"
+"Title:"
+"Age of Mother 9: All"
+"Birthplace: In Hospital"
+"Birth Weight 12: All"
+"Chronic Hypertension: All"
+"Delivery Method: All"
+"Diabetes: All"
+"Eclampsia: All"
+"Education: All"
+"Gender: All"
+"Hispanic Origin: All"
+"Live Birth Order: All"
+"LMP Gestational Age 11: 37-38 weeks, 39 weeks, 40 weeks, 41 weeks"
+"Marital Status: All"
+"Medical Attendant: All"
+"Month: All"
+"Month Prenatal Care Began: All"
+"OE Gestational Age 11: 37-38 weeks, 39 weeks, 40 weeks, 41 weeks"
+"Plurality or Multiple Birth: Single"
+"Pregnancy-associated Hypertension: All"
+"Race: All"
+"States: All"
+"Tobacco Use: All"
+"Weekday: All"
+"Year: 2012, 2013, 2014, 2015"
+"Group By: Month Prenatal Care Began, Delivery Method"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 1,000"
+"Population Option: No populations shown because rates were not selected."
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/Natality.html for more information."
+"---"
+"Query Date: Jan 1, 2018 10:43:30 PM"
+"---"
+"Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention"
+"(CDC), National Center for Health Statistics (NCHS), Division of Vital Statistics, Natality public-use data 2007-2015, on CDC"
+"WONDER Online Database, February 2017. Accessed at http://wonder.cdc.gov/natality-current.html on Jan 1, 2018 10:43:30 PM"
+"---"
+Caveats:
+"1. Each birth record represents one living baby."
+"2. <p> About Education and Prenatal Care data: Education and Prenatal Care data have been recoded to ""Excluded"" for births to"
+"mothers residing in a reporting area that used the 1989 U.S. Standard Certificate of Live Birth in the specified data year. All"
+"reporting areas collect information on Education and Prenatal care, but information from the 2003 revision of the birth"
+"certificate is not comparable to the information based on the earlier certificate. The following reporting areas have Education"
+"and Prenatal Care data coded to ""Excluded"": Alabama, 2007-2013; Alaska 2007-2012; Arizona 2007-2013; Arkansas 2007-2013;"
+"Connecticut 2007-2015; District of Columbia 2007-2009; Georgia 2007; Hawaii 2007-2013; Illinois 2007-2009; Louisiana 2007-2010;"
+"Maine 2007-2013; Maryland 2007-2009; Massachusetts 2007-2011; Michigan 2007; Minnesota 2007-2011; Mississippi 2007-2012;"
+"Missouri 2007-2009; Montana 2007; Nevada 2007-2009; New Jersey 2007-2015; New Mexico 2007; New York (only counties comprising"
+"New York City) 2007; North Carolina 2007-2010; Oklahoma 2007-2009; Oregon 2007; Rhode Island 2007-2014; Utah 2007-2008; Virginia"
+"2007-2012; West Virginia 2007-2013; Wisconsin 2007-2010. </p> <p> Note the change from preceding years: Natality data for years"
+"2003-2006 in CDC WONDER excluded Education and Prenatal Care data for the reporting areas that had adopted the 2003 U.S."
+"Standard Certificate of Live Birth. </p>"
+"3. Beginning in 2014, month prenatal care began is calculated using gestational age based on the obstetric estimate. For years"
+"2013 and earlier, month prenatal care began was based on gestational age calculated using the date of the last normal menses."
+"This change may lead to a slight discontinuity in prenatal care results between years 2013 and 2014."

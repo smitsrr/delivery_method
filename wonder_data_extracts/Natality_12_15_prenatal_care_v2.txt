@@ -1,0 +1,40 @@
+"Notes"	"Month Prenatal Care Began"	"Month Prenatal Care Began Code"	"Delivery Method"	"Delivery Method Code"	Births
+	"No prenatal care"	"00"	"Vaginal"	"1"	99047
+	"No prenatal care"	"00"	"Cesarean"	"2"	33033
+	"No prenatal care"	"00"	"Not Stated"	"9"	52
+	"1st month"	"01"	"Vaginal"	"1"	454843
+	"1st month"	"01"	"Cesarean"	"2"	222114
+	"1st month"	"01"	"Not Stated"	"9"	262
+	"2nd month"	"02"	"Vaginal"	"1"	2953893
+	"2nd month"	"02"	"Cesarean"	"2"	1331955
+	"2nd month"	"02"	"Not Stated"	"9"	1359
+	"3rd month"	"03"	"Vaginal"	"1"	2532436
+	"3rd month"	"03"	"Cesarean"	"2"	1090405
+	"3rd month"	"03"	"Not Stated"	"9"	1066
+	"4th month"	"04"	"Vaginal"	"1"	776090
+	"4th month"	"04"	"Cesarean"	"2"	318641
+	"4th month"	"04"	"Not Stated"	"9"	342
+	"5th month"	"05"	"Vaginal"	"1"	383461
+	"5th month"	"05"	"Cesarean"	"2"	151883
+	"5th month"	"05"	"Not Stated"	"9"	163
+	"6th month"	"06"	"Vaginal"	"1"	230697
+	"6th month"	"06"	"Cesarean"	"2"	90909
+	"6th month"	"06"	"Not Stated"	"9"	108
+	"7th month"	"07"	"Vaginal"	"1"	167249
+	"7th month"	"07"	"Cesarean"	"2"	68487
+	"7th month"	"07"	"Not Stated"	"9"	58
+	"8th month"	"08"	"Vaginal"	"1"	123802
+	"8th month"	"08"	"Cesarean"	"2"	51590
+	"8th month"	"08"	"Not Stated"	"9"	45
+	"9th month"	"09"	"Vaginal"	"1"	56565
+	"9th month"	"09"	"Cesarean"	"2"	23647
+	"9th month"	"09"	"Not Stated"	"9"	22
+	"10th month"	"10"	"Vaginal"	"1"	3000
+	"10th month"	"10"	"Cesarean"	"2"	1179
+	"10th month"	"10"	"Not Stated"	"9"	4
+	"Not stated/Not on certificate"	"99"	"Vaginal"	"1"	292286
+	"Not stated/Not on certificate"	"99"	"Cesarean"	"2"	119029
+	"Not stated/Not on certificate"	"99"	"Not Stated"	"9"	1841
+	"Excluded"	"98"	"Vaginal"	"1"	640169
+	"Excluded"	"98"	"Cesarean"	"2"	302897
+	"Excluded"	"98"	"Not Stated"	"9"	5876
