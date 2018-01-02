@@ -70,31 +70,35 @@ setwd("C:/Users/smits/Documents/GitHub/delivery_method/")
 county.pop <- read.csv("co-est2016-alldata.csv", colClasses = "character") %>%
   mutate(fips = paste0(STATE, COUNTY),
          state = toTitleCase(STNAME), 
-         county = tolower(gsub(" .*$", "", CTYNAME)))%>%
-  select(fips, POPESTIMATE2012, state, county)
+         county = gsub(" county", "", tolower(CTYNAME)))%>%
+  mutate(county=gsub(" parish", "", tolower(county))) %>% # because louisiana is weird
+  mutate(county=gsub(".", "", county)) %>%  # in the ggplot map data, they don't have periods
+  select(fips, POPESTIMATE2012, state, county) %>%
+  filter(substr(fips,3,5) != '000')  #this was super exagerating the population!
 
-  #join in unidentified counties
+  #join in unidentified counties so taht we can join by state
 unidentified<- filter(natality, str_detect(County, "Unidentified")) %>%
  mutate(state_code = substr(County.Code, 1,2))
 
-counties_3<- county.pop %>%
+natality.2<- county.pop %>%
   left_join(natality, by=c("fips" = "County.Code")) %>%
   mutate(fips_state = substr(fips,1,2)) %>%
   left_join(unidentified, by = c("fips_state" = "state_code")) %>%
-  mutate(County_all_pop = ifelse(is.na(County.x), County.y, County.x),
-         cesarean_rate_all_pop = ifelse(is.na(cesarean_rate_all.x), cesarean_rate_all.y, cesarean_rate_all.x),
-         births_all_pop = ifelse(is.na(births_all.x), births_all.y, births_all.x),
+  mutate(county_display = ifelse(is.na(County.x), County.y, County.x),
+         cesarean_rate = ifelse(is.na(cesarean_rate_all.x), cesarean_rate_all.y, cesarean_rate_all.x),
+         births = ifelse(is.na(births_all.x), births_all.y, births_all.x),
          population = as.numeric(POPESTIMATE2012)) %>%
-  filter(tolower(state) != county) %>% #this was super exagerating the population!
-  group_by(County_all_pop) %>%
-  mutate(population_all_pop = sum(population)) 
-  
-
-    # if you join in and expand the unidentified counties:
-    ##take either county.x or county.y
-    ##cesarean_rate.x or cesarean_rate.y
-    ##births.x or births.y
-    ## depending on whether x is populated. 
+  group_by(county_display) %>%
+  mutate(population_display = sum(population)) %>%
+  select(fips,
+         county_display, 
+         cesarean_rate,
+         births,
+         population,
+         population_display,
+         state,
+         county)
+    #take only the variables I need going forward
 
     # check that we have cesarean rates for all counties with >100,000 2013 pop
 #unidentified_check<- filter(counties_3, population<100000)
@@ -105,19 +109,34 @@ counties_3<- county.pop %>%
     ## setup mapping data
 map.county <- map_data('county') %>%
   mutate(region = toTitleCase(region))
-counties   <- unique(map.county[,5:6])
+map.county <- data.table(map.county)
+setkey(map.county,region,subregion)
 state_map <- map_data("state") %>%
   mutate(region = toTitleCase(region))
 
     #join natality with county.pop
-birth_map<- left_join(counties_3, county.pop, by=c("County.Code" = "fips"))
+natality.3 <- data.table(natality.2)
+setkey(natality.3,state,county)
 
-map.county <- data.table(map.county)
-setkey(map.county,region,subregion)
-birth_map <- data.table(birth_map)
-setkey(birth_map,state.x,county.x)
-map.df      <- map.county[birth_map]
+    # join the natality data with the county data. 
+map.df      <- map.county[natality.3]
 
+    # troubleshooting
+selected_states<- c("Utah", "Colorado", "Idaho")
+# [map.df$region %in% selected_states,]
+# [state_map$region %in% selected_states,]
+p<- ggplot(map.df, aes(x=long, y=lat, group = group)) +
+  geom_polygon(colour = "grey" , aes(fill = cesarean_rate)) +
+  coord_map("polyconic")+
+  geom_path(data = state_map, colour="black")+
+  theme_void() +
+  geom_polygon_interactive(aes(tooltip = paste0(county_display,
+                                                "<br>Population: ", format(population,big.mark=","),
+                                                "<br>C-section Rate: ", cesarean_rate, "%")
+                               , fill = cesarean_rate))+
+  scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
+
+ggiraph(code = print(p)) #takes a super long time to render...
 
 ui <- fluidPage(
    
@@ -141,7 +160,7 @@ ui <- fluidPage(
                        selected = unique(counties$region)), 
            fluidRow(
              column(width = 7, offset=3,
-                    div(style="width:800px;height:600px;", 
+                    div(style="width:900px;height:700px;", 
                         ggiraphOutput("county_map")))),
            h4("Grey counties have population < 100,000. CDC aggregates all counties in a state
               with population < 100,000.    
@@ -199,7 +218,7 @@ server <- function(input, output, session) {
                                    , fill = cesarean_rate_all.x))+
       scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
     
-    ggiraph(code = print(p), selection_type = "multiple") #takes a super long time to render...
+    ggiraph(code = print(p)) #takes a super long time to render...
    })
   
   output$race_age_plot <- renderPlot({
@@ -223,7 +242,6 @@ server <- function(input, output, session) {
 runApp(list(ui = ui, server = server))
 
 ## TO DO
-# Since i'm not going to use plotly, think about having a zoom feature for states? 
 # damn map size. individual states look great, but the whole US is WAY too tiny. 
 
 # fill in the data for 'white' counties = 'county name', 'data not available'

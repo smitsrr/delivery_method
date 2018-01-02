@@ -1,6 +1,8 @@
 library(ggplot2)
 library(mapdata)
 library(shiny)
+library(data.table)
+library(ggiraph)
 
 map.county <- map_data('county')
 counties<- data.table(map.county)
@@ -19,9 +21,9 @@ server <- function(input, output) {
    p<- ggplot(counties, aes(x=long, y=lat, group = group)) +
       geom_polygon(colour = "grey") +
       coord_map("polyconic" ) +
-      geom_polygon_interactive(aes(tooltip = county))
+      geom_polygon_interactive(aes(tooltip = subregion))
     
-    ggiraph(code = print(p))
+    ggiraph(code = {print(p)})
   })
   
 }
