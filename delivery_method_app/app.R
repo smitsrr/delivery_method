@@ -37,22 +37,6 @@ race_age<- natality_race_age %>%
                               ordered = TRUE)) %>%
   filter(Delivery.Method == "Cesarean")
 
-    # validate against aggregated age/race totals
-# race_age_totals<- read.delim("wonder_data_extracts/Natality_12_2015_race_age_totals_v2.txt",
-#                              header = TRUE, colClasses = "character") %>%
-#   mutate(Births = as.numeric(Births)) %>%
-#          # race_recode = case_when(.$Race.Code == '1002-5' ~ "Other", 
-#          #                         .$Race.Code == 'A-PI' ~ "Other",
-#          #                         TRUE ~ .$Race))%>%
-#   group_by(Race.Code, Age.of.Mother.9.Code) %>%
-#   mutate(cesarean_rate = Births/sum(Births)) %>%
-#   filter(Delivery.Method == "Cesarean",
-#          Births >= 100)
-# 
-# ggplot(race_age_totals,aes(x=Age.of.Mother.9.Code, y=cesarean_rate, color = Race, group = Race))+
-#   geom_point() + 
-#   geom_path()
-
     # county totals, all births
 natality<- read.delim("wonder_data_extracts/Natality_12_15_county_totals_all_births_v2.txt", 
                                header = TRUE, colClasses = "character") %>%
@@ -72,7 +56,7 @@ county.pop <- read.csv("co-est2016-alldata.csv", colClasses = "character") %>%
          state = toTitleCase(STNAME), 
          county = gsub(" county", "", tolower(CTYNAME)))%>%
   mutate(county=gsub(" parish", "", tolower(county))) %>% # because louisiana is weird
-  mutate(county=gsub(".", "", county)) %>%  # in the ggplot map data, they don't have periods
+  mutate(county=gsub("[.]", "", county)) %>%  # in the ggplot map data, they don't have periods
   select(fips, POPESTIMATE2012, state, county) %>%
   filter(substr(fips,3,5) != '000')  #this was super exagerating the population!
 
@@ -90,7 +74,7 @@ natality.2<- county.pop %>%
          population = as.numeric(POPESTIMATE2012)) %>%
   group_by(county_display) %>%
   mutate(population_display = sum(population)) %>%
-  select(fips,
+  select(fips,                     #take only the variables I need going forward
          county_display, 
          cesarean_rate,
          births,
@@ -98,7 +82,7 @@ natality.2<- county.pop %>%
          population_display,
          state,
          county)
-    #take only the variables I need going forward
+
 
     # check that we have cesarean rates for all counties with >100,000 2013 pop
 #unidentified_check<- filter(counties_3, population<100000)
@@ -106,20 +90,35 @@ natality.2<- county.pop %>%
     # check population sums
 #unidentified_check<- filter(counties_3, state == 'Alabama')
 
-    ## setup mapping data
-map.county <- map_data('county') %>%
-  mutate(region = toTitleCase(region))
-map.county <- data.table(map.county)
-setkey(map.county,region,subregion)
+    # use the TIGER dataset from the census to draw the counties
+    # http://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_050_00_5m.zip
+setwd("C:/Users/smits/Documents/GitHub/delivery_method/wonder_data_extracts")
+US.counties <- readOGR(dsn=".",layer="gz_2010_us_050_00_5m")
+#leave out AK, HI, and PR (state FIPS: 02, 15, and 72)
+US.counties <- US.counties[!(US.counties$STATE %in% c("02","15","72")),]  
+county.data <- US.counties@data
+county.data <- cbind(id=rownames(county.data),county.data)
+county.data <- data.table(county.data)
+county.data[,FIPS:=paste0(STATE,COUNTY)] # this is the state + county FIPS code
+setkey(county.data,FIPS)  
+
+map.df <- data.table(fortify(US.counties))
+setkey(map.df,id)
+
+    ## setup state mapping data
 state_map <- map_data("state") %>%
   mutate(region = toTitleCase(region))
 
     #join natality with county.pop
 natality.3 <- data.table(natality.2)
-setkey(natality.3,state,county)
+setkey(natality.3,fips)
 
     # join the natality data with the county data. 
-map.df      <- map.county[natality.3]
+county.data <- county.data[natality.3]  # should be joined on fips
+setkey(county.data, id)
+
+    # merge the mapping information with natality/county data
+map.df<- map.df[county.data]  # should be joined on ID
 
     # troubleshooting
 selected_states<- c("Utah", "Colorado", "Idaho")
@@ -128,9 +127,9 @@ selected_states<- c("Utah", "Colorado", "Idaho")
 p<- ggplot(map.df, aes(x=long, y=lat, group = group)) +
   geom_polygon(colour = "grey" , aes(fill = cesarean_rate)) +
   coord_map("polyconic")+
-  geom_path(data = state_map, colour="black")+
+  geom_path(data = state_map, colour="black", size = .5)+
   theme_void() +
-  geom_polygon_interactive(aes(tooltip = paste0(county_display,
+  geom_polygon_interactive(aes(tooltip = paste0(gsub("'", "", county_display),
                                                 "<br>Population: ", format(population,big.mark=","),
                                                 "<br>C-section Rate: ", cesarean_rate, "%")
                                , fill = cesarean_rate))+
