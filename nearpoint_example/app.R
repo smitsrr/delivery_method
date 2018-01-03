@@ -10,22 +10,35 @@ counties<- data.table(map.county)
 ui <- fluidPage(
   
   # Application title
-  titlePanel("NearPoints using a map"),
-fluidRow(column(12,
-                ggiraph::ggiraphOutput("county_map")))
+  titlePanel("ggiraph plot margins"),
+fluidRow(column(6,
+                div(style="width:900px;height:700px;", 
+                    ggiraphOutput("county_map"))
+                ),
+         column(6,
+                div(style="width:900px;height:700px;", 
+                    ggiraphOutput("county_map_all")))
+  )
 )
 
 server <- function(input, output) {
-  
-  output$county_map<- renderPlot({
-   p<- ggplot(counties, aes(x=long, y=lat, group = group)) +
-      geom_polygon(colour = "grey") +
-      coord_map("polyconic" ) +
+  output$county_map<- renderggiraph({
+    p<- ggplot(counties, aes(x=long, y=lat, group = group)) +
+      # coord_map("polyconic" ) +  # comment or uncomment this line to see the changes
+      theme(plot.margin = unit(c(.1,.1,.1,.1), "cm")) + 
       geom_polygon_interactive(aes(tooltip = subregion))
     
-    ggiraph(code = {print(p)})
+    ggiraph(code = {print(p)},width = 1, height = 5.418)
   })
   
+  output$county_map_all<-renderggiraph({
+  # just two states
+  p<- ggplot(counties[counties$region %in% c("alabama", "georgia"),], aes(x=long, y=lat, group = group)) +
+    # coord_map("polyconic" ) +  # comment or uncomment this line to see the changes
+    theme(plot.margin = unit(c(.1,.1,.1,.1), "cm")) + 
+    geom_polygon_interactive(aes(tooltip = subregion))
+  ggiraph(code = {print(p)},width = 1, height = 5.418)
+  })
 }
 
 # Run the application 

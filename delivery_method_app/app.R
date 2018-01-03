@@ -84,12 +84,6 @@ natality.2<- county.pop %>%
          state,
          county)
 
-    # change Shannon county to Okglala lakota...just change the county part of the fips code
-# county.data <- county.data %>%
-                       #   mutate(COUNTY = ifelse(COUNTY == "113" &
-                       #                            STATE == "46", "102", COUNTY))
-
-
     # check that we have cesarean rates for all counties with >100,000 2013 pop
 #unidentified_check<- filter(counties_3, population<100000)
 
@@ -131,12 +125,12 @@ ui <- fluidPage(
    # Application title
   titlePanel("Cesarean section rate"),
   tabsetPanel(type="tabs",
-    tabPanel(title = "Background", 
-             fluidRow(
-               column(width = 6, offset = 3,
-                      tags$div(
-                         tags$p(""))
-             ))),
+    # tabPanel(title = "Background", 
+    #          fluidRow(
+    #            column(width = 6, offset = 3,
+    #                   tags$div(
+    #                      tags$p(""))
+    #          ))),
     tabPanel(title = "Visualizations",
            hr(),
            h3("Percent of Births Delivered Via Cesarean as a Factor of Geographic Location", align = "center"),
@@ -145,7 +139,7 @@ ui <- fluidPage(
                        choices = sort(unique(map.df$state)),
                        multiple = TRUE,
                        options = list(`actions-box` = TRUE), 
-                       selected = unique(counties$region)), 
+                       selected = unique(map.df$state)), 
            fluidRow(
              column(width = 7, offset=3,
                     div(style="width:900px;height:700px;", 
@@ -189,22 +183,22 @@ ui <- fluidPage(
 server <- function(input, output, session) {
    
   county_data<- reactive({
-    map.df[map.df$state %in% input$select_state,]
+    #map.df[map.df$state %in% input$select_state,]
+    map.df # to see if this is any faster
   })
 
   output$county_map <- renderggiraph({
         # take the filtered data from the reactive portion above
     p<- ggplot(county_data(), aes(x=long, y=lat, group = group)) +
-      geom_polygon(color = "grey") +
-      coord_map("polyconic") +
-      geom_path(data = state_map[state_map$region %in% input$select_state,], colour="black")+
-      theme_void() +
+      # coord_map("polyconic") +
+      #theme_void() +
       geom_polygon_interactive(aes(tooltip = paste0(gsub("'", "", county_display),
                                                     "<br>Population: ", format(population,big.mark=","),
                                                     "<br>Births: ", format(births, big.mark=","),
                                                     "<br>C-section Rate: ", cesarean_rate, "%")
                                    , 
                                    fill = cesarean_rate))+
+      expand_limits(x = county_data()$long, y = county_data()$lat) +
       scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
     
     ggiraph(code = print(p)) #takes a super long time to render...
@@ -222,7 +216,6 @@ server <- function(input, output, session) {
       xlab("Age of Mother") + 
       scale_y_continuous(labels = scales::percent)+
       scale_fill_brewer()
-    
   })
   
 }
