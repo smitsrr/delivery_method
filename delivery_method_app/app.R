@@ -120,18 +120,23 @@ setkey(county.data, id)
     # merge the mapping information with natality/county data
 map.df<- map.df[county.data]  # should be joined on ID
 
+## TROUBLE SHOOT
+# ggplot(map.df, aes(x=long, y=lat, group = group)) +
+#   geom_polygon( aes( fill = cesarean_rate)) +
+#   coord_quickmap()+
+#   theme_void()+
+#   geom_path(data = state_map, colour="black") +
+#   scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
+
+##################
+# SHINY
+#################
 ui <- fluidPage(
    
    # Application title
   titlePanel("Cesarean section rate"),
   tabsetPanel(type="tabs",
-    # tabPanel(title = "Background", 
-    #          fluidRow(
-    #            column(width = 6, offset = 3,
-    #                   tags$div(
-    #                      tags$p(""))
-    #          ))),
-    tabPanel(title = "Visualizations",
+    tabPanel(title = "Geography",
            hr(),
            h3("Percent of Births Delivered Via Cesarean as a Factor of Geographic Location", align = "center"),
            pickerInput(inputId = "select_state",
@@ -140,37 +145,33 @@ ui <- fluidPage(
                        multiple = TRUE,
                        options = list(`actions-box` = TRUE), 
                        selected = unique(map.df$state)), 
-           fluidRow(
-             column(width = 7, offset=3,
-                    div(style="width:900px;height:700px;", 
-                        ggiraphOutput("county_map")))),
-           h4("Grey counties have population < 100,000. CDC aggregates all counties in a state
-              with population < 100,000.    
-               White counties have had population changes and therefore data are not available. "),
-           hr(),
-           h3("Median Percent of Births Delivered via Cesarean as a Factor of Mother Age and Race", align = "center"),
-           fluidRow(
-             column(width = 6, offset = 3, 
-                    plotOutput("race_age_plot")))
+           div(
+             style = "position:relative",
+             plotOutput("county_map", 
+                        hover = hoverOpts("plot_hover", delay = 100, delayType = "debounce")),
+             uiOutput("hover_info")
+           )
      ),
-     tabPanel(title = "Technical Details",
+    tabPanel(title = "Age and Race", 
+             h3("Median Percent of Births Delivered via Cesarean as a Factor of Mother Age and Race", align = "center"),
+             fluidRow(
+               column(width = 6, offset = 3, 
+                      plotOutput("race_age_plot")))), 
+    tabPanel(title = "Technical Details",
            fluidRow(
              column(width = 8, offset=2,
                     br(),
                     tags$div(
                       tags$p("All data were obtained through the CDC's Wonder data query tool between
-                             December 20 and December 31, 2017. Queries had the following restrictions:")),
-                    tags$li(
-                      tags$li("Births 2012-2015"), 
-                      tags$li("Single live births"), 
-                      tags$li("In hospitals"), 
-                      tags$li("gestational age between 37-41 weeks"),
-                      tags$li("In hospitals")),
+                             December 20 and December 31, 2017. Queries had the following restrictions:"),
+                      tags$li("Single live births between 20012 and 2015"),  
+                      tags$li("Gestational age between 37-41 weeks"),
+                      tags$li("Birth occured in a hospital")),
                     tags$div(
-                      tags$p("County data were grouped only by County and Delivery Method. 
+                      tags$p("County data were grouped only by County and Delivery Method in the Wonder query. 
                              Age and race data were grouped by County, Race, Age of Mother 9, and
-                             Delivery Method. Counties and race categories with fewer than 20 births
-                             were excluded from the calculation. ")),
+                             Delivery Method in the Wonder Query. Counties and race categories with 
+                             fewer than 20 births were excluded from the calculation. ")),
                     hr(),
                     tags$div(
                       tags$p("Suggested Citation: United States Department of Health and Human Services (US DHHS), Centers for Disease Control and Prevention
@@ -183,25 +184,17 @@ ui <- fluidPage(
 server <- function(input, output, session) {
    
   county_data<- reactive({
-    #map.df[map.df$state %in% input$select_state,]
-    map.df # to see if this is any faster
+    map.df[map.df$state %in% input$select_state,]
   })
 
-  output$county_map <- renderggiraph({
+  output$county_map <- renderPlot({
         # take the filtered data from the reactive portion above
-    p<- ggplot(county_data(), aes(x=long, y=lat, group = group)) +
-      # coord_map("polyconic") +
-      #theme_void() +
-      geom_polygon_interactive(aes(tooltip = paste0(gsub("'", "", county_display),
-                                                    "<br>Population: ", format(population,big.mark=","),
-                                                    "<br>Births: ", format(births, big.mark=","),
-                                                    "<br>C-section Rate: ", cesarean_rate, "%")
-                                   , 
-                                   fill = cesarean_rate))+
-      expand_limits(x = county_data()$long, y = county_data()$lat) +
+    ggplot(county_data(), aes(x=long, y=lat, group = group)) +
+      geom_polygon(aes( fill = cesarean_rate)) +
+      theme_void()+
+      coord_quickmap()+
+      geom_path(data = state_map[state_map$region %in% input$select_state,], colour="black") +
       scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
-    
-    ggiraph(code = print(p)) #takes a super long time to render...
    })
   
   output$race_age_plot <- renderPlot({
@@ -218,15 +211,48 @@ server <- function(input, output, session) {
       scale_fill_brewer()
   })
   
+      # hover functionality
+  output$hover_info<-renderUI({
+    hover <- input$plot_hover
+    point <- nearPoints(map.df, hover, threshold = 5, maxpoints = 1, addDist = TRUE)
+    if (nrow(point) == 0) return(NULL)
+    
+    # calculate point position INSIDE the image as percent of total dimensions
+    # from left (horizontal) and from top (vertical)
+    left_pct <- (hover$x - hover$domain$left) / (hover$domain$right - hover$domain$left)
+    top_pct <- (hover$domain$top - hover$y) / (hover$domain$top - hover$domain$bottom)
+    
+    # calculate distance from left and bottom side of the picture in pixels
+    left_px <- hover$range$left + left_pct * (hover$range$right - hover$range$left)
+    top_px <- hover$range$top + top_pct * (hover$range$bottom - hover$range$top)
+    
+    # create style property fot tooltip
+    # background color is set so tooltip is a bit transparent
+    # z-index is set so we are sure are tooltip will be on top
+    style <- paste0("position:absolute; z-index:100; background-color: rgba(245, 245, 245, 0.85); ",
+                    "left:", left_px + 2, "px; top:", top_px + 2, "px;")
+    
+    # actual tooltip created as wellPanel
+    wellPanel(
+      style = style,
+      p(HTML(paste0(gsub("'", "", point$county_display),
+                    "<br>Population: ", format(point$population,big.mark=","),
+                    "<br>Births: ", format(point$births, big.mark=","),
+                    "<br>C-section Rate: ", point$cesarean_rate, "%")))
+    )
+  })
 }
 
 # Run the application 
 runApp(list(ui = ui, server = server))
 
 ## TO DO
-# damn map size. individual states look great, but the whole US is WAY too tiny. 
 # contingency for no state selected. 
 # now I think that the ggplot map for states doesn't line up perfectly with the TIGER file...
+# use the TIGER state file for the state borders. 
+# center state selecter. 
+# add tooltips to the age/race plot! It should contain N's and summary stats. 
+# SHIT. nearpoints doesn't work super well for polygons!!! 
 
 # write methods
 
