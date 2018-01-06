@@ -73,8 +73,9 @@ natality.2<- county.pop %>%
          births = ifelse(is.na(births_all.x), births_all.y, births_all.x),
          population = as.numeric(POPESTIMATE2012)) %>%
   group_by(county_display) %>%
-  mutate(population_display = sum(population), 
-         fips = ifelse(fips == "46102", "46113", fips)) %>%
+  mutate(population_display = sum(population) 
+         # ,fips = ifelse(fips == "46102", "46113", fips)
+         ) %>% #Damn county in SD
   select(fips,                     #take only the variables I need going forward
          county_display, 
          cesarean_rate,
@@ -90,67 +91,47 @@ natality.2<- county.pop %>%
     # check population sums
 #unidentified_check<- filter(counties_3, state == 'Alabama')
 
-    # use the TIGER dataset from the census to draw the counties
-    # http://www2.census.gov/geo/tiger/GENZ2010/gz_2010_us_050_00_5m.zip
+    # Get Census shape file information
+    #https://www2.census.gov/geo/tiger/GENZ2016/shp/cb_2016_us_county_5m.zip
+exclude_states<- c("02", "15", "78", "60", "66", "69", "72")
+    #excludes Alaska, american samoa (60), commonwealth of the northern mariana islands (69), 
+    # guam (66). need to exclude the virgin islands
 setwd("C:/Users/smits/Documents/GitHub/delivery_method/wonder_data_extracts")
-US.counties <- readOGR(dsn=".",layer="gz_2010_us_050_00_5m")
-#leave out AK, HI, and PR (state FIPS: 02, 15, and 72)
-US.counties <- US.counties[!(US.counties$STATE %in% c("02","15","72")),]  
-county.data <- US.counties@data
+us.counties <- readOGR(dsn=".",layer="cb_2016_us_county_5m")
+us.counties<- us.counties[!us.counties$STATEFP %in% exclude_states,]
+
+county.data <- us.counties@data
 county.data <- cbind(id=rownames(county.data),county.data)
 county.data <- data.table(county.data)
-county.data[,FIPS:=paste0(STATE,COUNTY)] # this is the state + county FIPS code
+county.data[,FIPS:=paste0(STATEFP,COUNTYFP)] # this is the state + county FIPS code
 setkey(county.data,FIPS)  
 
-map.df <- data.table(fortify(US.counties))
-setkey(map.df,id)
-
-    ## setup state mapping data
-state_map <- map_data("state") %>%
-  mutate(region = toTitleCase(region))
-
-    #join natality with county.pop
+    # join the natality data with the county data.
 natality.3 <- data.table(natality.2)
 setkey(natality.3,fips)
-
-    # join the natality data with the county data. 
 county.data <- county.data[natality.3]  # should be joined on fips
 setkey(county.data, id)
 
-    # merge the mapping information with natality/county data
+    # make the map layer
+map.df<-data.table(fortify(us.counties))
+setkey(map.df,id)
+    # add in interesting data
 map.df<- map.df[county.data]  # should be joined on ID
 
-
-
-## TROUBLE SHOOT
     # use the TIGER dataset from the census to draw the state outlines
     # http://www2.census.gov/geo/tiger/GENZ2016/shp/cb_2016_us_state_5m.zip
 US.states <- readOGR(dsn=".",layer="cb_2016_us_state_5m")
-    #excludes Alaska, american samoa (60), commonwealth of the northern mariana islands (69), 
-    # guam (66). need to exclude the virgin islands
 exclude_states<- c("02", "15", "78", "60", "66", "69", "72")
 US.states<- US.states[!US.states$GEOID %in% exclude_states,]
-#US.states<- US.states[!US.states$NAME == "United States Virgin" c("02", "15", "60", "66", "69", "72"),]
-us_states<- fortify(US.states)
+us_states<- merge(fortify(US.states), as.data.frame(US.states), by.x="id", by.y=0)
 
-    # GET THE COUNTY DATA
-    #https://www2.census.gov/geo/tiger/GENZ2016/shp/cb_2016_us_county_5m.zip
-us.counties <- readOGR(dsn=".",layer="cb_2016_us_county_5m")
-us.counties<- us.counties[!us.counties$STATEFP %in% exclude_states,]
-us_counties<-fortify(us.counties)
-
-p<-ggplot()+
-  geom_polygon(data = us_counties, aes(x=long,y=lat, group = group), color = "black", fill = "white")+
-  geom_polygon(data = us_states, aes(x=long, y=lat, group = group), color = "red", fill = NA)
-p
-
-
-ggplot(map.df, aes(x=long, y=lat, group = group)) +
-  geom_polygon( aes( fill = cesarean_rate)) +
-  coord_quickmap()+
-  theme_void()+
-  geom_path(data = state_map, colour="black") +
-  scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
+    #testing:
+# ggplot(map.df, aes(x=long, y=lat, group = group)) +
+#   geom_polygon( aes( fill = cesarean_rate)) +
+#   coord_quickmap()+
+#   theme_void()+
+#   geom_polygon(data = us_states, aes(x=long, y=lat, group = group), color = "black", fill = NA)
+#   scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
 
 ##################
 # SHINY
@@ -165,7 +146,7 @@ ui <- fluidPage(
            h3("Percent of Births Delivered Via Cesarean as a Factor of Geographic Location", align = "center"),
            pickerInput(inputId = "select_state",
                        label = "Display: ",
-                       choices = sort(unique(map.df$state)),
+                       choices = sort(state_crosswalk$state),
                        multiple = TRUE,
                        options = list(`actions-box` = TRUE), 
                        selected = unique(map.df$state)), 
@@ -210,15 +191,21 @@ server <- function(input, output, session) {
   county_data<- reactive({
     map.df[map.df$state %in% input$select_state,]
   })
+  
+  state_data<-reactive({
+    us_states[us_states$NAME %in% input$select_state, ]
+  })
+  
 
   output$county_map <- renderPlot({
         # take the filtered data from the reactive portion above
-    ggplot(county_data(), aes(x=long, y=lat, group = group)) +
-      geom_polygon(aes( fill = cesarean_rate)) +
-      theme_void()+
+    ggplot(county_data(),  aes(x=long, y=lat, group = group)) +
+      geom_polygon( aes( fill = cesarean_rate)) +
       coord_quickmap()+
-      geom_path(data = state_map[state_map$region %in% input$select_state,], colour="black") +
-      scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
+      theme_void()+
+      scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))+
+      geom_polygon(data = state_data(), aes(x=long, y=lat, group = group), color = "black", fill = NA)
+    
    })
   
   output$race_age_plot <- renderPlot({
@@ -271,12 +258,12 @@ server <- function(input, output, session) {
 runApp(list(ui = ui, server = server))
 
 ## TO DO
-# contingency for no state selected. 
-# now I think that the ggplot map for states doesn't line up perfectly with the TIGER file...
-# use the TIGER state file for the state borders. 
+# contingency for no state selected. Seems to not be freaking out right now.  
 # center state selecter. 
+
 # add tooltips to the age/race plot! It should contain N's and summary stats. 
 # SHIT. nearpoints doesn't work super well for polygons!!! 
+# might be going back to ggiraph after all. 
 
 # write methods
 
