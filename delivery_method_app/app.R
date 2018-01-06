@@ -120,13 +120,37 @@ setkey(county.data, id)
     # merge the mapping information with natality/county data
 map.df<- map.df[county.data]  # should be joined on ID
 
+
+
 ## TROUBLE SHOOT
-# ggplot(map.df, aes(x=long, y=lat, group = group)) +
-#   geom_polygon( aes( fill = cesarean_rate)) +
-#   coord_quickmap()+
-#   theme_void()+
-#   geom_path(data = state_map, colour="black") +
-#   scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
+    # use the TIGER dataset from the census to draw the state outlines
+    # http://www2.census.gov/geo/tiger/GENZ2016/shp/cb_2016_us_state_5m.zip
+US.states <- readOGR(dsn=".",layer="cb_2016_us_state_5m")
+    #excludes Alaska, american samoa (60), commonwealth of the northern mariana islands (69), 
+    # guam (66). need to exclude the virgin islands
+exclude_states<- c("02", "15", "78", "60", "66", "69", "72")
+US.states<- US.states[!US.states$GEOID %in% exclude_states,]
+#US.states<- US.states[!US.states$NAME == "United States Virgin" c("02", "15", "60", "66", "69", "72"),]
+us_states<- fortify(US.states)
+
+    # GET THE COUNTY DATA
+    #https://www2.census.gov/geo/tiger/GENZ2016/shp/cb_2016_us_county_5m.zip
+us.counties <- readOGR(dsn=".",layer="cb_2016_us_county_5m")
+us.counties<- us.counties[!us.counties$STATEFP %in% exclude_states,]
+us_counties<-fortify(us.counties)
+
+p<-ggplot()+
+  geom_polygon(data = us_counties, aes(x=long,y=lat, group = group), color = "black", fill = "white")+
+  geom_polygon(data = us_states, aes(x=long, y=lat, group = group), color = "red", fill = NA)
+p
+
+
+ggplot(map.df, aes(x=long, y=lat, group = group)) +
+  geom_polygon( aes( fill = cesarean_rate)) +
+  coord_quickmap()+
+  theme_void()+
+  geom_path(data = state_map, colour="black") +
+  scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
 
 ##################
 # SHINY
