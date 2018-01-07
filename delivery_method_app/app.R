@@ -133,6 +133,9 @@ us_states<- merge(fortify(US.states), as.data.frame(US.states), by.x="id", by.y=
 #   geom_polygon(data = us_states, aes(x=long, y=lat, group = group), color = "black", fill = NA)
 #   scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
 
+input<-NULL
+input$select_state <- c("Alabama", "Georgia")
+
 ##################
 # SHINY
 #################
@@ -146,15 +149,12 @@ ui <- fluidPage(
            h3("Percent of Births Delivered Via Cesarean as a Factor of Geographic Location", align = "center"),
            pickerInput(inputId = "select_state",
                        label = "Display: ",
-                       choices = sort(state_crosswalk$state),
+                       choices = sort(unique(map.df$state)),
                        multiple = TRUE,
                        options = list(`actions-box` = TRUE), 
                        selected = unique(map.df$state)), 
-           div(
-             style = "position:relative",
-             plotOutput("county_map", 
-                        hover = hoverOpts("plot_hover", delay = 100, delayType = "debounce")),
-             uiOutput("hover_info")
+           fluidRow(
+                ggiraphOutput("county_map")
            )
      ),
     tabPanel(title = "Age and Race", 
@@ -188,23 +188,36 @@ ui <- fluidPage(
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
    
+  
+  
   county_data<- reactive({
+    req(input$select_state)
     map.df[map.df$state %in% input$select_state,]
   })
   
   state_data<-reactive({
+    req(input$select_state)  
     us_states[us_states$NAME %in% input$select_state, ]
+   
   })
   
 
-  output$county_map <- renderPlot({
+  output$county_map <- renderggiraph({
         # take the filtered data from the reactive portion above
-    ggplot(county_data(),  aes(x=long, y=lat, group = group)) +
-      geom_polygon( aes( fill = cesarean_rate)) +
-      coord_quickmap()+
-      theme_void()+
-      scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))+
-      geom_polygon(data = state_data(), aes(x=long, y=lat, group = group), color = "black", fill = NA)
+    p<- ggplot(county_data(),  aes(x=long, y=lat, group = group)) +
+        geom_polygon( aes( fill = cesarean_rate)) +
+        coord_quickmap()+
+        theme_void()+
+        geom_polygon_interactive(aes(tooltip = paste0(gsub("'", "", county_display),
+                                                    "<br>Population: ", format(population,big.mark=","),
+                                                    "<br>Births: ", format(births, big.mark=","),
+                                                    "<br>C-section Rate: ", cesarean_rate, "%"), 
+                                   fill = cesarean_rate))+ 
+        scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))+
+        geom_polygon(data = state_data(), aes(x=long, y=lat, group = group), color = "black", fill = NA)
+
+    
+    ggiraph(code = print(p)) #takes a super long time to render...
     
    })
   
@@ -222,43 +235,16 @@ server <- function(input, output, session) {
       scale_fill_brewer()
   })
   
-      # hover functionality
-  output$hover_info<-renderUI({
-    hover <- input$plot_hover
-    point <- nearPoints(map.df, hover, threshold = 5, maxpoints = 1, addDist = TRUE)
-    if (nrow(point) == 0) return(NULL)
-    
-    # calculate point position INSIDE the image as percent of total dimensions
-    # from left (horizontal) and from top (vertical)
-    left_pct <- (hover$x - hover$domain$left) / (hover$domain$right - hover$domain$left)
-    top_pct <- (hover$domain$top - hover$y) / (hover$domain$top - hover$domain$bottom)
-    
-    # calculate distance from left and bottom side of the picture in pixels
-    left_px <- hover$range$left + left_pct * (hover$range$right - hover$range$left)
-    top_px <- hover$range$top + top_pct * (hover$range$bottom - hover$range$top)
-    
-    # create style property fot tooltip
-    # background color is set so tooltip is a bit transparent
-    # z-index is set so we are sure are tooltip will be on top
-    style <- paste0("position:absolute; z-index:100; background-color: rgba(245, 245, 245, 0.85); ",
-                    "left:", left_px + 2, "px; top:", top_px + 2, "px;")
-    
-    # actual tooltip created as wellPanel
-    wellPanel(
-      style = style,
-      p(HTML(paste0(gsub("'", "", point$county_display),
-                    "<br>Population: ", format(point$population,big.mark=","),
-                    "<br>Births: ", format(point$births, big.mark=","),
-                    "<br>C-section Rate: ", point$cesarean_rate, "%")))
-    )
-  })
 }
 
 # Run the application 
 runApp(list(ui = ui, server = server))
 
 ## TO DO
+# For some reason the PickerInput is not selecting all/deselecting all appropriately. 
+
 # contingency for no state selected. Seems to not be freaking out right now.  
+
 # center state selecter. 
 
 # add tooltips to the age/race plot! It should contain N's and summary stats. 
