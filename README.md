@@ -3,14 +3,20 @@
 The purpose of this project is to explore the different factors that correlate with cesarean section rate, 
 focusing primarily on geography, age, and ethnicity of the mother. 
 
-### Source Data
-All of my data are from the [Wonder data system](https://wonder.cdc.gov/natality.html) available from the CDC, specifically for natality data. 
+### Source Data and Methods
+Cesarean data are from the [Wonder data system](https://wonder.cdc.gov/natality.html) available from the CDC, specifically for natality data. 
 All data were queried for only single births between 2012 and 2015 that were in hospitals, and not premature 
 (37-41 weeks gestational age according to both methods). 
 
 Counties with population below 100,000 are grouped in 'Unknown County' by state. 
 
 Age and ethnic categories with fewer than 20 births were excluded. 
+
+County and population data are from the [US Census](https://www.census.gov/data/datasets/2016/demo/popest/counties-total.html#ds). Shape files 
+used for mapping are from the [TIGER](https://www2.census.gov/geo/tiger/GENZ2016/shp/cb_2016_us_county_5m.zip) dataset produced by the US Census. 
+
+
+All analyses were conducted using R. 
 
 ### Results
 
