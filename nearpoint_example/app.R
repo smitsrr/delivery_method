@@ -23,12 +23,12 @@ fluidRow(column(6,
 
 server <- function(input, output) {
   output$county_map<- renderggiraph({
-    p<- ggplot(counties, aes(x=long, y=lat, group = group)) +
+    q<- ggplot(counties, aes(x=long, y=lat, group = group)) +
       # coord_map("polyconic" ) +  # comment or uncomment this line to see the changes
       theme(plot.margin = unit(c(.1,.1,.1,.1), "cm")) + 
       geom_polygon_interactive(aes(tooltip = subregion))
     
-    ggiraph(code = {print(p)},width = 1, height = 5.418)
+    ggiraph(code = {print(q)},width = 1)
   })
   
   output$county_map_all<-renderggiraph({
@@ -37,7 +37,7 @@ server <- function(input, output) {
     # coord_map("polyconic" ) +  # comment or uncomment this line to see the changes
     theme(plot.margin = unit(c(.1,.1,.1,.1), "cm")) + 
     geom_polygon_interactive(aes(tooltip = subregion))
-  ggiraph(code = {print(p)},width = 1, height = 5.418)
+  ggiraph(code = {print(p)},width = 1)
   })
 }
 

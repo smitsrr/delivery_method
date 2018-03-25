@@ -126,12 +126,29 @@ US.states<- US.states[!US.states$GEOID %in% exclude_states,]
 us_states<- merge(fortify(US.states), as.data.frame(US.states), by.x="id", by.y=0)
 
     #testing:
-# ggplot(map.df, aes(x=long, y=lat, group = group)) +
-#   geom_polygon( aes( fill = cesarean_rate)) +
-#   coord_quickmap()+
-#   theme_void()+
-#   geom_polygon(data = us_states, aes(x=long, y=lat, group = group), color = "black", fill = NA)
-#   scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
+ggplot(map.df, aes(x=long, y=lat, group = group)) +
+  geom_polygon( aes( fill = cesarean_rate)) +
+  coord_quickmap()+
+  coord_map("polyconic" ) + 
+  theme_void()+
+  geom_polygon(data = us_states, aes(x=long, y=lat, group = group), color = "black", fill = NA)+
+  scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
+ggsave('cesarean_rate_map.png')
+
+
+ggplot(race_age[race_age$Births>20,], aes(x=Age.of.Mother.9.Code, y=cesarean_rate, fill = Race)) + 
+  geom_boxplot()+ 
+  theme_few()+
+  theme(legend.position="top", legend.title = element_blank(), 
+        axis.title = element_text(color = "black"), 
+        text = element_text(color = "black"), 
+        axis.text = element_text(color = "black")) + 
+  ylab("Percent of Births Delivered via Cesarean") + 
+  xlab("Age of Mother") + 
+  scale_y_continuous(labels = scales::percent)+
+  scale_fill_brewer()
+ggsave('cesarean_rate_age_eth.png')
+
 
 input<-NULL
 input$select_state <- c("Alabama", "Georgia")
@@ -151,8 +168,8 @@ ui <- fluidPage(
                        label = "Display: ",
                        choices = sort(unique(map.df$state)),
                        multiple = TRUE,
-                       options = list(`actions-box` = TRUE), 
-                       selected = unique(map.df$state)), 
+                       options = list(`actions-box` = TRUE),
+                       selected = unique(map.df$state)),
            fluidRow(
                 ggiraphOutput("county_map")
            )
@@ -187,20 +204,14 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
-   
-  
-  
+
   county_data<- reactive({
-    req(input$select_state)
     map.df[map.df$state %in% input$select_state,]
   })
-  
+
   state_data<-reactive({
-    req(input$select_state)  
-    us_states[us_states$NAME %in% input$select_state, ]
-   
+      us_states[us_states$NAME %in% input$select_state, ]
   })
-  
 
   output$county_map <- renderggiraph({
         # take the filtered data from the reactive portion above
@@ -208,6 +219,7 @@ server <- function(input, output, session) {
         geom_polygon( aes( fill = cesarean_rate)) +
         coord_quickmap()+
         theme_void()+
+        theme(plot.margin = unit(c(.01,.01,.01,.01), "cm"))+
         geom_polygon_interactive(aes(tooltip = paste0(gsub("'", "", county_display),
                                                     "<br>Population: ", format(population,big.mark=","),
                                                     "<br>Births: ", format(births, big.mark=","),
