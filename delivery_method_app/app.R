@@ -37,6 +37,9 @@ race_age<- natality_race_age %>%
                               ordered = TRUE)) %>%
   filter(Delivery.Method == "Cesarean")
 
+# clean dataset for sharing
+write.csv(race_age, 'mother_demographics.csv')
+
     # county totals, all births
 natality<- read.delim("wonder_data_extracts/Natality_12_15_county_totals_all_births_v2.txt", 
                                header = TRUE, colClasses = "character") %>%
@@ -150,8 +153,9 @@ ggplot(race_age[race_age$Births>20,], aes(x=Age.of.Mother.9.Code, y=cesarean_rat
 ggsave('cesarean_rate_age_eth.png')
 
 
-input<-NULL
-input$select_state <- c("Alabama", "Georgia")
+# clean dataset for sharing
+write.csv(map.df, 'county_data_with_rates.csv')
+
 
 ##################
 # SHINY
