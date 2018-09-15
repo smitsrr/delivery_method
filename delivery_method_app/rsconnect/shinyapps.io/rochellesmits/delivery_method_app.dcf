@@ -1,0 +1,12 @@
+name: delivery_method_app
+title: delivery_method_app
+username:
+account: rochellesmits
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 447461
+bundleId: 1586669
+url: https://rochellesmits.shinyapps.io/delivery_method_app/
+when: 1536975897.11314
+asMultiple: FALSE
+asStatic: FALSE

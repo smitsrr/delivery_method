@@ -3,8 +3,10 @@
 library(shiny)
 library(plyr)
 library(dplyr)
+library(tidyverse)
 library(ggplot2)
 library(rgdal)    # for readOGR(...)
+library(rsconnect)
 library(maptools)
 library(data.table)
 library(mapproj)
@@ -16,14 +18,13 @@ library(shinyWidgets)
 library(ggiraph)      # for Geom_polygon_interactive(...)
 library(tools)        # for toTitleCase(...)
 
-setwd("C:/Users/smits/Documents/GitHub/delivery_method")
-    #import some data
+    # import some data
     # Note, you have to delete the comments at the end of the text files. 
     # due to supression, the totals likely won't be able to be calculated when
     # you include segments. 
 
     # age and race - use this for the analysis of race and age. 
-natality_race_age<- read.delim("wonder_data_extracts/Natality_12_15_race_age_v2.txt",
+natality_race_age<- read.delim("Natality_12_15_race_age_v2.txt",
                   header = TRUE, colClasses = "character")
 
 race_age<- natality_race_age %>%
@@ -41,7 +42,7 @@ race_age<- natality_race_age %>%
 write.csv(race_age, 'mother_demographics.csv')
 
     # county totals, all births
-natality<- read.delim("wonder_data_extracts/Natality_12_15_county_totals_all_births_v2.txt", 
+natality<- read.delim("Natality_12_15_county_totals_all_births_v2.txt", 
                                header = TRUE, colClasses = "character") %>%
   filter(Births != "Suppressed") %>%
   mutate(Births = as.numeric(Births)) %>%
@@ -53,7 +54,6 @@ natality<- read.delim("wonder_data_extracts/Natality_12_15_county_totals_all_bir
 
     # population totals for counties
     # https://www.census.gov/data/datasets/2016/demo/popest/counties-total.html#ds
-setwd("C:/Users/smits/Documents/GitHub/delivery_method/")
 county.pop <- read.csv("co-est2016-alldata.csv", colClasses = "character") %>%
   mutate(fips = paste0(STATE, COUNTY),
          state = toTitleCase(STNAME), 
@@ -99,7 +99,6 @@ natality.2<- county.pop %>%
 exclude_states<- c("02", "15", "78", "60", "66", "69", "72")
     #excludes Alaska, american samoa (60), commonwealth of the northern mariana islands (69), 
     # guam (66). need to exclude the virgin islands
-setwd("C:/Users/smits/Documents/GitHub/delivery_method/wonder_data_extracts")
 us.counties <- readOGR(dsn=".",layer="cb_2016_us_county_5m")
 us.counties<- us.counties[!us.counties$STATEFP %in% exclude_states,]
 
@@ -129,32 +128,32 @@ US.states<- US.states[!US.states$GEOID %in% exclude_states,]
 us_states<- merge(fortify(US.states), as.data.frame(US.states), by.x="id", by.y=0)
 
     #testing:
-ggplot(map.df, aes(x=long, y=lat, group = group)) +
-  geom_polygon( aes( fill = cesarean_rate)) +
-  coord_quickmap()+
-  coord_map("polyconic" ) + 
-  theme_void()+
-  geom_polygon(data = us_states, aes(x=long, y=lat, group = group), color = "black", fill = NA)+
-  scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
-ggsave('cesarean_rate_map.png')
+# ggplot(map.df, aes(x=long, y=lat, group = group)) +
+#   geom_polygon( aes( fill = cesarean_rate)) +
+#   coord_quickmap()+
+#   coord_map("polyconic" ) +
+#   theme_void()+
+#   geom_polygon(data = us_states, aes(x=long, y=lat, group = group), color = "black", fill = NA)+
+#   scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))
+#ggsave('cesarean_rate_map.png')
 
 
-ggplot(race_age[race_age$Births>20,], aes(x=Age.of.Mother.9.Code, y=cesarean_rate, fill = Race)) + 
-  geom_boxplot()+ 
-  theme_few()+
-  theme(legend.position="top", legend.title = element_blank(), 
-        axis.title = element_text(color = "black"), 
-        text = element_text(color = "black"), 
-        axis.text = element_text(color = "black")) + 
-  ylab("Percent of Births Delivered via Cesarean") + 
-  xlab("Age of Mother") + 
-  scale_y_continuous(labels = scales::percent)+
-  scale_fill_brewer()
-ggsave('cesarean_rate_age_eth.png')
+# ggplot(race_age[race_age$Births>20,], aes(x=Age.of.Mother.9.Code, y=cesarean_rate, fill = Race)) + 
+#   geom_boxplot()+ 
+#   theme_few()+
+#   theme(legend.position="top", legend.title = element_blank(), 
+#         axis.title = element_text(color = "black"), 
+#         text = element_text(color = "black"), 
+#         axis.text = element_text(color = "black")) + 
+#   ylab("Percent of Births Delivered via Cesarean") + 
+#   xlab("Age of Mother") + 
+#   scale_y_continuous(labels = scales::percent)+
+#   scale_fill_brewer()
+#ggsave('cesarean_rate_age_eth.png')
 
 
 # clean dataset for sharing
-write.csv(map.df, 'county_data_with_rates.csv')
+#write.csv(map.df, 'county_data_with_rates.csv')
 
 
 ##################
@@ -232,8 +231,7 @@ server <- function(input, output, session) {
         scale_fill_gradientn("",colours=brewer.pal(9,"YlGnBu"))+
         geom_polygon(data = state_data(), aes(x=long, y=lat, group = group), color = "black", fill = NA)
 
-    
-    ggiraph(code = print(p)) #takes a super long time to render...
+    # ggiraph(code = print(p)) #takes a super long time to render...
     
    })
   

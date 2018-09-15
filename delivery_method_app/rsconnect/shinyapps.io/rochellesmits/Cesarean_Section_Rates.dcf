@@ -1,0 +1,12 @@
+name: Cesarean_Section_Rates
+title: Cesarean_Section_Rates
+username:
+account: rochellesmits
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 447459
+bundleId: 1586668
+url: https://rochellesmits.shinyapps.io/Cesarean_Section_Rates/
+when: 1536975617.92603
+asMultiple: FALSE
+asStatic: FALSE
