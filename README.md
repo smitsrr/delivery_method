@@ -19,6 +19,7 @@ used for mapping are from the [TIGER](https://www2.census.gov/geo/tiger/GENZ2016
 All analyses were conducted using R. 
 
 ### Results
+Percent of qualifying births delivered via cesarean. 
 
 ![map](https://github.com/smitsrr/delivery_method/blob/master/cesarean_rate_map.png "cesarean rate map")
 Tidy data available in `county_data_with_rates.csv`
